@@ -18,8 +18,8 @@ export default function FAQs() {
         </div>
         <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
           {faqs.map((faq, index) => (
-            <div key={index}>
-              <div style={{ transition: "all 1s linear" }}>
+            <div key={index} className="">
+              <div>
                 <div
                   onClick={() => {
                     if (openedQuestionIndex === index) {
@@ -32,11 +32,15 @@ export default function FAQs() {
                   {index + 1}. {faq.question}
                 </div>
                 <div
-                  style={{ display: openedQuestionIndex !== index ? "hidden" : "visible" }}
-                  className="mt-4 text-gray-500"
+                  style={{
+                    display: openedQuestionIndex === index ? "block" : "none",
+                    transition: "display 0.5s linear",
+                  }}
+                  className="mt-4 text-gray-500 text-lg"
                 >
                   {faq.answer}
                 </div>
+                <div className="h-[1px] w-full bg-gray-300 mt-5" />
               </div>
             </div>
           ))}
@@ -59,7 +63,7 @@ const faqs: FAQ[] = [
   },
   {
     question: "What types of charging stations do you offer?",
-    answer: "The answer",
+    answer: "Simply use our app or contact our customer support, and we'll bring the charging station to you.",
   },
   {
     question: "Can I subscribe to a plan that suits my charging needs?",
