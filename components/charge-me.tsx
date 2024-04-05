@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ChargeMe() {
   return (
     <div className="bg-[#F6F8F7] flex flex-col sm:flex-row justify-between gap-4 px-2 sm:px-2 md:px-16 lg:px-36 py-28">
-      <div className="max-sm:hidden">
+      <div className="max-sm:hidden mr-10">
         <img src="/charge-me.png" />
       </div>
       <div className="text-[70px] sm:hidden">CHARGE ME</div>
