@@ -45,7 +45,7 @@ export default function Home() {
               </div>
               <div className="p-2 rounded-lg hover:cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
                 <div>
-                  <Image src={"/google1.png"} width={20} height={20} alt="Get on app store" />
+                  <Image src={"/playstore.png"} width={20} height={20} alt="Get on app store" />
                 </div>
                 <div>
                   <div className="text-[8px]">Get it on</div>
