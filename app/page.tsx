@@ -30,7 +30,7 @@ export default function Home() {
             <div className="text-6xl font-semibold">Get charged</div>
             <div className="text-6xl font-semibold">Anytime</div>
             <div className="text-6xl font-semibold">Anywhere!</div>
-            <div className="font-medium text-lg">
+            <div className="text-lg">
               Introducing a revolutionary charging service that brings the power to you
             </div>
             <div className="flex gap-3 justify-center items-center">
