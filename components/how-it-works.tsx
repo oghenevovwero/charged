@@ -4,8 +4,8 @@ export default function HowItWorks() {
   return (
     <div className="bg-white text-black py-28 px-2 sm:px-8 md:px-16 lg:px-36">
       <div className="text-center ">
-        <div className="font-bold text-3xl">Here&apos;s how it works</div>
-        <div className="font-light mt-4 mb-16">Get started in 3 easy steps</div>
+        <div className="font-bold text-4xl">Here&apos;s how it works</div>
+        <div className="font-light text-lg mt-4 mb-16">Get started in 3 easy steps</div>
       </div>
       <div className="flex flex-col max-sm:gap-8 sm:flex-row justify-around items-center">
         <Step
