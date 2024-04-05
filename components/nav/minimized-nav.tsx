@@ -1,18 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MinimizedTopNav() {
+  const transparentStyle = "bg-transparent text-white";
+  const nonTransparentStyle = "bg-gray-600 text-white shadow-lg";
+
   const [openNav, setOpenNav] = useState(false);
-  const [dynamicStyles, setDynamicStyles] = useState("bg-transparent text-white");
+  const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
 
   const scrollHandler = () => {
     if (window.scrollY >= window.screen.height - 230) {
-      setDynamicStyles("bg-gray-600 text-white shadow-lg");
+      setDynamicStyles(nonTransparentStyle);
     } else {
       if (window.scrollY <= window.screen.height - 230) {
-        setDynamicStyles("bg-transparent text-white");
+        setDynamicStyles(transparentStyle);
       }
     }
   };
@@ -28,40 +31,50 @@ export default function MinimizedTopNav() {
 
   const navElements = () => {
     return (
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 text-xl font-light">
         <div
-          className="hover:cursor-pointer hover:opacity-50 active:opacity-50"
+          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
           onClick={() => {
-            setDynamicStyles("bg-white text-black shadow-lg");
+            setDynamicStyles(nonTransparentStyle);
           }}
         >
           About us
         </div>
         <div
-          className="hover:cursor-pointer hover:opacity-50 active:opacity-50"
+          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
           onClick={() => {
-            setDynamicStyles("bg-white text-black shadow-lg");
+            setDynamicStyles(nonTransparentStyle);
           }}
         >
           How it works
         </div>
         <div
-          className="hover:cursor-pointer hover:opacity-50 active:opacity-50"
+          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
           onClick={() => {
-            setDynamicStyles("bg-white text-black shadow-lg");
+            setDynamicStyles(nonTransparentStyle);
           }}
         >
           FAQs
         </div>
-        <div className="flex gap-2 hover:cursor-pointer hover:opacity-50 items-center">
+        <div
+          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+          onClick={() => {
+            setDynamicStyles(nonTransparentStyle);
+          }}
+        >
+          Reach us
+        </div>
+        {/* <div className="flex w-fit gap-2 hover:cursor-pointer hover:opacity-75 items-center">
           <div>
             <Image src={"/global.png"} width={20} height={20} alt="english language" />
           </div>
           <div>EN</div>
+        </div> */}
+        <div className="w-fit">
+          <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
+            Access App
+          </button>
         </div>
-        <button className="bg-[#00A63D] hover:cursor-pointer hover:bg-[#2f794a] text-white px-2 py-2 rounded-md font-light">
-          Access App
-        </button>
       </div>
     );
   };
@@ -72,9 +85,9 @@ export default function MinimizedTopNav() {
       className={`fixed top-0 left-0 right-0 z-10 ${dynamicStyles}`}
     >
       <div className="mx-auto lg:flex items-center lg:justify-between">
-        <div className={`flex items-center py-[10px] justify-between px-4`}>
+        <div className={`flex items-center py-[10px] justify-between pr-2 pl-4`}>
           <div
-            className="hover:cursor-pointer hover:opacity-50 active:opacity-50"
+            className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
             onClick={() => {
               scrollHandler();
             }}
@@ -119,7 +132,7 @@ export default function MinimizedTopNav() {
         <div
           className={`${
             openNav ? "" : "hidden"
-          } mt-2 flex flex-col gap-4 px-2 pb-5 rounded ${dynamicStyles}`}
+          } mt-2 flex flex-col gap-4 px-4 pb-5 rounded ${dynamicStyles}`}
         >
           {navElements()}
         </div>

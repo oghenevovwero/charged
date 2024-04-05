@@ -1,5 +1,5 @@
-import Brands from "@/components/brands";
-import ChargeMe from "@/components/charge-me";
+import Partners from "@/components/partners";
+import ChargeMe from "@/components/charge-me/charge-me";
 import FAQs from "@/components/faqs";
 import Footer from "@/components/footer";
 import GetCharging from "@/components/get-charging";
@@ -34,7 +34,7 @@ export default function Home() {
               Introducing a revolutionary charging service that brings the power to you
             </div>
             <div className="flex gap-3 justify-center items-center">
-              <div className="p-2 hover:cursor-pointer hover:opacity-50 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+              <div className="p-2 hover:cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
                 <div>
                   <Image src={"/apple.png"} width={20} height={20} alt="Get on app store" />
                 </div>
@@ -43,7 +43,7 @@ export default function Home() {
                   <div className="text-[12px] font-semibold">App Store</div>
                 </div>
               </div>
-              <div className="p-2 rounded-lg hover:cursor-pointer hover:opacity-50 text-white border border-gray-500 flex gap-1 items-center">
+              <div className="p-2 rounded-lg hover:cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
                 <div>
                   <Image src={"/google1.png"} width={20} height={20} alt="Get on app store" />
                 </div>
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Brands />
+      <Partners />
       <LagosMap />
       <ChargeMe />
       <HowItWorks />

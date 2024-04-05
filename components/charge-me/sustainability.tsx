@@ -1,0 +1,34 @@
+import Image from "next/image";
+
+export default function Sustainability() {
+  return (
+    <div className="w-full bg-white text-black p-2 lg:p-5 rounded-xl">
+      <div className="relative">
+        <img src={"/p4.png"} className="rounded-lg w-full" alt="BMW logo" />
+        <div className="absolute bottom-6  w-full flex items-center justify-center">
+          <div className="bg-white text-black rounded-lg p-2 flex gap-2 items-center justify-start">
+            <Image
+              src={"/e1.png"}
+              width={20}
+              height={20}
+              className="rounded-lg object-cover"
+              alt="BMW logo"
+            />
+            <div className="">
+              <div className="font-semibold text-sm sm:text-[12px] md:text-sm">
+                Charging completed
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="text-xl mt-6 mb-4">Sustainability</div>
+        <div className="font-light">
+          Use a clean and eco-friendly charging solution to reduce your carbon footprint.
+        </div>
+      </div>
+    </div>
+  );
+}

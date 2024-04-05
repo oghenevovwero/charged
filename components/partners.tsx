@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function Brands() {
+export default function Partners() {
   return (
     <div className="flex flex-col items-start py-10 md:py-20 bg-black mt-[-10px] px-2 sm:px-4 md:px-14 lg:px-48 xl:px-64">
-      <div className="text-4xl md:text-6xl text-white font-bold mb-5">Our partners</div>
+      <div className="text-4xl text-white font-bold">Our partners</div>
       <div className="flex w-full items-center py-5 md:py-10 justify-between">
         <div className="w-[40px] h-[40px]">
           <Image src={"/nissan.png"} width={50} height={20} alt="Nissan logo" />

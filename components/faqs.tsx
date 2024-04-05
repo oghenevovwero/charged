@@ -5,9 +5,9 @@ import { useState } from "react";
 export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
-    <div className="bg-white text-black py-36 px-2 sm:px-8 md:px-16 lg:px-48">
+    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-48">
       <div className="flex flex-col md:flex-row max-md:gap-4 justify-around mb-16">
-        <div className="font-bold text-3xl md:text-4xl">Frequently Asked Questions</div>
+        <div className="font-bold text-4xl">Frequently Asked Questions</div>
         <div>
           <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
             <div className="flex gap-1 items-center">
