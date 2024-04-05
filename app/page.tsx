@@ -17,9 +17,11 @@ export default function Home() {
         <div
           className="
           bg-[url('/charger2.png')] 
-          bg-repeat-round 
+          bg-no-repeat
           h-full 
-          overflow-x-clip 
+          bg-center
+          bg-cover
+          overflow-hidden
           flex 
           justify-start
           items-center"

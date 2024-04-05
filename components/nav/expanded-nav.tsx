@@ -9,10 +9,10 @@ export default function ExpandedNav() {
     if (!isHome.current) {
       return;
     }
-    if (window.scrollY >= window.screen.height - 260) {
+    if (window.scrollY >= window.screen.height - 230) {
       setDynamicStyles("bg-gray-600 text-white shadow-lg");
     } else {
-      if (window.scrollY <= window.screen.height - 260) {
+      if (window.scrollY <= window.screen.height - 230) {
         setDynamicStyles("bg-transparent text-white");
       }
     }

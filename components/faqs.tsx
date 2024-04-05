@@ -6,11 +6,16 @@ export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
     <div className="bg-white text-black py-36 px-2 sm:px-8 md:px-16 lg:px-48">
-      <div className="flex justify-around mb-20">
-        <div className="font-bold text-2xl md:text-4xl">Frequently Asked Questions</div>
-        <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-4 md:px-6 py-[6px] rounded-lg text-sm md:text-lg font-light">
-          Other FAQs
-        </button>
+      <div className="flex flex-col md:flex-row max-md:gap-4 justify-around mb-16">
+        <div className="font-bold text-3xl md:text-4xl">Frequently Asked Questions</div>
+        <div>
+          <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
+            <div className="flex gap-1 items-center">
+              <div>Other</div>
+              <div>FAQs</div>
+            </div>
+          </button>
+        </div>
       </div>
       <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
         <div className="flex-1 w-full">
@@ -28,7 +33,7 @@ export default function FAQs() {
                     }
                     setOpenIndex(index);
                   }}
-                  className="hover:cursor-pointer hover:opacity-35 text-xl"
+                  className="md:hover:cursor-pointer md:hover:opacity-35"
                 >
                   {index + 1}. {faq.question}
                 </div>
@@ -37,7 +42,7 @@ export default function FAQs() {
                     display: openedQuestionIndex === index ? "block" : "none",
                     transition: "display 0.5s linear",
                   }}
-                  className="mt-4 text-gray-500 text-lg"
+                  className="mt-4 text-gray-500"
                 >
                   {faq.answer}
                 </div>
@@ -64,7 +69,8 @@ const faqs: FAQ[] = [
   },
   {
     question: "What types of charging stations do you offer?",
-    answer: "Simply use our app or contact our customer support, and we'll bring the charging station to you.",
+    answer:
+      "Simply use our app or contact our customer support, and we'll bring the charging station to you.",
   },
   {
     question: "Can I subscribe to a plan that suits my charging needs?",

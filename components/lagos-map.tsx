@@ -6,7 +6,8 @@ export default function LagosMap() {
       <div
         className="
           bg-[url('/lagos.png')] 
-          bg-repeat-round
+          bg-no-repeat
+          bg-cover
           h-full 
           overflow-x-clip 
           flex

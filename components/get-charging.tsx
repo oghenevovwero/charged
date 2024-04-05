@@ -4,7 +4,8 @@ export default function GetCharging() {
       <div
         className="
     bg-[url('/charger3.png')] 
-    bg-repeat-round 
+    bg-no-repeat
+    md:bg-cover
     h-full 
     overflow-x-clip 
     flex 
