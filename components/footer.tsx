@@ -50,18 +50,18 @@ export default function Footer() {
       <div className="px-2 sm:px-8 md:px-16 lg:px-36">
         <div className="h-[1px] bg-gray-400 w-full mb-8" />
         <div className="flex justify-between items-center">
-          <div className="text-[#8C9E96] font-light text-[9px] md:text-sm">
+          <div className="text-[#8C9E96] font-light text-[10px] md:text-sm">
             &copy; 2024 Charge Me. All Rights Reserved
           </div>
           <div className="flex gap-4">
             <div>
-              <Image src={"/twitter.png"} width={20} height={20} alt="X" />
+              <Image src={"/twitter.png"} width={17.5} height={17.5} alt="X" />
             </div>
             <div>
-              <Image src={"/li.png"} width={20} height={20} alt="Linked in" />
+              <Image src={"/li.png"} width={17.5} height={17.5} alt="Linked in" />
             </div>
             <div>
-              <Image src={"/fb.png"} width={20} height={20} alt="Facebook" />
+              <Image src={"/fb.png"} width={17.5} height={17.5} alt="Facebook" />
             </div>
           </div>
         </div>
