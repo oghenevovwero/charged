@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-600 text-white shadow-lg";
+  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-2 right-2 rounded-md mt-2";
 
   const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
 
@@ -48,7 +48,7 @@ export default function ExpandedNav() {
             scrollHandler();
           }}
         >
-          <Image src={"/the-logo.png"} height={40} width={80} alt="Our logo" />
+          <Image src={"/the-logo.png"} height={30} width={70} alt="Our logo" />
         </div>
         <div className="flex gap-16 xl:gap-20 justify-around items-center">
           <div
@@ -78,11 +78,14 @@ export default function ExpandedNav() {
           >
             FAQs
           </div>
-          <div className="flex gap-1 hover:cursor-pointer hover:opacity-75 items-center">
-            <div className="h-5 w-5">
-              <Image src={"/global.png"} width={20} height={20} alt="english language" />
-            </div>
-            <div>EN</div>
+          <div
+            className="hover:cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            onClick={() => {
+              setDynamicStyles(nonTransparentStyle);
+            }}
+          >
+            <div>Contact</div>
+            <div>us</div>
           </div>
           <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
             <div className="flex gap-1">
