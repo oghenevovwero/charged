@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="hover:cursor-pointer hover:opacity-50">FAQs</div>
         </div>
       </div>
-      <div className="flex justify-center items-center my-10 md:my-20">
+      <div className="flex justify-center items-center my-10 md:my-20 px-2">
         <img src="/footer-charge.png" />
       </div>
       <div className="px-2 sm:px-8 md:px-16 lg:px-36">
