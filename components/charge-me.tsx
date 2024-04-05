@@ -6,7 +6,7 @@ export default function ChargeMe() {
       <div className="max-sm:hidden mr-10">
         <img src="/charge-me.png" />
       </div>
-      <div className="text-[70px] sm:hidden">CHARGE ME</div>
+      <div className="text-[45px] sm:hidden">CHARGE ME</div>
       <div className="xl:px-52">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
           <Convenience />

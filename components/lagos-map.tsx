@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LagosMap() {
   return (
-    <div className="h-[50vh]">
+    <div className="h-[70vh]">
       <div
         className="
           bg-[url('/lagos.png')] 
@@ -15,7 +15,7 @@ export default function LagosMap() {
           md:pr-10
           items-center"
       >
-        <img src="/charger.png" className="h-[50vh] mix-blend-color-burn" />
+        <img src="/charger.png" className="h-full mix-blend-color-burn" />
       </div>
     </div>
   );

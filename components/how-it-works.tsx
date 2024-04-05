@@ -7,7 +7,7 @@ export default function HowItWorks() {
         <div className="font-bold text-3xl">Here&apos;s how it works</div>
         <div className="font-light mt-4 mb-16">Get started in 3 easy steps</div>
       </div>
-      <div className="flex justify-around items-center">
+      <div className="flex flex-col max-sm:gap-8 sm:flex-row justify-around items-center">
         <Step
           name="Download the app"
           description="Our user-friendly app is your charging control center."

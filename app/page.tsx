@@ -24,7 +24,7 @@ export default function Home() {
           justify-start
           items-center"
         >
-          <div className="flex flex-col gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start">
+          <div className="flex flex-col gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start text-white">
             <div className="text-6xl font-semibold">Get charged</div>
             <div className="text-6xl font-semibold">Anytime</div>
             <div className="text-6xl font-semibold">Anywhere!</div>
