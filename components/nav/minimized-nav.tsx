@@ -79,7 +79,7 @@ export default function MinimizedTopNav() {
               scrollHandler();
             }}
           >
-            <Image src={"/logo.png"} height={40} width={100} alt="Our logo" />
+            <Image src={"/the-logo.png"} height={40} width={100} alt="Our logo" />
           </div>
           <button
             onClick={() => setOpenNav((prev) => !prev)}

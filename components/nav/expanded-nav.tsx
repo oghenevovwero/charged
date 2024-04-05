@@ -49,7 +49,7 @@ export default function ExpandedNav() {
             scrollHandler();
           }}
         >
-          <Image src={"/logo.png"} height={40} width={100} alt="Our logo" />
+          <Image src={"/the-logo.png"} height={40} width={100} alt="Our logo" />
         </div>
         <div className="flex gap-20 justify-around items-center">
           <div

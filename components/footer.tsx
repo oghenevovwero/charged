@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
           <div className="flex flex-col gap-2">
             <div>
-              <Image src={"/logo.png"} height={40} width={100} alt="Our logo" />
+              <Image src={"/the-logo.png"} height={40} width={100} alt="Our logo" />
             </div>
             <div className="font-extralight">Mobile EV charge that has your back</div>
           </div>
