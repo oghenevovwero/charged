@@ -7,7 +7,7 @@ export default function MinimizedTopNav() {
   const transparentStyle = "bg-transparent text-white";
   const nonTransparentStyle = "bg-gray-600 text-white shadow-lg";
 
-  const [openNav, setOpenNav] = useState(false);
+  const [navIsOpen, setOpenNav] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
 
   const scrollHandler = () => {
@@ -29,56 +29,6 @@ export default function MinimizedTopNav() {
     };
   }, []);
 
-  const navElements = () => {
-    return (
-      <div className="flex flex-col gap-5 text-xl font-light">
-        <div
-          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-          onClick={() => {
-            setDynamicStyles(nonTransparentStyle);
-          }}
-        >
-          About us
-        </div>
-        <div
-          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-          onClick={() => {
-            setDynamicStyles(nonTransparentStyle);
-          }}
-        >
-          How it works
-        </div>
-        <div
-          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-          onClick={() => {
-            setDynamicStyles(nonTransparentStyle);
-          }}
-        >
-          FAQs
-        </div>
-        <div
-          className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-          onClick={() => {
-            setDynamicStyles(nonTransparentStyle);
-          }}
-        >
-          Reach us
-        </div>
-        {/* <div className="flex w-fit gap-2 hover:cursor-pointer hover:opacity-75 items-center">
-          <div>
-            <Image src={"/global.png"} width={20} height={20} alt="english language" />
-          </div>
-          <div>EN</div>
-        </div> */}
-        <div className="w-fit">
-          <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
-            Access App
-          </button>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <header
       style={{ transition: "all 0.35s linear" }}
@@ -99,7 +49,7 @@ export default function MinimizedTopNav() {
             className="block lg:hidden p-2 rounded focus:outline-none"
           >
             <svg
-              className={`w-6 h-6 ${openNav ? "hidden" : "block"}`}
+              className={`w-6 h-6 ${navIsOpen ? "hidden" : "block"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -113,7 +63,7 @@ export default function MinimizedTopNav() {
               ></path>
             </svg>
             <svg
-              className={`w-6 h-6 ${openNav ? "block" : "hidden"}`}
+              className={`w-6 h-6 ${navIsOpen ? "block" : "hidden"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -128,13 +78,55 @@ export default function MinimizedTopNav() {
             </svg>
           </button>
         </div>
-        <nav className="hidden lg:flex space-x-4">{navElements()}</nav>
+        {/* <nav className="hidden lg:flex space-x-4">{navElements()}</nav> */}
         <div
           className={`${
-            openNav ? "" : "hidden"
-          } mt-2 flex flex-col gap-4 px-4 pb-5 rounded ${dynamicStyles}`}
+            navIsOpen ? "" : "hidden"
+          } ${dynamicStyles} p-4 flex flex-col gap-6 text-xl font-light`}
         >
-          {navElements()}
+          <div
+            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              setDynamicStyles(nonTransparentStyle);
+            }}
+          >
+            About us
+          </div>
+          <div
+            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              setDynamicStyles(nonTransparentStyle);
+            }}
+          >
+            How it works
+          </div>
+          <div
+            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              setDynamicStyles(nonTransparentStyle);
+            }}
+          >
+            FAQs
+          </div>
+          <div
+            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              setDynamicStyles(nonTransparentStyle);
+            }}
+          >
+            Contact us
+          </div>
+          {/* <div className="flex w-fit gap-2 hover:cursor-pointer hover:opacity-75 items-center">
+          <div>
+            <Image src={"/global.png"} width={20} height={20} alt="english language" />
+          </div>
+          <div>EN</div>
+        </div> */}
+          <div className="w-fit">
+            <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md">
+              Access App
+            </button>
+          </div>
         </div>
       </div>
     </header>
