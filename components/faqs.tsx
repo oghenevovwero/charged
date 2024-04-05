@@ -23,7 +23,7 @@ export default function FAQs() {
         </div>
         <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
           {faqs.map((faq, index) => (
-            <div key={index} className="">
+            <div key={index} className="w-fit">
               <div>
                 <div
                   onClick={() => {
@@ -46,7 +46,7 @@ export default function FAQs() {
                 >
                   {faq.answer}
                 </div>
-                <div className="h-[1px] w-full bg-gray-300 mt-5" />
+                <div className="h-[1px] w-full bg-gray-300 mt-3" />
               </div>
             </div>
           ))}
