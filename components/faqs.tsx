@@ -8,13 +8,13 @@ export default function FAQs() {
     <div className="bg-white text-black py-36 px-2 sm:px-8 md:px-16 lg:px-48">
       <div className="flex justify-around mb-20">
         <div className="font-bold text-2xl md:text-4xl">Frequently Asked Questions</div>
-        <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-6 py-[6px] rounded-lg text-sm md:text-lg font-light">
-          See More FAQs
+        <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-4 md:px-6 py-[6px] rounded-lg text-sm md:text-lg font-light">
+          Other FAQs
         </button>
       </div>
       <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
         <div className="flex-1 w-full">
-          <img className="max-md:w-full px-10 sm:px-20 md:px-0" src="/plug.png" alt="plug in" />
+          <img className="max-md:w-full px-2 sm:px-20 md:px-0" src="/plug.png" alt="plug in" />
         </div>
         <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
           {faqs.map((faq, index) => (
@@ -23,6 +23,7 @@ export default function FAQs() {
                 <div
                   onClick={() => {
                     if (openedQuestionIndex === index) {
+                      setOpenIndex(-1);
                       return;
                     }
                     setOpenIndex(index);

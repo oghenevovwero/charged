@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-       <Brands />
+      <Brands />
       <LagosMap />
       <ChargeMe />
       <HowItWorks />
