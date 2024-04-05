@@ -50,7 +50,7 @@ export default function Footer() {
       <div className="px-2 sm:px-8 md:px-16 lg:px-36">
         <div className="h-[1px] bg-gray-400 w-full mb-8" />
         <div className="flex justify-between items-center">
-          <div className="text-[#8C9E96] font-light text-[10px] md:text-sm">
+          <div className="text-[#8C9E96] font-light text-sm">
             &copy; 2024 Charge Me. All Rights Reserved
           </div>
           <div className="flex gap-4">
