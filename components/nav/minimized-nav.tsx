@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function MinimizedTopNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-1 right-1 rounded-md mt-1";
+  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-2 right-2 rounded-md mt-[2px]";
 
   const [navIsOpen, setOpenNav] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
