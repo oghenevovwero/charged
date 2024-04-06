@@ -1,21 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 export default function MinimizedTopNav() {
-  const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-2 right-2 rounded-md mt-[2px]";
-
-  const [navIsOpen, setOpenNav] = useState(false);
-  const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
+  const navIsOpen = useRef(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
     if (window.scrollY >= window.screen.height - 230) {
-      setDynamicStyles(nonTransparentStyle);
+      setDynamicStyles("bg-gray-700");
     } else {
-      if (window.scrollY <= window.screen.height - 230) {
-        setDynamicStyles(transparentStyle);
+      if (navIsOpen.current) {
+        setDynamicStyles("bg-gray-700");
+      } else {
+        setDynamicStyles("bg-transparent");
       }
     }
   };
@@ -27,29 +28,30 @@ export default function MinimizedTopNav() {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, []);
+  }, [navIsOpen, openNav]);
 
   return (
     <header
-      style={{ transition: "all 0.35s linear" }}
-      className={`fixed top-0 left-0 right-0 z-10 ${dynamicStyles}`}
+      className={`${
+        openNav ? "h-screen" : "h-20"
+      } text-white fixed inset-0 z-10 transition-all overflow-y-scroll overscroll-y-none ${dynamicStyles}`}
     >
-      <div className="mx-auto lg:flex items-center lg:justify-between">
-        <div className={`flex items-center py-[10px] justify-between pr-2 pl-4`}>
-          <div
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
-            onClick={() => {
-              scrollHandler();
-            }}
-          >
+      <div className="">
+        <div className={`flex h-20 items-center justify-between px-4`}>
+          <div className="hover:cursor-pointer hover:opacity-75 active:opacity-50">
             <Image src={"/the-logo.png"} height={35} width={70} alt="Our logo" />
           </div>
           <button
-            onClick={() => setOpenNav((prev) => !prev)}
-            className="block lg:hidden p-2 rounded focus:outline-none"
+            onClick={() => {
+              setOpenNav((prev) => {
+                navIsOpen.current = !prev;
+                return !prev;
+              });
+            }}
+            className="block lg:hidden rounded focus:outline-none"
           >
             <svg
-              className={`w-6 h-6 ${navIsOpen ? "hidden" : "block"}`}
+              className={`w-6 h-6 ${openNav ? "hidden" : "block"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -63,7 +65,7 @@ export default function MinimizedTopNav() {
               ></path>
             </svg>
             <svg
-              className={`w-6 h-6 ${navIsOpen ? "block" : "hidden"}`}
+              className={`w-6 h-6 ${openNav ? "block" : "hidden"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -80,48 +82,33 @@ export default function MinimizedTopNav() {
         </div>
         {/* <nav className="hidden lg:flex space-x-4">{navElements()}</nav> */}
         <div
-          className={`${
-            navIsOpen ? "" : "hidden"
-          } ${dynamicStyles} p-4 flex flex-col gap-6 text-xl font-light`}
+          className={`
+           p-4 flex flex-col gap-6 text-xl font-light overflow-y-scroll overscroll-y-none`}
         >
-          <div
+          <Link
+            href={"#"}
             className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-            onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
-            }}
           >
             About us
-          </div>
-          <div
+          </Link>
+          <Link
+            href={"#"}
             className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-            onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
-            }}
           >
             How it works
-          </div>
-          <div
+          </Link>
+          <Link
+            href={"#"}
             className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-            onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
-            }}
           >
             FAQs
-          </div>
-          <div
+          </Link>
+          <Link
+            href={"#"}
             className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
-            onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
-            }}
           >
             Contact us
-          </div>
-          {/* <div className="flex w-fit gap-2 hover:cursor-pointer hover:opacity-75 items-center">
-          <div>
-            <Image src={"/global.png"} width={20} height={20} alt="english language" />
-          </div>
-          <div>EN</div>
-        </div> */}
+          </Link>
           <div className="w-fit">
             <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md">
               Access App

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WaitList() {
   return (
-    <div className="bg-black flex justify-center items-center py-14 md:py-28 px-2 sm:px-4 md:px-14 lg:px-48 xl:px-64">
+    <div className="bg-black flex justify-center items-center py-14 md:py-28 px-2 sm:px-4 md:px-14 lg:px-48 xl:px-80">
       <div className="flex flex-col md:flex-row md:h-96">
         <div className="flex-1 bg-[#54645D] text-white rounded-3xl md:rounded-l-3xl flex flex-col p-6 sm:p-14 justify-center items-center">
           <div className="font-bold text-4xl">Join the WaitList</div>
