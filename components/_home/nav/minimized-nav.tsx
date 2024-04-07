@@ -38,9 +38,15 @@ export default function MinimizedTopNav() {
     >
       <div className="">
         <div className={`flex h-20 items-center justify-between px-4`}>
-          <div className="hover:cursor-pointer hover:opacity-75 active:opacity-50">
+          <Link
+            onClick={() => {
+              scrollHandler();
+            }}
+            href={"/"}
+            className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
+          >
             <Image src={"/the-logo.png"} height={35} width={70} alt="Our logo" />
-          </div>
+          </Link>
           <button
             onClick={() => {
               setOpenNav((prev) => {
@@ -86,7 +92,10 @@ export default function MinimizedTopNav() {
            p-4 flex flex-col gap-6 text-xl font-light overflow-y-scroll overscroll-y-none`}
         >
           <Link
-            href={"#"}
+            onClick={() => {
+              scrollHandler();
+            }}
+            href={"/about"}
             className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
           >
             About us
