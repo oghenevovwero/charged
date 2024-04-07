@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function WhatSetsUsApart() {
   return (
     <div className="bg-[#2A322F] text-white py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-32">
-      <div className="text-4xl font-medium">What sets us apart</div>
+      <div className="text-5xl font-medium mb-10">What sets us apart</div>
       <div className="flex flex-col items-center md:flex-row gap-8">
         <div className="flex-1 px-2 sm:px-8 md:px-16 lg:px-32">
           <div className="text-3xl font-medium my-10">On-Demand convenience</div>
