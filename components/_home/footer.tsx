@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-start flex-col md:flex-row gap-4 text-gray-300">
-          <Link href="#" className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href={"/about"} className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60">
             About us
           </Link>
           <Link href="#" className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function ExpandedNav() {
@@ -42,28 +43,30 @@ export default function ExpandedNav() {
         items-center 
         text-lg w-full"
       >
-        <div
-          className="hover:cursor-pointer hover:opacity-75 active:opacity-100"
+        <Link
+          href={"/"}
+          className="cursor-pointer hover:opacity-75 active:opacity-100"
           onClick={() => {
             scrollHandler();
           }}
         >
           <Image src={"/the-logo.png"} height={30} width={70} alt="Our logo" />
-        </div>
+        </Link>
         <div className="flex gap-16 xl:gap-20 justify-around items-center">
-          <div
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+          <Link
+            href={"/about"}
+            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
             onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
+              scrollHandler();
             }}
           >
             <div>About</div>
             <div>us</div>
-          </div>
+          </Link>
           <div
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
             onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
+              scrollHandler();
             }}
           >
             <div>How</div>
@@ -71,23 +74,23 @@ export default function ExpandedNav() {
             <div>works</div>
           </div>
           <div
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
+            className="cursor-pointer hover:opacity-75 active:opacity-50"
             onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
+              scrollHandler();
             }}
           >
             FAQs
           </div>
           <div
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
             onClick={() => {
-              setDynamicStyles(nonTransparentStyle);
+              scrollHandler();
             }}
           >
             <div>Contact</div>
             <div>us</div>
           </div>
-          <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
+          <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
             <div className="flex gap-1">
               <div>Access</div>
               <div>App</div>
