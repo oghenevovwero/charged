@@ -1,6 +1,7 @@
 import Image from "next/image";
 import arrowImg from "@/public/arrow-forward.svg";
 import trailerImg from "@/public/trailer.png";
+import trailerLogoImg from "@/public/s-logo.png";
 
 export default function WhatSetsUsApart() {
   return (
@@ -16,15 +17,20 @@ export default function WhatSetsUsApart() {
             cutting-edge technology and a passion for environmental responsibility.
           </div>
         </div>
-        <div className="flex-1 relative">
-          <Image className="rounded-lg" src={trailerImg} alt="a member of a charging fleet" />
-          {/* <Image
-            width={55}
-            height={55}
+        <div className="relative">
+          <Image
+            className="rounded-lg"
+            src={trailerImg}
+            alt="a member of a charging fleet"
+          />
+          <Image
+            width={86}
+            height={86}
+            quality={100}
             alt="charge vehicle"
-            className="absolute top-[135px] left-[160px]"
-            src="/s-logo.png"
-          /> */}
+            className="absolute right-[125px] top-[132px]"
+            src={trailerLogoImg}
+          />
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 mt-14 md:mt-28">
