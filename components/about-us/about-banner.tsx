@@ -16,7 +16,7 @@ export default function AboutUsBanner() {
       items-center"
       >
         <div className="flex w-full justify-center gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start text-white">
-          <div className="text-6xl font-semibold text-center">About us</div>
+          <div className="text-7xl md:text-8xl font-semibold text-center">About us</div>
         </div>
       </div>
     </div>
