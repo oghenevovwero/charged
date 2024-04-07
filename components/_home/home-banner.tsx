@@ -5,7 +5,7 @@ import playImg from "@/public/playstore.png";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen relative overflow-hidden">
+    <div className="h-screen relative overflow-clip">
       <Image
         src={bannerImg}
         placeholder="blur"
@@ -37,7 +37,7 @@ export default function HomeBanner() {
                 />
               </div>
               <div>
-                <div className="text-[8px]">Download on the</div>
+                <div className="text-[8px]">COMING SOON ON</div>
                 <div className="text-[12px] font-semibold">App Store</div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function HomeBanner() {
                 />
               </div>
               <div>
-                <div className="text-[8px]">Get it on</div>
+                <div className="text-[8px]">COMING SOON ON</div>
                 <div className="text-[12px] font-semibold">Google play</div>
               </div>
             </div>

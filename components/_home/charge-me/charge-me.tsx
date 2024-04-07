@@ -1,13 +1,15 @@
+import Image from "next/image";
 import Convenience from "./convenience";
 import Flexibility from "./flexibility";
 import Reliability from "./reliability";
 import Sustainability from "./sustainability";
+import chargeMeImg from "@/public/charge-me.png";
 
 export default function ChargeMe() {
   return (
     <div className="bg-[#F6F8F7] flex flex-col sm:flex-row justify-between gap-4 px-2 sm:px-2 md:px-12 lg:px-28 py-14 md:py-28">
-      <div className="max-sm:hidden mr-10">
-        <img src="/charge-me.png" />
+      <div className="max-sm:hidden flex justify-center mr-10 w-64 xl:w-80">
+        <Image src={chargeMeImg} alt="charge me" height={1050}  />
       </div>
       <div className="text-4xl sm:hidden font-bold">CHARGE ME</div>
       <div className="xl:px-36 2xl:px-48">

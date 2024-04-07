@@ -8,7 +8,7 @@ import footerChargeImg from "@/public/footer-charge.png";
 export default function Footer() {
   return (
     <div className="bg-[#1C211F] py-20 text-[#EDF0EF]">
-      <div className="px-2 sm:px-8 md:px-16 lg:px-36">
+      <div className="px-2 sm:px-8 md:px-16 lg:px-36 xl:px-80">
         <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
@@ -16,8 +16,8 @@ export default function Footer() {
             </Link>
             <div>Mobile EV charge that has your back</div>
           </div>
-          <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2 justify-center sm:items-center">
-            <div className="mb-2 opacity-80">You should get our app now</div>
+          <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2">
+            <div className="mb-2 text-lg font-medium">Get the app</div>
             <div className="flex flex-row md:flex-col gap-2 justify-center items-center">
               <div className="p-2 hover:cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
                 <div>

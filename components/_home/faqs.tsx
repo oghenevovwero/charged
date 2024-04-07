@@ -8,8 +8,8 @@ import plugImg from "@/public/plug.png"
 export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
-    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-48">
-      <div className="flex flex-col md:flex-row max-md:gap-4 justify-around mb-16">
+    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-80">
+      <div className="flex flex-col md:flex-row max-md:gap-4 justify-between mb-16">
         <div className="font-bold text-4xl">Frequently Asked Questions</div>
         <div>
           <button className="hover:cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
@@ -20,7 +20,7 @@ export default function FAQs() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
+      <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center md:px-10 lg:px-20 xl:px-24">
         <div className="flex-1 w-full">
           <Image className="max-md:w-full px-2 sm:px-20 md:px-0" src={plugImg} alt="plug in" />
         </div>

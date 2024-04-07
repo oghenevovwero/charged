@@ -16,7 +16,7 @@ export default function OurMission() {
         <div className="text-4xl md:text-4xl text-center px-2 sm:px-8 md:px-16 lg:px-32 xl:px-72 font-medium md:font-bold">
           Your Charge, Your way: Anytime, Anywhere you want it
         </div>
-        <div className="mt-10 mb-20 text-center px-2 sm:px-8 md:px-16 lg:px-32 xl:px-72 text-lg font-light">
+        <div className="mt-10 mb-20 text-center px-2 sm:px-8 md:px-16 lg:px-32 xl:px-72 md:text-lg font-light">
           At Charge Me Now, we&apos;re committed to creating a sustainable and convenient charging
           infrastructure for electric vehicles, empowering individuals to adopt cleaner
           transportation options and contributing to the global shift towards a greener future.
