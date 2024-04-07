@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-2 right-2 rounded-md mt-2";
+  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-1 right-1 rounded-md mt-1";
 
   const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
 

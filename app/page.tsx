@@ -28,6 +28,7 @@ export default function Home() {
       <WhatSetsUsApart />
       <OurPromise />
       <JoinTheTeam />
+      <Footer />
 
       {/* HOME */}
 

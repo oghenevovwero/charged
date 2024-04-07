@@ -34,11 +34,11 @@ function Step({ name, image, description }: { name: string; image: string; descr
   return (
     <div className="flex items-center gap-4 px-2 sm:px-8 md:px-12 xl:px-20 2xl:px-24">
       <div>
-        <Image src={image} width={75} height={75} alt={name} />
+        <Image src={image} width={80} height={80} alt={name} />
       </div>
       <div>
         <div className="mt-8 mb-4 font-semibold text-2xl">{name}</div>
-        <div className="font-light">{description}</div>
+        <div className="">{description}</div>
       </div>
     </div>
   );
