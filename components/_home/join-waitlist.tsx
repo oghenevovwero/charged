@@ -1,4 +1,5 @@
 import Image from "next/image";
+import plugImg from "@/public/plug.png";
 
 export default function WaitList() {
   return (
@@ -21,7 +22,7 @@ export default function WaitList() {
           </div>
         </div>
         <div className="flex-1 h-96 max-md:hidden">
-          <img className="w-full h-full" src="/plug.png" alt="plug in" />
+          <Image className="w-full h-full" src={plugImg} alt="plug in" />
         </div>
       </div>
     </div>

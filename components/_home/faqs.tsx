@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
+import plugImg from "@/public/plug.png"
+
 
 export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
@@ -19,7 +22,7 @@ export default function FAQs() {
       </div>
       <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
         <div className="flex-1 w-full">
-          <img className="max-md:w-full px-2 sm:px-20 md:px-0" src="/plug.png" alt="plug in" />
+          <Image className="max-md:w-full px-2 sm:px-20 md:px-0" src={plugImg} alt="plug in" />
         </div>
         <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
           {faqs.map((faq, index) => (

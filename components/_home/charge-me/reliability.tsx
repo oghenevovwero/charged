@@ -1,10 +1,11 @@
 import Image from "next/image";
+import reliabilityImg from "@/public/p2.png";
 
 export default function Reliability() {
   return (
     <div className="w-full bg-white text-black p-2 lg:p-5 rounded-xl">
       <div className="relative">
-        <img src={"/p2.png"} className="rounded-lg w-full" alt="BMW logo" />
+        <Image src={reliabilityImg} className="rounded-lg w-full" alt="we are reliable" />
         <div className="absolute bottom-4 w-full flex items-center justify-center">
           <div className="bg-white text-black rounded-lg p-2 flex gap-2 items-center justify-start">
             <Image
