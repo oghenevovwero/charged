@@ -6,7 +6,7 @@ export default function Welcome() {
     <div className="flex flex-col md:items-center md:flex-row bg-[#F6F8F7] py-14 md:py-28 text-black px-2 sm:px-8 md:px-16 lg:px-32 xl:px-44">
       <div className="flex-1 px-2 sm:px-8 md:px-16 lg:px-24">
         <div className="text-4xl font-medium md:font-bold">
-          Welcome to Charge Me Now Pioneers in Mobile EV Charging
+          Welcome to Charge Me Now. We are pioneers in Mobile EV Charging
         </div>
         <div className="my-10">
           At Charge Me Now, we are on a mission to revolutionize the way people charge their
