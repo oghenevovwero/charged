@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import logoImg from "@/public/the-logo.png";
 
 export default function MinimizedTopNav() {
   const navIsOpen = useRef(false);
@@ -45,7 +46,7 @@ export default function MinimizedTopNav() {
             href={"/"}
             className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
           >
-            <Image src={"/the-logo.png"} height={35} width={70} alt="Our logo" />
+            <Image src={logoImg} height={35} width={70} alt="Our logo" />
           </Link>
           <button
             onClick={() => {

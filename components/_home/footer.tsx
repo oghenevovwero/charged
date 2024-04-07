@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import logoImg from "@/public/the-logo.png";
+import appleImg from "@/public/apple.png";
+import playImg from "@/public/playstore.png";
+import footerChargeImg from "@/public/footer-charge.png";
 
 export default function Footer() {
   return (
@@ -7,9 +11,9 @@ export default function Footer() {
       <div className="px-2 sm:px-8 md:px-16 lg:px-36">
         <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
           <div className="flex flex-col gap-2">
-            <div>
-              <Image src={"/the-logo.png"} height={40} width={100} alt="Our logo" />
-            </div>
+            <Link href={"/"} className="cursor-pointer">
+              <Image src={logoImg} height={40} width={100} alt="Our logo" />
+            </Link>
             <div>Mobile EV charge that has your back</div>
           </div>
           <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2 justify-center sm:items-center">
@@ -17,7 +21,14 @@ export default function Footer() {
             <div className="flex flex-row md:flex-col gap-2 justify-center items-center">
               <div className="p-2 hover:cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
                 <div>
-                  <Image src={"/apple.png"} width={20} height={20} alt="Get on app store" />
+                  <Image
+                    src={appleImg}
+                    width={20}
+                    height={20}
+                    alt="Get on app store"
+                    quality={100}
+                    placeholder="blur"
+                  />
                 </div>
                 <div>
                   <div className="text-[9px]">Download on the</div>
@@ -26,7 +37,14 @@ export default function Footer() {
               </div>
               <div className="p-2 rounded-lg hover:cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
                 <div>
-                  <Image src={"/playstore.png"} width={20} height={20} alt="Get on app store" />
+                  <Image
+                    src={playImg}
+                    width={20}
+                    height={20}
+                    alt="Get on play store"
+                    quality={100}
+                    placeholder="blur"
+                  />
                 </div>
                 <div>
                   <div className="text-[9px]">Get it on</div>
@@ -37,7 +55,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-start flex-col md:flex-row gap-4 text-gray-300">
-          <Link href={"/about"} className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link
+            href={"/about"}
+            className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60"
+          >
             About us
           </Link>
           <Link href="#" className="hover:cursor-pointer md:hover:opacity-75 active:opacity-60">
@@ -58,7 +79,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center my-10 md:my-20 px-2">
-        <img src="/footer-charge.png" />
+        <Image src={footerChargeImg} alt="charge" quality={100} />
       </div>
       <div className="px-2 sm:px-8 md:px-16 lg:px-36">
         <div className="h-[1px] bg-gray-400 w-full mb-8" />

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import DownloadApp from "./download-app";
+import RequestCharge from "./request-charge";
+import GetCharged from "./get-charged";
 
 export default function HowItWorks() {
   return (
@@ -8,21 +11,9 @@ export default function HowItWorks() {
         <div className="font-light text-lg mt-4 mb-16">Get started in 3 easy steps</div>
       </div>
       <div className="flex flex-col max-sm:gap-8 sm:flex-row justify-around items-center">
-        <Step
-          name="Download the app"
-          description="Our user-friendly app is your gateway to our charging control center."
-          image="/asd.png"
-        />
-        <Step
-          name="Request charge"
-          description="Select your location, desired service, and a time that works for you."
-          image="/req.png"
-        />
-        <Step
-          name="Get charged"
-          description="Our truck arrives on time and powers up your vehicle as per requirement."
-          image="/bat.png"
-        />
+        <DownloadApp />
+        <RequestCharge />
+        <GetCharged />
       </div>
     </div>
   );

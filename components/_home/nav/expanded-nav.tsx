@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import logoImg from "@/public/the-logo.png";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
   const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-1 right-1 rounded-md mt-1";
 
-  const [dynamicStyles, setDynamicStyles] = useState(transparentStyle);
+  const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
   const scrollHandler = () => {
     if (window.scrollY >= window.screen.height - 230) {
@@ -30,7 +31,7 @@ export default function ExpandedNav() {
   return (
     <div
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed flex left-0 right-0 z-10 h-fit text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <div
         className="
@@ -50,7 +51,7 @@ export default function ExpandedNav() {
             scrollHandler();
           }}
         >
-          <Image src={"/the-logo.png"} height={30} width={70} alt="Our logo" />
+          <Image src={logoImg} height={30} width={70} alt="Our logo" />
         </Link>
         <div className="flex gap-16 xl:gap-20 justify-around items-center">
           <Link

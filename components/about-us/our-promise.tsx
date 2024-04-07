@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Reliability from "./our-promise/reliability";
+import Flexibility from "./our-promise/flexibility";
+import Eco from "./our-promise/eco";
 
 export default function OurPromise() {
   return (
@@ -7,38 +10,9 @@ export default function OurPromise() {
         <div className="font-bold text-4xl">Our promise to you</div>
       </div>
       <div className="flex flex-col max-sm:gap-8 sm:flex-row justify-around items-center">
-        <Step
-          name="Reliability"
-          description="Count on us to deliver a reliable and efficient charging experience whenever you request our services.
-          "
-          image="/okay.png"
-        />
-        <Step
-          name="Flexibility"
-          description="Your schedule is our priority. Request a charge at a time and location that suits you best.
-          "
-          image="/flexibility.png"
-        />
-        <Step
-          name="Environmental impact"
-          description="Join us in making a positive impact on the environment. Every charge with us contributes to a more sustainable future.
-          "
-          image="/eco.png"
-        />
-      </div>
-    </div>
-  );
-}
-
-function Step({ name, image, description }: { name: string; image: string; description: string }) {
-  return (
-    <div className="flex items-center gap-4 px-2 sm:px-8 md:px-12 xl:px-20 2xl:px-24">
-      <div>
-        <Image src={image} width={80} height={80} alt={name} />
-      </div>
-      <div>
-        <div className="mt-8 mb-4 font-semibold text-2xl">{name}</div>
-        <div className="">{description}</div>
+        <Reliability />
+        <Flexibility />
+        <Eco />
       </div>
     </div>
   );

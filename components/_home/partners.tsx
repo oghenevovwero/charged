@@ -1,4 +1,10 @@
 import Image from "next/image";
+import nissanImg from "@/public/nissan.png";
+import teslaImg from "@/public/tesla.png";
+import bmwImg from "@/public/bmw.png";
+import fordImg from "@/public/ford.png";
+import bydImg from "@/public/byd.png";
+import hyundaiImg from "@/public/hyundai.png";
 
 export default function Partners() {
   return (
@@ -6,22 +12,22 @@ export default function Partners() {
       <div className="text-4xl text-white font-bold">Our partners</div>
       <div className="flex w-full items-center py-5 md:py-10 justify-between">
         <div className="w-[40px] h-[40px]">
-          <Image src={"/nissan.png"} width={50} height={20} alt="Nissan logo" />
+          <Image src={nissanImg} width={50} height={20} alt="Nissan logo" />
         </div>
         <div className="w-[40px] h-[40px]">
-          <Image src={"/tesla.png"} width={60} height={20} alt="BYD logo" />
+          <Image src={teslaImg} width={60} height={20} alt="BYD logo" />
         </div>
         <div className="w-[70px] h-[70px] mt-10">
-          <Image src={"/ford.png"} width={60} height={20} alt="Ford logo" />
+          <Image src={fordImg} width={60} height={20} alt="Ford logo" />
         </div>
         <div className="w-[70px] h-[70px] mt-8">
-          <Image src={"/hyundai.png"} width={80} height={20} alt="Hyundai logo" />
+          <Image src={hyundaiImg} width={80} height={20} alt="Hyundai logo" />
         </div>
         <div className="w-[35px] h-[35px]">
-          <Image src={"/bmw.png"} width={50} height={20} alt="BMW logo" />
+          <Image src={bmwImg} width={50} height={20} alt="BMW logo" />
         </div>
         <div className="w-[40px] h-[40px] mt-4">
-          <Image src={"/byd.png"} width={60} height={20} alt="BYD logo" />
+          <Image src={bydImg} width={60} height={20} alt="BYD logo" />
         </div>
       </div>
     </div>
