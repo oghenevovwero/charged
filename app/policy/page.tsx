@@ -10,15 +10,16 @@ export default function Policy() {
           <div className="text-4xl font-bold mb-10">Privacy Policy</div>
           <div className="font-bold text-xl mb-5">Last updated : March 19, 2024</div>
           <div className="text-lg mb-6">
-            This privacy notice pertains to Charge Me Now LLC, operating under the name CMN ("CMN,"
-            "we," "us," or "our"), and explains the methods and purposes behind the collection,
-            storage, utilization, and/or sharing ("processing") of your information when you utilize
-            our services ("Services"). This includes actions such as:
+            This privacy notice pertains to Charge Me Now LLC, operating under the name CMN
+            (&quot;CMN,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), and explains the
+            methods and purposes behind the collection, storage, utilization, and/or sharing
+            (&quot;processing&quot;) of your information when you utilize our services
+            (&quot;Services&quot;). This includes actions such as:
           </div>
           <div className="text-lg ml-6 md:ml-12">
             <div className="mb-2">
-              1. Visiting our website at www.gochargemenow.com or any of our websites linked to this
-              privacy notice.
+              1. Visiting our website at <link>www.gochargemenow.com</link> or any of our websites
+              linked to this privacy notice.
             </div>
             <div>
               2. Installing and using our mobile application (CMN) or any other application linked
@@ -84,7 +85,7 @@ export default function Policy() {
           <div className="text-lg mb-6">
             1. Managing account creation and authentication, as well as overall user account
             management. This involves processing your information to enable account setup, login
-            functionalities, and maintenance of your account's functionality.
+            functionalities, and maintenance of your account&quot;s functionality.
           </div>
           <div className="text-lg mb-6">
             2. Facilitating the delivery of services to users. We process your information to
@@ -149,10 +150,10 @@ export default function Policy() {
 
           <div className="font-bold text-xl mt-8">6. Children&apos;s Privacy</div>
           <div className="text-lg mb-6">
-            Charge Me Now's services are not directed to individuals under the age of 18. We do not
-            knowingly collect personal information from children. If you become aware that a child
-            has provided us with personal information, please contact us, and we will take steps to
-            delete such information.
+            Charge Me Now&quot;s services are not directed to individuals under the age of 18. We do
+            not knowingly collect personal information from children. If you become aware that a
+            child has provided us with personal information, please contact us, and we will take
+            steps to delete such information.
           </div>
 
           <div className="font-bold text-xl">Updates to this Policy</div>
@@ -162,8 +163,8 @@ export default function Policy() {
             review this Privacy Policy periodically for any updates.
           </div>
           <div className="text-lg mb-6">
-            By using Charge Me Now's services, you acknowledge that you have read, understood, and
-            agree to the practices described in this Privacy Policy.
+            By using Charge Me Now&quot;s services, you acknowledge that you have read, understood,
+            and agree to the practices described in this Privacy Policy.
           </div>
         </div>
       </div>
