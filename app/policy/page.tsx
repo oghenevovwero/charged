@@ -1,5 +1,4 @@
 import ContactNav from "@/components/contact-nav/contact-nav";
-import Image from "next/image";
 
 export default function Policy() {
   return (
@@ -130,9 +129,9 @@ export default function Policy() {
           <div className="font-semibold text-lg">Opting Out Of Marketing Communications:</div>
           <div className="text-lg mb-6">
             You can opt out of marketing and promotional communications at any time by responding
-            with "STOP" or "UNSUBSCRIBE" to our messages, or by contacting us using the provided
-            contact details. However, please note that opting out of marketing communications does
-            not preclude us from contacting you about service-related matters.
+            withSTOP&quot; or &quot;UNSUBSCRIBE&quot; to our messages, or by contacting us using the
+            provided contact details. However, please note that opting out of marketing
+            communications does not preclude us from contacting you about service-related matters.
           </div>
           <div className="font-semibold text-lg">Account Information:</div>
           <div className="text-lg mb-6">
@@ -159,8 +158,8 @@ export default function Policy() {
           <div className="font-bold text-xl">Updates to this Policy</div>
           <div className="text-lg mb-6">
             We may update this Privacy Policy from time to time. Any changes will be posted on this
-            page, and the "last updated" date will be revised accordingly. We encourage you to
-            review this Privacy Policy periodically for any updates.
+            page, and the &quot;last updated&quot; date will be revised accordingly. We encourage
+            you to review this Privacy Policy periodically for any updates.
           </div>
           <div className="text-lg mb-6">
             By using Charge Me Now&quot;s services, you acknowledge that you have read, understood,
