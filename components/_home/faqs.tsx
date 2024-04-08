@@ -2,29 +2,27 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import plugImg from "@/public/plug.png"
-
+import plugImg from "@/public/plug.png";
+import Container from "../about-us/container";
+import Link from "next/link";
 
 export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
-    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-80">
-      <div className="flex flex-col md:flex-row max-md:gap-4 justify-between mb-16">
-        <div className="font-bold text-4xl">Frequently Asked Questions</div>
-        <div>
-          <button className="cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
-            <div className="flex gap-1 items-center">
-              <div>Other</div>
-              <div>FAQs</div>
-            </div>
-          </button>
+    <Container className="bg-white text-black">
+      <div className="flex gap-6 flex-col md:flex-row max-md:gap-4  mb-16 items-center">
+        <div className="font-bold text-4xl flex-1">Frequently Asked Questions</div>
+        <div className="flex-1">
+          <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 text-black border font-extralight border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
+            Other FAQs
+          </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
+      <div className="flex gap-6 flex-col md:flex-row justify-around items-center">
         <div className="flex-1 w-full">
-          <Image className="max-md:w-full px-2 sm:px-20 md:px-0" src={plugImg} alt="plug in" />
+          <Image className="max-md:w-full" src={plugImg} alt="plug in" />
         </div>
-        <div className="flex-1 flex flex-col justify-between items-stretch gap-10">
+        <div className="flex-1 flex flex-col justify-between gap-10">
           {faqs.map((faq, index) => (
             <div key={index} className="w-fit">
               <div>
@@ -55,7 +53,7 @@ export default function FAQs() {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

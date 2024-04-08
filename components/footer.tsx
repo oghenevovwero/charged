@@ -4,11 +4,12 @@ import logoImg from "@/public/the-logo.png";
 import appleImg from "@/public/apple.png";
 import playImg from "@/public/playstore.png";
 import footerChargeImg from "@/public/footer-charge.png";
+import Padding from "./padding";
 
 export default function Footer() {
   return (
-    <div className="bg-[#1C211F] py-20 text-[#EDF0EF]">
-      <div className="px-2 sm:px-8 md:px-16 lg:px-36">
+    <div className="bg-[#1C211F] py-12 md:py-24 text-[#EDF0EF]">
+      <Padding className="py-0">
         <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
@@ -56,11 +57,8 @@ export default function Footer() {
           <Link href={"/about"} className="cursor-pointer md:hover:opacity-75 active:opacity-60">
             About us
           </Link>
-          <Link href="#" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
-            How it works
-          </Link>
           <Link
-            href="subscription"
+            href="/pricing"
             className="cursor-pointer md:hover:opacity-75 active:opacity-60"
           >
             Pricing
@@ -74,15 +72,18 @@ export default function Footer() {
           <Link href="contact" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
             Contact us
           </Link>
-          <Link href="contact" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/policy" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
             Privacy policy
           </Link>
+          <Link href="/conditions" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+            Terms & Conditions
+          </Link>
         </div>
-      </div>
+      </Padding>
       <div className="flex justify-center items-center my-10 md:my-20 px-2">
         <Image src={footerChargeImg} alt="charge" quality={100} />
       </div>
-      <div className="px-2 sm:px-8 md:px-16 lg:px-36">
+      <Padding className="">
         <div className="h-[1px] bg-gray-400 w-full mb-8" />
         <div className="flex justify-between items-center text-[#8C9E96] ">
           <div className="font-light text-sm">&copy; 2024 Charge Me. All Rights Reserved</div>
@@ -96,7 +97,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </Padding>
     </div>
   );
 }

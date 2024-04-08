@@ -1,9 +1,10 @@
 import Image from "next/image";
 import teamImg from "@/public/team.png";
+import Container from "./container";
 
 export default function WhoWeAre() {
   return (
-    <div className="flex flex-col gap-10 items-center md:flex-row bg-[#F6F8F7] py-14 md:py-28 text-black px-2 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+    <Container className="flex flex-col gap-10 items-center md:flex-row bg-[#F6F8F7]  text-black">
       <div className="flex-1 ">
         <div className="text-4xl md:text-5xl font-bold">Who we are</div>
         <div className="mt-10">
@@ -17,6 +18,6 @@ export default function WhoWeAre() {
       <div className="flex-1 ">
         <Image className="rounded-md" src={teamImg} alt="collaborative workers" />
       </div>
-    </div>
+    </Container>
   );
 }

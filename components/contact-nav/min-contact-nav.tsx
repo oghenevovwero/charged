@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logoImg from "@/public/the-logo.png";
+import Padding from "../padding";
 
 export default function MinimizedContactTopNav() {
   const navIsOpen = useRef(false);
@@ -13,10 +14,10 @@ export default function MinimizedContactTopNav() {
     <header
       className={`${
         openNav ? "h-screen" : "h-20"
-      } text-white fixed inset-0 z-10 transition-all bg-gray-700`}
+      } text-black fixed inset-0 z-10 transition-all bg-white shadow-lg`}
     >
       <div className="">
-        <div className={`flex h-20 items-center justify-between px-2 sm:px-8 md:px-16 lg:px-36`}>
+        <Padding className={`flex h-20 items-center justify-between`}>
           <Link            
             href={"/"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"
@@ -61,10 +62,9 @@ export default function MinimizedContactTopNav() {
               ></path>
             </svg>
           </button>
-        </div>
-        <div
-          style={{ display: openNav ? "block" : "none" }}
-          className={`py-4 px-2 sm:px-8 md:px-16 lg:px-36 text-xl font-light`}
+        </Padding>
+        <Padding
+          className={`${openNav ? "block": "hidden"} text-xl font-light pt-5`}
         >
           <Link
             href={"/about"}
@@ -102,7 +102,7 @@ export default function MinimizedContactTopNav() {
               Access App
             </button>
           </div>
-        </div>
+        </Padding>
       </div>
     </header>
   );

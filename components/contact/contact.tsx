@@ -1,15 +1,18 @@
 import Image from "next/image";
 import chevronImg from "@/public/down-chevron.png";
 import chargeImg from "@/public/charge-at-station.png";
+import Container from "../about-us/container";
 
 export default function ContactUs() {
   return (
-    <div className="bg-white text-black flex flex-col max-sm:items-center sm:flex-row gap-4 py-28 justify-between px sm:px-8 md:px-16 lg:px-32 xl:px-44">
+    <Container className="bg-white text-black flex flex-col max-sm:items-center py-32 sm:flex-row gap-12 sm:gap-5 justify-between">
+      <div className="flex-1">
       <Image src={chargeImg} alt="charging" />
-      <div className="flex flex-col gap-5">
+      </div>
+      <div className="flex-1 w-full flex flex-col gap-5">
         <div className="text-4xl font-bold">Get in touch</div>
         <div className="text-light">Our friendly team would love to hear from you</div>
-        <div className="flex justify-between gap-4">
+        <div className="w-full flex flex-col md:flex-row justify-between gap-4">
           <div className="w-full">
             <div className="font-semibold text-sm mb-1">First name</div>
             <input
@@ -42,7 +45,7 @@ export default function ContactUs() {
           <div className="flex gap-2 items-center absolute left-2 bottom-4">
             <div className="font-bold text-gray-500">US</div>
             <div>
-            <Image src={chevronImg} alt="more countries" width={15} height={20} />
+            <Image src={chevronImg} alt="more countries" width={10} height={20} />
             </div>
           </div>
         </div>
@@ -65,6 +68,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

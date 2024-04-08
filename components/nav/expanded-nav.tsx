@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
+import Padding from "../padding";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-xl left-1 right-1 rounded-md mt-1";
+  const nonTransparentStyle = "bg-gray-700 text-white shadow-lg";
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
@@ -33,10 +34,9 @@ export default function ExpandedNav() {
       style={{ transition: "all 0.35s linear" }}
       className={`fixed flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
-      <div
+      <Padding
         className="
         py-2
-        px-2 sm:px-8 md:px-16 lg:px-36
         flex 
         justify-between 
         items-center
@@ -110,7 +110,7 @@ export default function ExpandedNav() {
             </div>
           </button>
         </div>
-      </div>
+      </Padding>
     </div>
   );
 }

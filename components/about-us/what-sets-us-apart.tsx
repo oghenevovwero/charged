@@ -2,10 +2,11 @@ import Image from "next/image";
 import arrowImg from "@/public/arrow-forward.svg";
 import trailerImg from "@/public/trailer.png";
 import trailerLogoImg from "@/public/s-logo.png";
+import Container from "./container";
 
 export default function WhatSetsUsApart() {
   return (
-    <div className="bg-[#2A322F] text-white py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-32">
+    <Container className="bg-[#2A322F] text-white  ">
       <div className="text-5xl font-medium mb-10 md:font-bold">What sets us apart</div>
       <div className="flex flex-col items-center md:flex-row gap-6">
         <div className="flex-1 px-2 sm:px-16">
@@ -17,14 +18,14 @@ export default function WhatSetsUsApart() {
             cutting-edge technology and a passion for environmental responsibility.
           </div>
         </div>
-        <div className="relative">
-          <Image className="rounded-lg" src={trailerImg} alt="a member of a charging fleet" />
+        <div className="relative flex-1">
+          <Image className="rounded-lg aspect-square" src={trailerImg} alt="a member of a charging fleet" />
           <Image
             width={86}
             height={86}
             quality={100}
             alt="charge vehicle"
-            className="absolute right-[125px] top-[132px]"
+            className="absolute right-[125px] top-[120px]"
             src={trailerLogoImg}
           />
         </div>
@@ -44,6 +45,6 @@ export default function WhatSetsUsApart() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

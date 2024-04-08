@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { useState } from "react";
 import plugImg from "@/public/plug.png";
+import Container from "../about-us/container";
 
 export default function Support() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
-    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-64">
+    <Container className="bg-white text-black ">
       <div className="flex flex-col md:flex-row max-md:gap-12 justify-around">
         <div className="flex-1">
           <div className="text-[#00A63D] font-bold">Support</div>
@@ -48,7 +49,7 @@ export default function Support() {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

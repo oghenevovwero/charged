@@ -1,5 +1,6 @@
 import Image from "next/image";
 import chargingImg from "@/public/price-banner.png";
+import Container from "../about-us/container";
 
 export default function PricingBanner() {
   return (
@@ -15,9 +16,9 @@ export default function PricingBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <div className="flex flex-col h-full justify-end pb-6 md:pb-12 text-white px-2 sm:px-8 md:px-16 lg:px-32">
+        <Container className="flex flex-col h-full justify-end pb-6 md:pb-12 text-white ">
           <div className="text-5xl md:text-6xl font-semibold">Become a member</div>
-        </div>
+        </Container>
       </div>
     </div>
   );

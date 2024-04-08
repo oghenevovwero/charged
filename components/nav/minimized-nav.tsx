@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logoImg from "@/public/the-logo.png";
+import Padding from "../padding";
 
 export default function MinimizedTopNav() {
   const navIsOpen = useRef(false);
@@ -11,11 +12,11 @@ export default function MinimizedTopNav() {
   const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - 230) {
-      setDynamicStyles("bg-gray-700");
+    if (window.scrollY >= window.screen.height - 100) {
+      setDynamicStyles("bg-gray-700 shadow-lg");
     } else {
       if (navIsOpen.current) {
-        setDynamicStyles("bg-gray-700");
+        setDynamicStyles("bg-gray-700 shadow-lg");
       } else {
         setDynamicStyles("bg-transparent");
       }
@@ -37,8 +38,8 @@ export default function MinimizedTopNav() {
         openNav ? "h-screen" : "h-20"
       } text-white fixed inset-0 z-10 transition-all ${dynamicStyles}`}
     >
-      <div className="h-full">
-        <div className={`flex h-20 items-center justify-between px-2 sm:px-8 md:px-16 lg:px-36`}>
+      <div className="">
+        <Padding className={`flex h-20 items-center justify-between`}>
           <Link
             onClick={() => {
               scrollHandler();
@@ -86,10 +87,9 @@ export default function MinimizedTopNav() {
               ></path>
             </svg>
           </button>
-        </div>
-        <div
-          style={{ display: openNav ? "block" : "none" }}
-          className={`py-4 px-2 sm:px-8 md:px-16 lg:px-36 h-full gap-6 text-xl font-light`}
+        </Padding>
+        <Padding
+          className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl font-light`}
         >
           <Link
             onClick={() => {
@@ -129,7 +129,7 @@ export default function MinimizedTopNav() {
               Access App
             </button>
           </div>
-        </div>
+        </Padding>
       </div>
     </header>
   );

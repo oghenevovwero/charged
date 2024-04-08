@@ -1,5 +1,6 @@
 import Image from "next/image";
 import chargingImg from "@/public/charging.png"
+import Container from "./container";
 
 export default function AboutUsBanner() {
   return (
@@ -15,9 +16,9 @@ export default function AboutUsBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <div className="flex w-full justify-center gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start text-white">
+        <Container className="flex w-full justify-center gap-5 items-start text-white">
           <div className="text-7xl md:text-8xl font-semibold text-center">About us</div>
-        </div>
+        </Container>
       </div>
     </div>
   );

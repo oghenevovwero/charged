@@ -2,10 +2,11 @@ import Image from "next/image";
 import Reliability from "./reliability";
 import Flexibility from "./flexibility";
 import Eco from "./eco";
+import Container from "../container";
 
 export default function OurPromise() {
   return (
-    <div className="bg-[#EEFFF4] text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+    <Container className="bg-[#EEFFF4] text-black ">
       <div className="text-center ">
         <div className="font-bold text-4xl mb-14">Our promise to you</div>
       </div>
@@ -14,6 +15,6 @@ export default function OurPromise() {
         <Flexibility /> 
         <Eco />
       </div>
-    </div>
+    </Container>
   );
 }

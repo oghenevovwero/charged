@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Container from "../about-us/container";
 
 export default function OtherQuestions() {
   return (
-    <div className="bg-white text-black py-10 md:py-20 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-64">
-      <div className="bg-[#EEFFF4] rounded-xl text-center py-10">
+    <Container className="bg-white text-black">
+      <div className="bg-[#EEFFF4] rounded-xl text-center py-20">
         <div className="text-2xl font-bold">Still have questions?</div>
         <div className="mt-4 mb-6">Contact our friendly team, they would be happy to answer any question</div>
         <div className="w-full flex justify-center">
@@ -15,6 +16,6 @@ export default function OtherQuestions() {
           </Link>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

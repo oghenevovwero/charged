@@ -2,6 +2,7 @@ import Image from "next/image";
 import bannerImg from "@/public/charger2.png";
 import appleImg from "@/public/apple.png";
 import playImg from "@/public/playstore.png";
+import Container from "../about-us/container";
 
 export default function HomeBanner() {
   return (
@@ -17,11 +18,11 @@ export default function HomeBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <div className="flex flex-col gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start text-white">
+        <Container className="flex flex-col gap-5 items-start text-white">
           <div className="text-6xl font-semibold">Get charged</div>
           <div className="text-6xl font-semibold">Anytime</div>
           <div className="text-6xl font-semibold">Anywhere!</div>
-          <div className="text-lg">
+          <div className="text-xl my-5 font-light sm:w-[60%] md:w-1/2">
             Introducing a revolutionary charging service that brings the power to you
           </div>
           <div className="flex gap-3 justify-center items-center">
@@ -56,7 +57,7 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

@@ -4,11 +4,11 @@ import teslaImg from "@/public/tesla.png";
 import bmwImg from "@/public/bmw.png";
 import fordImg from "@/public/ford.png";
 import bydImg from "@/public/byd.png";
-import hyundaiImg from "@/public/hyundai.png";
+import hyundaiImg from "@/public/hyundai.png";import Padding from "../padding";
 
 export default function Partners() {
   return (
-    <div className="flex w-full items-center justify-between py-4 md:py-6 bg-white mt-[-10px] px-2 sm:px-4 md:px-14 lg:px-48 xl:px-64">
+    <Padding className="flex w-full items-center justify-between py-4 md:py-6 bg-white mt-[-10px]">
       <div className="w-[40px] h-[40px]">
         <Image src={nissanImg} width={50} height={20} alt="Nissan logo" />
       </div>
@@ -27,6 +27,6 @@ export default function Partners() {
       <div className="w-[40px] h-[40px] mt-4">
         <Image src={bydImg} width={60} height={20} alt="BYD logo" />
       </div>
-    </div>
+    </Padding>
   );
 }
