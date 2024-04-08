@@ -25,7 +25,7 @@ export default function HomeBanner() {
             Introducing a revolutionary charging service that brings the power to you
           </div>
           <div className="flex gap-3 justify-center items-center">
-            <div className="p-2 hover:cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+            <div className="p-2 cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
               <div>
                 <Image
                   src={appleImg}
@@ -33,7 +33,6 @@ export default function HomeBanner() {
                   height={20}
                   alt="Get on app store"
                   quality={100}
-                  placeholder="blur"
                 />
               </div>
               <div>
@@ -41,7 +40,7 @@ export default function HomeBanner() {
                 <div className="text-[12px] font-semibold">App Store</div>
               </div>
             </div>
-            <div className="p-2 rounded-lg hover:cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
+            <div className="p-2 rounded-lg cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
               <div>
                 <Image
                   src={playImg}
@@ -49,7 +48,6 @@ export default function HomeBanner() {
                   height={20}
                   alt="Get on play store"
                   quality={100}
-                  placeholder="blur"
                 />
               </div>
               <div>

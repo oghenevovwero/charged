@@ -37,8 +37,7 @@ export default function ExpandedNav() {
         className="
         py-2
         px-2
-        lg:px-20
-        xl-px-40
+        lg:px-36
         flex 
         justify-between 
         items-center 
@@ -64,7 +63,8 @@ export default function ExpandedNav() {
             <div>About</div>
             <div>us</div>
           </Link>
-          <div
+          <Link
+            href={"#"}
             className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
             onClick={() => {
               scrollHandler();
@@ -73,16 +73,36 @@ export default function ExpandedNav() {
             <div>How</div>
             <div>it</div>
             <div>works</div>
-          </div>
-          <div
+          </Link>
+          <Link
+            href={"/pricing"}
+            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              scrollHandler();
+            }}
+          >
+            Pricing
+          </Link>
+          <Link
+            href={"/faqs"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"
             onClick={() => {
               scrollHandler();
             }}
           >
             FAQs
-          </div>
-          <div
+          </Link>
+          <Link
+            href={"/careers"}
+            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            onClick={() => {
+              scrollHandler();
+            }}
+          >
+            Careers
+          </Link>
+          <Link
+            href={"/contact"}
             className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
             onClick={() => {
               scrollHandler();
@@ -90,7 +110,7 @@ export default function ExpandedNav() {
           >
             <div>Contact</div>
             <div>us</div>
-          </div>
+          </Link>
           <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
             <div className="flex gap-1">
               <div>Access</div>

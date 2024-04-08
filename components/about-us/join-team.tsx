@@ -1,5 +1,6 @@
 import Image from "next/image";
 import memberImg from "@/public/members.png";
+import Link from "next/link";
 
 export default function JoinTheTeam() {
   return (
@@ -10,9 +11,12 @@ export default function JoinTheTeam() {
           Work with some of the best global talent to push a sustainable and convenient charging
           infrastructure for electric vehicles
         </div>
-        <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
+        <Link
+          href={"/roles"}
+          className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-4 rounded-md font-light"
+        >
           View open roles
-        </button>
+        </Link>
       </div>
       <div className="flex-1 relative">
         <Image alt="members" className="rounded-md md:rounded-r-lg" src={memberImg} />

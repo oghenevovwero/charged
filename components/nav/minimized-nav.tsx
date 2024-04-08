@@ -35,16 +35,16 @@ export default function MinimizedTopNav() {
     <header
       className={`${
         openNav ? "h-screen" : "h-20"
-      } text-white fixed inset-0 z-10 transition-all overflow-y-scroll overscroll-y-none ${dynamicStyles}`}
+      } text-white fixed inset-0 z-10 transition-all ${dynamicStyles}`}
     >
-      <div className="">
+      <div className="h-full">
         <div className={`flex h-20 items-center justify-between px-4`}>
           <Link
             onClick={() => {
               scrollHandler();
             }}
             href={"/"}
-            className="hover:cursor-pointer hover:opacity-75 active:opacity-50"
+            className="cursor-pointer hover:opacity-75 active:opacity-50"
           >
             <Image src={logoImg} height={35} width={70} alt="Our logo" />
           </Link>
@@ -87,40 +87,39 @@ export default function MinimizedTopNav() {
             </svg>
           </button>
         </div>
-        {/* <nav className="hidden lg:flex space-x-4">{navElements()}</nav> */}
         <div
-          className={`
-           p-4 flex flex-col gap-6 text-xl font-light overflow-y-scroll overscroll-y-none`}
+          style={{ display: openNav ? "block" : "none" }}
+          className={`p-4 h-full gap-6 text-xl font-light`}
         >
           <Link
             onClick={() => {
               scrollHandler();
             }}
             href={"/about"}
-            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             About us
           </Link>
           <Link
             href={"#"}
-            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             How it works
           </Link>
           <Link
-            href={"#"}
-            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            href={"/faqs"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             FAQs
           </Link>
           <Link
-            href={"#"}
-            className="hover:cursor-pointer w-fit hover:opacity-75 active:opacity-50"
+            href={"/contact"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             Contact us
           </Link>
           <div className="w-fit">
-            <button className="bg-[#00A63D] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md">
+            <button className="bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md">
               Access App
             </button>
           </div>

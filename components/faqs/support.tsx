@@ -2,29 +2,22 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import plugImg from "@/public/plug.png"
+import plugImg from "@/public/plug.png";
 
-
-export default function FAQs() {
+export default function Support() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
-    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-80">
-      <div className="flex flex-col md:flex-row max-md:gap-4 justify-between mb-16">
-        <div className="font-bold text-4xl">Frequently Asked Questions</div>
-        <div>
-          <button className="cursor-pointer hover:bg-gray-100 text-black border border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
-            <div className="flex gap-1 items-center">
-              <div>Other</div>
-              <div>FAQs</div>
-            </div>
-          </button>
+    <div className="bg-white text-black py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-36 xl:px-64">
+      <div className="flex flex-col md:flex-row max-md:gap-12 justify-around">
+        <div className="flex-1">
+          <div className="text-[#00A63D] font-bold">Support</div>
+          <div className="text-4xl font-bold my-3">FAQs</div>
+          <div>
+            Everything you need to know about the product and billing. Can’t find the answer you’re
+            looking for? Please chat to our team.
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col md:flex-row max-md:gap-6 justify-around items-center">
-        <div className="flex-1 w-full">
-          <Image className="max-md:w-full px-2 sm:px-20 md:px-0" src={plugImg} alt="plug in" />
-        </div>
-        <div className="flex-1 flex flex-col justify-between items-stretch gap-10">
+        <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
           {faqs.map((faq, index) => (
             <div key={index} className="w-fit">
               <div>
@@ -86,5 +79,22 @@ const faqs: FAQ[] = [
   {
     question: "Can I request a mobile charging station anywhere?",
     answer: "Yes, our platform provides a mobile charging station anywhere",
+  },
+  {
+    question: "What types of charging connectors are available on the mobile station?",
+    answer: "This is a generic placeholder text to this question that will be answered later",
+  },
+  {
+    question:
+      "How long does it take for the mobile charging station to arrive after a request is made?",
+    answer: "This is a generic placeholder text to this question that will be answered later",
+  },
+  {
+    question: "Are there any additional fees for using the mobile charging station service?",
+    answer: "This is a generic placeholder text to this question that will be answered later",
+  },
+  {
+    question: "Can the mobile charging station accommodate multiple vehicles at once?",
+    answer: "This is a generic placeholder text to this question that will be answered later",
   },
 ];

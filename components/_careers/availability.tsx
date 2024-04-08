@@ -1,25 +1,21 @@
 import Image from "next/image";
 import chargeImg from "@/public/about-charge.png";
-import pluggedInImg from "@/public/plugged-in.png";
-import driverImg from "@/public/driver.png";
-import bootImg from "@/public/boot.png";
-import customerImg from "@/public/customer.png";
+import pluggedInImg from "@/public/mechanic.png";
+import driverImg from "@/public/young-lady.png";
+import bootImg from "@/public/happy-driver.png";
+import customerImg from "@/public/man-in-suit.png";
+import Link from "next/link";
 
-export default function OurMission() {
+export default function Availability() {
   return (
-    <div className="text-black bg-white py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-32 xl:px-48">
-      <div className="flex justify-center items-center mt-10 mb-20 md:my-20 px-2">
-        <Image src={chargeImg} alt="charge with us" />
-      </div>
+    <div className="text-black bg-white py-14 md:py-28 px-2 sm:px-8 md:px-16 lg:px-32 xl:px-56">
       <div>
-        <div className="text-[#00A63D] text-center mb-8 text-3xl font-bold">Our Mission</div>
         <div className="text-4xl md:text-4xl text-center px-2 sm:px-8 md:px-16 lg:px-32 font-bold">
-          Your Charge, Your way: Anytime, Anywhere you want it
+          Guaranteed availability of swift and potent EV charging whenever needed
         </div>
         <div className="mt-10 mb-20 text-center px-2 sm:px-8 md:px-16 lg:px-32 md:text-lg font-light">
-          At Charge Me Now, we&apos;re committed to creating a sustainable and convenient charging
-          infrastructure for electric vehicles, empowering individuals to adopt cleaner
-          transportation options and contributing to the global shift towards a greener future.
+          We provide a variety of engaging employment options in areas including engineering,
+          marketing, sales, and mobile operations, among others.
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1 sm:gap-2 md:gap-4 place-items-center lg:px-10 xl:px-20">
           <div>
@@ -38,6 +34,14 @@ export default function OurMission() {
               alt="a satisfied customer"
             />
           </div>
+        </div>
+        <div className="w-full flex justify-center mt-10">
+          <Link
+            href={"/roles"}
+            className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md"
+          >
+            View open roles
+          </Link>
         </div>
       </div>
     </div>

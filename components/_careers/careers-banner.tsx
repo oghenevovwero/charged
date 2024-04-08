@@ -1,7 +1,7 @@
 import Image from "next/image";
-import chargingImg from "@/public/charging.png"
+import chargingImg from "@/public/executive-team.png"
 
-export default function AboutUsBanner() {
+export default function CareersBanner() {
   return (
     <div className="h-screen relative overflow-clip">
       <Image
@@ -15,8 +15,8 @@ export default function AboutUsBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <div className="flex w-full justify-center gap-5 px-2 sm:px-8 md:px-16 lg:px-36 items-start text-white">
-          <div className="text-7xl md:text-8xl font-semibold text-center">About us</div>
+        <div className="flex flex-col h-full md:w-[55%] justify-end pb-12 text-white px-2 sm:px-8 md:px-16 lg:px-32 xl:px-56">
+          <div className="text-6xl font-semibold">Join our fast growing team</div>
         </div>
       </div>
     </div>

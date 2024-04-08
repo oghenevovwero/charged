@@ -18,11 +18,7 @@ export default function WhatSetsUsApart() {
           </div>
         </div>
         <div className="relative">
-          <Image
-            className="rounded-lg"
-            src={trailerImg}
-            alt="a member of a charging fleet"
-          />
+          <Image className="rounded-lg" src={trailerImg} alt="a member of a charging fleet" />
           <Image
             width={86}
             height={86}

@@ -16,7 +16,7 @@ export default function WaitList() {
               placeholder="Enter your email"
               className="bg-[#54645D] w-full py-3 px-2 text-lg font-light placeholder:text-white placeholder:text-lg placeholder:font-light outline-none border border-white rounded-xl"
             />
-            <button className="bg-[#00A63D] absolute right-[3px] top-[3px] hover:cursor-pointer hover:opacity-70 active:opacity-100 text-white px-3 py-3 rounded-lg font-light">
+            <button className="bg-[#00A63D] absolute right-[3px] top-[3px] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-3 py-3 rounded-lg font-light">
               Join waitlist
             </button>
           </div>
