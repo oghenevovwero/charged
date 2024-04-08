@@ -17,7 +17,7 @@ export default function Policy() {
           </div>
           <div className="text-lg ml-6 md:ml-12">
             <div className="mb-2">
-              1. Visiting our website at <link>www.gochargemenow.com</link> or any of our websites
+              1. Visiting our website at <a href="#">www.gochargemenow.com</a> or any of our websites
               linked to this privacy notice.
             </div>
             <div>
