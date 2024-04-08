@@ -16,7 +16,7 @@ export default function MinimizedContactTopNav() {
       } text-white fixed inset-0 z-10 transition-all bg-gray-700`}
     >
       <div className="">
-        <div className={`flex h-20 items-center justify-between px-4`}>
+        <div className={`flex h-20 items-center justify-between px-2 sm:px-8 md:px-16 lg:px-36`}>
           <Link            
             href={"/"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"
@@ -64,29 +64,36 @@ export default function MinimizedContactTopNav() {
         </div>
         <div
           style={{ display: openNav ? "block" : "none" }}
-          className={`p-4 flex flex-col gap-6 text-xl font-light`}
+          className={`py-4 px-2 sm:px-8 md:px-16 lg:px-36 text-xl font-light`}
         >
           <Link
             href={"/about"}
-            className="cursor-pointer block w-fit hover:opacity-75 active:opacity-50"
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             About us
           </Link>
+          
           <Link
-            href={"#"}
-            className="cursor-pointer block w-fit hover:opacity-75 active:opacity-50"
+            href={"/pricing"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
-            How it works
+            Pricing
           </Link>
           <Link
             href={"/faqs"}
-            className="cursor-pointer block w-fit hover:opacity-75 active:opacity-50"
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             FAQs
           </Link>
           <Link
+            href={"/careers"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          >
+            Careers
+          </Link>
+          <Link
             href={"/contact"}
-            className="cursor-pointer block w-fit hover:opacity-75 active:opacity-50"
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             Contact us
           </Link>

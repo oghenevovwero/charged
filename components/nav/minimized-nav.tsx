@@ -38,7 +38,7 @@ export default function MinimizedTopNav() {
       } text-white fixed inset-0 z-10 transition-all ${dynamicStyles}`}
     >
       <div className="h-full">
-        <div className={`flex h-20 items-center justify-between px-4`}>
+        <div className={`flex h-20 items-center justify-between px-2 sm:px-8 md:px-16 lg:px-36`}>
           <Link
             onClick={() => {
               scrollHandler();
@@ -89,7 +89,7 @@ export default function MinimizedTopNav() {
         </div>
         <div
           style={{ display: openNav ? "block" : "none" }}
-          className={`p-4 h-full gap-6 text-xl font-light`}
+          className={`py-4 px-2 sm:px-8 md:px-16 lg:px-36 h-full gap-6 text-xl font-light`}
         >
           <Link
             onClick={() => {
@@ -101,16 +101,22 @@ export default function MinimizedTopNav() {
             About us
           </Link>
           <Link
-            href={"#"}
+            href={"/pricing"}
             className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
-            How it works
+            Pricing
           </Link>
           <Link
             href={"/faqs"}
             className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             FAQs
+          </Link>
+          <Link
+            href={"/careers"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          >
+            Careers
           </Link>
           <Link
             href={"/contact"}

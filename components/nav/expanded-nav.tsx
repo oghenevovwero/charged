@@ -36,12 +36,12 @@ export default function ExpandedNav() {
       <div
         className="
         py-2
-        px-2
-        lg:px-36
+        px-2 sm:px-8 md:px-16 lg:px-36
         flex 
         justify-between 
-        items-center 
-        text-lg w-full"
+        items-center
+        h-[90px]
+        w-full"
       >
         <Link
           href={"/"}
@@ -50,9 +50,11 @@ export default function ExpandedNav() {
             scrollHandler();
           }}
         >
-          <Image src={logoImg} height={30} width={70} alt="Our logo" />
+          <div className="h-20 w-20">
+            <Image src={logoImg} alt="Our logo" />
+          </div>
         </Link>
-        <div className="flex gap-16 xl:gap-20 justify-around items-center">
+        <div className="flex gap-6 justify-around items-center">
           <Link
             href={"/about"}
             className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
@@ -63,17 +65,7 @@ export default function ExpandedNav() {
             <div>About</div>
             <div>us</div>
           </Link>
-          <Link
-            href={"#"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
-            onClick={() => {
-              scrollHandler();
-            }}
-          >
-            <div>How</div>
-            <div>it</div>
-            <div>works</div>
-          </Link>
+          
           <Link
             href={"/pricing"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"

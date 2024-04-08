@@ -29,14 +29,7 @@ export default function ExpandedContactNav() {
               <div>About</div>
               <div>us</div>
             </Link>
-            <Link
-              href={"#"}
-              className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
-            >
-              <div>How</div>
-              <div>it</div>
-              <div>works</div>
-            </Link>
+            
             <Link href={"/pricing"} className="cursor-pointer hover:opacity-75 active:opacity-50">
               Pricing
             </Link>
