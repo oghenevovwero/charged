@@ -16,7 +16,7 @@ export default function Availability() {
           <div className="text-4xl md:text-4xl text-center  font-bold">
             Guaranteed availability of swift and potent EV charging whenever needed
           </div>
-          <div className="mt-10 mb-20 text-center  md:text-lg font-light">
+          <div className="mt-10 mb-20 text-center  md:text-lg ">
             We provide a variety of engaging employment options in areas including engineering,
             marketing, sales, and mobile operations, among others.
           </div>

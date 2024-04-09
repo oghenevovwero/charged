@@ -64,7 +64,7 @@ export default function MinimizedContactTopNav() {
           </button>
         </Padding>
         <Padding
-          className={`${openNav ? "block": "hidden"} text-xl font-light pt-5`}
+          className={`${openNav ? "block": "hidden"} text-xl  pt-5`}
         >
           <Link
             href={"/about"}

@@ -88,7 +88,7 @@ export default function MinimizedTopNav() {
             </svg>
           </button>
         </Padding>
-        <Padding className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl font-light`}>
+        <Padding className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl `}>
           <Link
             onClick={() => {
               scrollHandler();

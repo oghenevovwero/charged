@@ -8,7 +8,7 @@ export default function SearchRoles() {
       <div className="relative">
         <input
           placeholder="Enter your email"
-          className="bg-white text-black w-full border-b border-b-gray-300 focus::border-b-gray-500 py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder:font-light outline-none border border-white"
+          className="bg-white text-black w-full border-b border-b-gray-300 focus::border-b-gray-500 py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder: outline-none border border-white"
         />
         <Image
           src={arrowImg}

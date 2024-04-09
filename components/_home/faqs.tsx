@@ -10,21 +10,21 @@ export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
     <Container className="bg-white text-black">
-      <div className="flex gap-6 flex-col md:flex-row max-md:gap-4  mb-16 items-center">
+      <div className="flex gap-6 flex-col md:flex-row max-md:gap-16  mb-16 items-center">
         <div className="font-bold text-4xl flex-1">Frequently Asked Questions</div>
-        <div className="flex-1">
-          <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 text-black border font-extralight border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
+        <div className="flex-1 w-full md:flex md:justify-end">
+          <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 text-black border  border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
             Other FAQs
           </Link>
         </div>
       </div>
       <div className="flex gap-6 flex-col md:flex-row justify-around items-center">
-        <div className="flex-1 w-full">
-          <Image className="max-md:w-full" src={plugImg} alt="plug in" />
+        <div className="md:flex-1 lg:flex-1 w-full">
+          <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
-        <div className="flex-1 flex flex-col justify-between gap-10">
+        <div className="md:flex-1 lg:flex-[1.5] flex flex-col justify-between gap-10 lg:pl-28">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-fit">
+            <div key={index} className="w-full">
               <div>
                 <div
                   onClick={() => {

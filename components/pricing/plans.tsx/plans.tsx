@@ -16,7 +16,7 @@ export default function Plans() {
       <div className="flex flex-col sm:flex-row items-center  justify-around gap-10 mb-12 sm:gap-2 lg:gap-4 rounded-lg shadow-lg p-2 md:p-3 lg:p-5">
         <div className="flex-[2]">
           <div className="font-bold mb-5 text-2xl">Roadside Assistance</div>
-          <div className="font-light">
+          <div className="">
             Additionally, we offer a standalone roadside assistance plan aimed at providing peace of
             mind to EV owners
           </div>
@@ -26,7 +26,7 @@ export default function Plans() {
           <div className="flex items-end gap-1">
             <div className="font-extrabold text-5xl">$20</div>
             <div>/</div>
-            <div className="text-[11px] font-light align-sub">Month</div>
+            <div className="text-[11px]  align-sub">Month</div>
           </div>
 
           <div className="">
@@ -73,7 +73,7 @@ export default function Plans() {
         <div className="text-[11px] font-bold max-[1110px]:mb-6">
           *Additional Charge: $10 for every extra 10 kWh
         </div>
-        <div className="text-[11px] font-light">
+        <div className="text-[11px] ">
           This option caters to individuals who may not require frequent charging services or prefer
           a pay-as-you-go approach.
         </div>

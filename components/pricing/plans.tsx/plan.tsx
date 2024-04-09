@@ -16,14 +16,14 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pl
         <div className="flex items-center gap-5">
           <div className="font-bold text-lg">{plan}</div>
           {recommended && (
-            <div className="text-[11px] font-light bg-[#E5F5FF] text-[#00A0FF] rounded-xl px-[6px] py-[3px]">
+            <div className="text-[11px]  bg-[#E5F5FF] text-[#00A0FF] rounded-xl px-[6px] py-[3px]">
               Recommended
             </div>
           )}
         </div>
         <div className="my-10">
           <span className="font-extrabold text-5xl">${cost}</span>
-          <span className="text-[11px] font-light align-sub">/ {duration}</span>
+          <span className="text-[11px]  align-sub">/ {duration}</span>
         </div>
         <div className="flex flex-col gap-3">
           {features.map((feature, index) => (

@@ -106,7 +106,7 @@ export default function ExpandedNav() {
             <div>Contact</div>
             <div>us</div>
           </Link>
-          <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md font-light">
+          <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md ">
             <div className="flex gap-1">
               <div>Access</div>
               <div>App</div>

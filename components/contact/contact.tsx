@@ -16,34 +16,34 @@ export default function ContactUs() {
           <div className="w-full">
             <div className="font-semibold text-sm mb-1">First name</div>
             <input
-              placeholder="you@company.com"
-              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder:font-light outline-none border border-gray-300 rounded-lg"
+              placeholder="First name"
+              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
             />
           </div>
 
           <div className="w-full">
             <div className="font-semibold text-sm mb-1">Last name</div>
             <input
-              placeholder="you@company.com"
-              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder:font-light outline-none border border-gray-300 rounded-lg"
+              placeholder="Last name"
+              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
             />
           </div>
         </div>
         <div className="w-full">
           <div className="font-semibold text-sm mb-1">Email</div>
           <input
-            placeholder="you@company.com"
-            className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder:font-light outline-none border border-gray-300 rounded-lg"
+            placeholder="You@company.com"
+            className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
           />
         </div>
         <div className="w-full relative text-sm">
           <div className="font-semibold text-sm mb-1">Phone number</div>
           <input
             placeholder="+1 (555) 000-0000"
-            className="bg-white text-black w-full  py-3 pr-2 pl-16 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder:font-light outline-none border border-gray-300 rounded-lg"
+            className="bg-white text-black w-full  py-3 pr-2 pl-[60px] text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
           />
-          <div className="flex gap-2 items-center absolute left-2 bottom-4">
-            <div className="font-bold text-gray-500">US</div>
+          <div className="flex gap-2 items-center absolute left-2 bottom-3">
+            <div className="text-gray-400 text-lg">US</div>
             <div>
             <Image src={chevronImg} alt="more countries" width={10} height={20} />
             </div>

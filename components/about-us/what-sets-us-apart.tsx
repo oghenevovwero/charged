@@ -9,7 +9,7 @@ export default function WhatSetsUsApart() {
     <Container className="bg-[#2A322F] text-white  ">
       <div className="text-5xl font-medium mb-10 md:font-bold">What sets us apart</div>
       <div className="flex flex-col items-center md:flex-row gap-6">
-        <div className="flex-1 px-2 sm:px-16">
+        <div className="flex-1 sm:pl-16 md:pl-20 lg:pl-24">
           <div className="text-4xl font-medium md:font-bold my-10">On-Demand convenience</div>
           <div>
             At Charge Me Now, we are on a mission to revolutionize the way people charge their
@@ -18,16 +18,22 @@ export default function WhatSetsUsApart() {
             cutting-edge technology and a passion for environmental responsibility.
           </div>
         </div>
-        <div className="relative flex-1">
-          <Image className="rounded-lg aspect-square" src={trailerImg} alt="a member of a charging fleet" />
-          <Image
-            width={86}
-            height={86}
-            quality={100}
-            alt="charge vehicle"
-            className="absolute right-[125px] top-[120px]"
-            src={trailerLogoImg}
-          />
+        <div className="relative flex-1 flex justify-end">
+          <div>
+            <Image
+              className="rounded-lg aspect-square relative inset-0"
+              src={trailerImg}
+              alt="a member of a charging fleet"
+            />
+            <Image
+              width={86}
+              height={86}
+              quality={100}
+              alt="charge vehicle"
+              className="absolute right-[125px] top-[120px]"
+              src={trailerLogoImg}
+            />
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 mt-14 md:mt-28">

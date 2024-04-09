@@ -13,7 +13,7 @@ export default function BuildWithUs() {
           environment where everyone can develop and thrive.
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-end">
         <Image className="rounded-md" src={welcomeImg} alt="take the journey with us" />
       </div>
     </Container>

@@ -9,7 +9,7 @@ export default function Support() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
     <Container className="bg-white text-black ">
-      <div className="flex flex-col md:flex-row max-md:gap-12 justify-around">
+      <div className="flex gap-6 flex-col md:flex-row max-md:gap-16">
         <div className="flex-1">
           <div className="text-[#00A63D] font-bold">Support</div>
           <div className="text-4xl font-bold my-3">FAQs</div>
@@ -18,9 +18,9 @@ export default function Support() {
             looking for? Please chat to our team.
           </div>
         </div>
-        <div className="flex-1 flex flex-col justify-between items-stretch gap-10 px-2 sm:px-4 md:px-10 lg:px-20">
+        <div className="flex-[2] flex flex-col justify-between items-stretch gap-10 lg:pl-28">
           {faqs.map((faq, index) => (
-            <div key={index} className="w-fit">
+            <div key={index} className="w-full">
               <div>
                 <div
                   onClick={() => {

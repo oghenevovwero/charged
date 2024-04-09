@@ -17,7 +17,7 @@ export default function Welcome() {
           cutting-edge technology and a passion for environmental responsibility.
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-end">
         <Image className="rounded-md" src={welcomeImg} alt="take the journey with us" />
       </div>
     </Container>

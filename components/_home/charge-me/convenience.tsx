@@ -19,7 +19,7 @@ export default function Convenience() {
               <div className="font-semibold text-sm sm:text-[12px] md:text-sm">
                 Charge scheduled successfully
               </div>
-              <div className="font-light text-[12px]">Feb 01, 2024 12:30am</div>
+              <div className=" text-[12px]">Feb 01, 2024 12:30am</div>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Convenience() {
 
       <div>
         <div className="text-xl mt-6 mb-4">Convenience</div>
-        <div className="font-light">
+        <div className="">
           Schedule a charging appointment at your preferred location, eliminating the hassle of
           searching for stations.
         </div>
