@@ -1,6 +1,6 @@
 import Image from "next/image";
 import plugImg from "@/public/unrounded-plug.png";
-import Container from "../about-us/container";
+import Container from "../container";
 
 export default function WaitList() {
   return (

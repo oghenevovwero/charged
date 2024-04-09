@@ -1,6 +1,6 @@
 import Image from "next/image";
 import teamImg from "@/public/team.png";
-import Container from "./container";
+import Container from "../container";
 
 export default function WhoWeAre() {
   return (

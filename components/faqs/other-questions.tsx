@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Container from "../about-us/container";
+import Container from "../container";
 
 export default function OtherQuestions() {
   return (

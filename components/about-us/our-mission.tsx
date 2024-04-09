@@ -4,7 +4,7 @@ import pluggedInImg from "@/public/plugged-in.png";
 import driverImg from "@/public/driver.png";
 import bootImg from "@/public/boot.png";
 import customerImg from "@/public/customer.png";
-import Container from "./container";
+import Container from "../container";
 import Padding from "../padding";
 
 export default function OurMission() {

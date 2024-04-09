@@ -1,4 +1,4 @@
-import Container from "@/components/about-us/container";
+import Container from "@/components/container";
 import ContactNav from "@/components/contact-nav/contact-nav";
 
 export default function Policy() {

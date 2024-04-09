@@ -65,7 +65,7 @@ export default function ExpandedNav() {
             <div>About</div>
             <div>us</div>
           </Link>
-          
+
           <Link
             href={"/pricing"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"
@@ -92,6 +92,9 @@ export default function ExpandedNav() {
             }}
           >
             Careers
+          </Link>
+          <Link href={"/roles"} className="cursor-pointer hover:opacity-75 active:opacity-50">
+            Roles
           </Link>
           <Link
             href={"/contact"}

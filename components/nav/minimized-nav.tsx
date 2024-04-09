@@ -88,9 +88,7 @@ export default function MinimizedTopNav() {
             </svg>
           </button>
         </Padding>
-        <Padding
-          className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl font-light`}
-        >
+        <Padding className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl font-light`}>
           <Link
             onClick={() => {
               scrollHandler();
@@ -117,6 +115,12 @@ export default function MinimizedTopNav() {
             className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           >
             Careers
+          </Link>
+          <Link
+            href={"/roles"}
+            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          >
+            Roles
           </Link>
           <Link
             href={"/contact"}

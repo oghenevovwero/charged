@@ -1,6 +1,6 @@
 import getChargingImg from "@/public/charger3.png";
 import Image from "next/image";
-import Container from "../about-us/container";
+import Container from "../container";
 
 export default function GetCharging() {
   return (

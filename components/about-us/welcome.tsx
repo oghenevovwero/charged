@@ -1,7 +1,7 @@
 import welcomeImg from "@/public/road.png";
 import Image from "next/image";
 import Padding from "../padding";
-import Container from "./container";
+import Container from "../container";
 
 export default function Welcome() {
   return (

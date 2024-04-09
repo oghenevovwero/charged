@@ -2,7 +2,7 @@ import Image from "next/image";
 import DownloadApp from "./download-app";
 import RequestCharge from "./request-charge";
 import GetCharged from "./get-charged";
-import Container from "@/components/about-us/container";
+import Container from "@/components/container";
 
 export default function HowItWorks() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import chargingImg from "@/public/charging.png"
-import Container from "./container";
+import Container from "../container";
 
 export default function AboutUsBanner() {
   return (

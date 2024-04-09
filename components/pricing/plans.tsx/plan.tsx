@@ -37,7 +37,7 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pl
         </div>
       </div>
       <div className="w-full mt-10">
-        <button className="border bg-white rounded-lg w-full p-2 font-medium text-lg border-[#00A63D]">Get started</button>
+        <button className="border bg-white rounded-lg w-full p-2 cursor-pointer active:opacity-50 font-medium text-lg border-[#00A63D]">Get started</button>
       </div>
     </div>
   );

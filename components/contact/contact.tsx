@@ -1,11 +1,11 @@
 import Image from "next/image";
 import chevronImg from "@/public/down-chevron.png";
 import chargeImg from "@/public/charge-at-station.png";
-import Container from "../about-us/container";
+import Container from "../container";
 
 export default function ContactUs() {
   return (
-    <Container className="bg-white text-black flex flex-col max-sm:items-center py-32 sm:flex-row gap-12 sm:gap-5 justify-between">
+    <Container className="bg-white text-black flex flex-col max-sm:items-center sm:flex-row gap-12 sm:gap-5 justify-between">
       <div className="flex-1">
       <Image src={chargeImg} alt="charging" />
       </div>

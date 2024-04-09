@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import plugImg from "@/public/plug.png";
-import Container from "../about-us/container";
+import Container from "../container";
 import Link from "next/link";
 
 export default function FAQs() {

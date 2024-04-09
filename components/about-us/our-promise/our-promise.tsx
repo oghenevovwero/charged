@@ -2,7 +2,7 @@ import Image from "next/image";
 import Reliability from "./reliability";
 import Flexibility from "./flexibility";
 import Eco from "./eco";
-import Container from "../container";
+import Container from "../../container";
 
 export default function OurPromise() {
   return (

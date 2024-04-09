@@ -2,7 +2,7 @@ import Image from "next/image";
 import arrowImg from "@/public/arrow-forward.svg";
 import trailerImg from "@/public/trailer.png";
 import trailerLogoImg from "@/public/s-logo.png";
-import Container from "./container";
+import Container from "../container";
 
 export default function WhatSetsUsApart() {
   return (

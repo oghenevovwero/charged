@@ -5,7 +5,7 @@ import driverImg from "@/public/young-lady.png";
 import bootImg from "@/public/happy-driver.png";
 import customerImg from "@/public/man-in-suit.png";
 import Link from "next/link";
-import Container from "../about-us/container";
+import Container from "../container";
 import Padding from "../padding";
 
 export default function Availability() {

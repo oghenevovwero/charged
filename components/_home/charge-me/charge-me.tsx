@@ -4,7 +4,7 @@ import Flexibility from "./flexibility";
 import Reliability from "./reliability";
 import Sustainability from "./sustainability";
 import chargeMeImg from "@/public/charge-me.png";
-import Container from "@/components/about-us/container";
+import Container from "@/components/container";
 
 export default function ChargeMe() {
   return (

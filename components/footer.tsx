@@ -69,7 +69,10 @@ export default function Footer() {
           <Link href="/careers" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
             Careers
           </Link>
-          <Link href="contact" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/roles" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+            Roles
+          </Link>
+          <Link href="/contact" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
             Contact us
           </Link>
           <Link href="/policy" className="cursor-pointer md:hover:opacity-75 active:opacity-60">

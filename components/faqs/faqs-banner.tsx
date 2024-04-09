@@ -1,6 +1,6 @@
 import Image from "next/image";
 import chargingImg from "@/public/faq-banner.png";
-import Container from "../about-us/container";
+import Container from "../container";
 
 export default function FaqsBanner() {
   return (

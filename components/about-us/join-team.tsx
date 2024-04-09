@@ -1,7 +1,7 @@
 import Image from "next/image";
 import memberImg from "@/public/members.png";
 import Link from "next/link";
-import Container from "./container";
+import Container from "../container";
 
 export default function JoinTheTeam() {
   return (

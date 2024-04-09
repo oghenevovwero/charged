@@ -1,4 +1,4 @@
-import Container from "@/components/about-us/container";
+import Container from "@/components/container";
 import Plan from "./plan";
 import Image from "next/image";
 import vanImg from "@/public/van.png";
@@ -50,7 +50,7 @@ export default function Plans() {
         </div>
 
         <div className="flex-1 w-full">
-          <button className="border bg-white rounded-lg w-full p-2 font-medium text-lg border-[#00A63D]">
+          <button className="border bg-white cursor-pointer active:opacity-50 rounded-lg w-full p-2 font-medium text-lg border-[#00A63D]">
             Get started
           </button>
         </div>
@@ -70,10 +70,10 @@ export default function Plans() {
           <div className="font-extrabold text-5xl">$20</div>
           <div className="align-sub font-bold">for up to 10 kWh</div>
         </div>
-        <div className="text-sm font-bold max-[1110px]:mb-6">
+        <div className="text-[11px] font-bold max-[1110px]:mb-6">
           *Additional Charge: $10 for every extra 10 kWh
         </div>
-        <div className="text-sm font-light">
+        <div className="text-[11px] font-light">
           This option caters to individuals who may not require frequent charging services or prefer
           a pay-as-you-go approach.
         </div>
