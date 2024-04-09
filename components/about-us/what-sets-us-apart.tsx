@@ -18,22 +18,12 @@ export default function WhatSetsUsApart() {
             cutting-edge technology and a passion for environmental responsibility.
           </div>
         </div>
-        <div className="relative flex-1 flex justify-end">
-          <div>
-            <Image
-              className="rounded-lg aspect-square relative inset-0"
-              src={trailerImg}
-              alt="a member of a charging fleet"
-            />
-            <Image
-              width={86}
-              height={86}
-              quality={100}
-              alt="charge vehicle"
-              className="absolute right-[125px] top-[120px]"
-              src={trailerLogoImg}
-            />
-          </div>
+        <div className="flex-1 flex justify-center md:justify-end">
+          <Image
+            className="rounded-lg relative inset-0"
+            src={trailerImg}
+            alt="a member of a charging fleet"
+          />
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 mt-14 md:mt-28">
