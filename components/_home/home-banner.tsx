@@ -6,7 +6,7 @@ import Container from "../container";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen relative overflow-hidden">
+    <div className="h-screen relative">
       <Image
         src={bannerImg}
         placeholder="blur"
@@ -22,7 +22,7 @@ export default function HomeBanner() {
           <div className="text-6xl font-semibold">Get charged</div>
           <div className="text-6xl font-semibold">Anytime</div>
           <div className="text-6xl font-semibold">Anywhere!</div>
-          <div className="text-xl my-5  sm:w-[60%] md:w-1/2">
+          <div className="text-xl my-5 font-light sm:w-[60%] md:w-1/2">
             Introducing a revolutionary charging service that brings the power to you
           </div>
           <div className="flex gap-3 justify-center items-center">
