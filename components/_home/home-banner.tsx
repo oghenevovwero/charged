@@ -6,7 +6,7 @@ import Container from "../container";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen relative overflow-clip">
+    <div className="h-screen relative overflow-hidden">
       <Image
         src={bannerImg}
         placeholder="blur"
