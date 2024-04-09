@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
             <div className="flex flex-row md:flex-col gap-2 justify-center items-center">
-              <div className="p-2 cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+              <div className="p-2 active:opacity-50 cursor-pointer hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
                 <div>
                   <Image
                     src={appleImg}
@@ -35,7 +35,7 @@ export default function Footer() {
                   <div className="text-[13px] font-semibold">App Store</div>
                 </div>
               </div>
-              <div className="p-2 rounded-lg cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
+              <div className="p-2 active:opacity-50 rounded-lg cursor-pointer hover:opacity-75 text-white border border-gray-500 flex gap-1 items-center">
                 <div>
                   <Image
                     src={playImg}
