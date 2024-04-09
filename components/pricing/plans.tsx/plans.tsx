@@ -1,6 +1,7 @@
 import Container from "@/components/about-us/container";
 import Plan from "./plan";
 import Image from "next/image";
+import vanImg from "@/public/van.png";
 import greenTickImg from "@/public/green-tick.png";
 
 export default function Plans() {
@@ -12,7 +13,7 @@ export default function Plans() {
         ))}
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-2 lg:gap-4 shadow-lg p-2 md:p-3 lg:p-5">
+      <div className="flex flex-col sm:flex-row items-center  justify-around gap-10 mb-12 sm:gap-2 lg:gap-4 rounded-lg shadow-lg p-2 md:p-3 lg:p-5">
         <div className="flex-[2]">
           <div className="font-bold mb-5 text-2xl">Roadside Assistance</div>
           <div className="font-light">
@@ -21,7 +22,7 @@ export default function Plans() {
           </div>
         </div>
 
-        <div className="flex-[3] w-full flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-4">
+        <div className="flex-[4] w-full flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-4">
           <div className="flex items-end gap-1">
             <div className="font-extrabold text-5xl">$20</div>
             <div>/</div>
@@ -52,6 +53,30 @@ export default function Plans() {
           <button className="border bg-white rounded-lg w-full p-2 font-medium text-lg border-[#00A63D]">
             Get started
           </button>
+        </div>
+      </div>
+
+      <div className="shadow-lg px-2 py-5 md:p-3 lg:p-5 rounded-lg relative min-[1110px]:h-[400px]">
+        <div className="font-bold lg:w-[70%] ">
+          We also do One-Time Service Call, For non-subscribers or customers who require occasional
+          assistance, we offer one-time service call requests
+        </div>
+        <div className="max-lg:my-10">
+          <Image src={vanImg} alt="van" className="min-[1110px]:float-end" />
+        </div>
+
+        <div className="h-full flex flex-col justify-around min-[1110px]:py-20">
+        <div className="flex items-end gap-1 max-[1110px]:my-10">
+          <div className="font-extrabold text-5xl">$20</div>
+          <div className="align-sub font-bold">for up to 10 kWh</div>
+        </div>
+        <div className="text-sm font-bold max-[1110px]:mb-6">
+          *Additional Charge: $10 for every extra 10 kWh
+        </div>
+        <div className="text-sm font-light">
+          This option caters to individuals who may not require frequent charging services or prefer
+          a pay-as-you-go approach.
+        </div>
         </div>
       </div>
     </Container>
