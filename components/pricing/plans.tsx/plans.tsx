@@ -7,7 +7,7 @@ import greenTickImg from "@/public/green-tick.png";
 export default function Plans() {
   return (
     <Container className="bg-white text-black">
-      <div className="flex flex-col sm:flex-row gap-2 md:gap-3 lg:gap-10 mb-12">
+      <div className="flex flex-col sm:flex-row gap-10 md:gap-3 lg:gap-10 mb-12">
         {plans.map((plan) => (
           <Plan key={plan.plan} {...plan} />
         ))}

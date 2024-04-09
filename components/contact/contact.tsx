@@ -6,8 +6,8 @@ import Container from "../container";
 export default function ContactUs() {
   return (
     <Container className="bg-white text-black flex flex-col max-sm:items-center sm:flex-row gap-12 sm:gap-5 justify-between">
-      <div className="flex-1">
-      <Image src={chargeImg} alt="charging" />
+      <div className="flex-1 mt-8">
+        <Image src={chargeImg} alt="charging" />
       </div>
       <div className="flex-1 w-full flex flex-col gap-5">
         <div className="text-4xl font-bold">Get in touch</div>
@@ -45,7 +45,7 @@ export default function ContactUs() {
           <div className="flex gap-2 items-center absolute left-2 bottom-3">
             <div className="text-gray-400 text-lg">US</div>
             <div>
-            <Image src={chevronImg} alt="more countries" width={10} height={20} />
+              <Image src={chevronImg} alt="more countries" width={10} height={20} />
             </div>
           </div>
         </div>
