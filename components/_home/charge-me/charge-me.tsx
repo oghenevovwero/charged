@@ -14,7 +14,7 @@ export default function ChargeMe() {
       </div>
       <div className="text-4xl sm:hidden font-bold">CHARGE ME</div>
       <div className="xl:px-32">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-8">
           <Convenience />
           <Flexibility />
           <Reliability />
