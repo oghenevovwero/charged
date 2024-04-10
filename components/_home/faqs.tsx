@@ -22,7 +22,7 @@ export default function FAQs() {
         <div className="md:flex-1 w-full md:pl-20">
           <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
-        <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-16 lg:pl-28 font-medium text-lg">
+        <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-8 lg:pl-28 font-medium text-lg">
           {faqs.map((faq, index) => (
             <div key={index} className="w-full">
               <div>
@@ -47,7 +47,7 @@ export default function FAQs() {
                 >
                   {faq.answer}
                 </div>
-                <div className="h-[1px] w-full bg-gray-300 mt-4" />
+                <div className="h-[1px] w-full bg-gray-300 mt-8" />
               </div>
             </div>
           ))}
