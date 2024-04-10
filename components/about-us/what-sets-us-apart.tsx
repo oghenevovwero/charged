@@ -8,19 +8,19 @@ import { useState } from "react";
 
 export default function WhatSetsUsApart() {
   const indicators = [
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-1 items-center" key={0}>
       <div className="h-1 w-36 bg-gray-500 rounded-full flex items-center">
         <div className="h-1 w-1/3 bg-gray-100 rounded-full" />
       </div>
       <div className="font-bold text-sm">1/3</div>
     </div>,
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-1 items-center" key={1}>
       <div className="h-1 w-36 bg-gray-500 rounded-full flex items-center">
         <div className="h-1 w-2/3 bg-gray-100 rounded-full" />
       </div>
       <div className="font-bold text-sm">2/3</div>
     </div>,
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-1 items-center" key={2}>
       <div className="h-1 w-36 bg-gray-500 rounded-full flex items-center">
         <div className="h-1 w-full bg-gray-100 rounded-full" />
       </div>
@@ -74,7 +74,7 @@ export default function WhatSetsUsApart() {
           <Image className="rounded-lg" src={trailerImg} alt="charging trailer" />
         </div>
       </div>
-      <div className="mt-10 flex justify-end" key={indicatorIndex}>{indicators.at(indicatorIndex)}</div>
+      <div className="mt-10 flex justify-end">{indicators.at(indicatorIndex)}</div>
     </Container>
   );
 }
