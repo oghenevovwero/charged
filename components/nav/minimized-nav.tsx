@@ -35,11 +35,11 @@ export default function MinimizedTopNav() {
   return (
     <header
       className={`${
-        openNav ? "h-screen" : "h-20"
+        openNav ? "h-screen" : "h-fit"
       } text-white fixed inset-0 z-10 transition-all ${dynamicStyles}`}
     >
       <div className="">
-        <Padding className={`flex h-20 items-center justify-between`}>
+        <Padding className={`flex h-[71px] items-center justify-between`}>
           <Link
             onClick={() => {
               scrollHandler();

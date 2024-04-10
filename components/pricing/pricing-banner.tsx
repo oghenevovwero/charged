@@ -16,8 +16,8 @@ export default function PricingBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <Container className="flex flex-col h-full justify-end pb-28 md:pb-16 text-white ">
-          <div className="text-5xl md:text-6xl font-semibold">Become a member</div>
+        <Container className="flex flex-col h-full justify-end pb-32 md:pb-16 text-white ">
+          <div className="text-6xl font-bold">Become a member</div>
         </Container>
       </div>
     </div>

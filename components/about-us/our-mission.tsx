@@ -16,7 +16,7 @@ export default function OurMission() {
       <div>
         <Padding className="">
           <div className="text-[#00A63D] text-center mb-8 text-3xl font-bold">Our Mission</div>
-          <div className="text-4xl md:text-4xl text-center  font-bold">
+          <div className="text-4xl text-center  font-bold">
             Your Charge, Your way: Anytime, Anywhere you want it
           </div>
           <div className="mt-10 mb-20 text-center  md:text-lg ">

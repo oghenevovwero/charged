@@ -7,8 +7,8 @@ export default function JoinTheTeam() {
   return (
     <Container className="flex flex-col gap-10 items-center md:flex-row bg-[#F6F8F7]  text-black">
       <div className="flex-1">
-        <div className="text-4xl font-medium md:text-5xl  md:font-bold">Come join the team</div>
-        <div className=" mt-10 mb-5">
+        <div className="text-4xl font-bold">Come join the team</div>
+        <div className="my-6">
           Work with some of the best global talent to push a sustainable and convenient charging
           infrastructure for electric vehicles
         </div>

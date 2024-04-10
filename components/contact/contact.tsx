@@ -6,7 +6,7 @@ import Container from "../container";
 export default function ContactUs() {
   return (
     <Container className="bg-white text-black flex flex-col max-sm:items-center sm:flex-row gap-12 sm:gap-5 justify-between">
-      <div className="flex-1 mt-8">
+      <div className="flex-1 mt-9">
         <Image src={chargeImg} alt="charging" />
       </div>
       <div className="flex-1 w-full flex flex-col gap-5">

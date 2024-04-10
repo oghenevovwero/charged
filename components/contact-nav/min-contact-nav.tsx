@@ -13,11 +13,11 @@ export default function MinimizedContactTopNav() {
   return (
     <header
       className={`${
-        openNav ? "h-screen" : "h-20"
-      } text-black fixed inset-0 z-10 transition-all bg-white shadow-lg`}
+        openNav ? "h-screen" : "h-fit"
+      } text-white fixed inset-0 z-10 transition-all bg-gray-700 shadow-lg`}
     >
       <div className="">
-        <Padding className={`flex h-20 items-center justify-between`}>
+        <Padding className={`flex h-[71px] items-center justify-between`}>
           <Link            
             href={"/"}
             className="cursor-pointer hover:opacity-75 active:opacity-50"

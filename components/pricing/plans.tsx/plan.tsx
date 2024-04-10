@@ -11,27 +11,27 @@ type PlanProps = {
 
 export default function Plan({ plan, cost, duration, features, recommended }: PlanProps) {
   return (
-    <div className="rounded-lg border shadow-lg p-2 md:p-3 lg:p-5">
+    <div className="rounded-lg border shadow-md p-2 md:p-3 lg:p-5">
       <div>
-        <div className="flex items-center gap-5">
-          <div className="font-bold text-lg">{plan}</div>
+        <div className="flex items-center gap-3">
+          <div className="font-medium text-lg">{plan}</div>
           {recommended && (
-            <div className="text-[11px]  bg-[#E5F5FF] text-[#00A0FF] rounded-xl px-[6px] py-[3px]">
+            <div className="text-[11px]  bg-[#E5F5FF] text-[#00A0FF] rounded-xl px-[6px] py-[2px]">
               Recommended
             </div>
           )}
         </div>
-        <div className="my-10">
-          <span className="font-extrabold text-5xl">${cost}</span>
+        <div className="mt-6 mb-8">
+          <span className="font-bold text-5xl">${cost}</span>
           <span className="text-[11px]  align-sub">/ {duration}</span>
         </div>
         <div className="flex flex-col gap-3">
           {features.map((feature, index) => (
-            <div key={index} className="flex gap-2 items-start">
+            <div key={index} className="flex gap-[6px] items-start">
               <div className="flex-[1]">
-                <Image src={greenTickImg} width={30} height={30} alt="included in plan" />
+                <Image src={greenTickImg} width={25} height={25} alt="included in plan" />
               </div>
-              <div className="text-sm font-bold flex-[10]">{feature}</div>
+              <div className="text-sm font-medium flex-[10]">{feature}</div>
             </div>
           ))}
         </div>

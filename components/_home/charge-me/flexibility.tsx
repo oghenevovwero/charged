@@ -38,7 +38,7 @@ export default function Flexibility() {
       </div>
 
       <div>
-        <div className="text-xl mt-6 mb-4">Flexibility</div>
+        <div className="text-xl mt-6 mb-4 font-bold">Flexibility</div>
         <div className="">
           Choose from various charging options to fit your needs, from quick top-ups to full
           charges.

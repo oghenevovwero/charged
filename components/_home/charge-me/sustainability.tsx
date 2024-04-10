@@ -25,7 +25,7 @@ export default function Sustainability() {
       </div>
 
       <div>
-        <div className="text-xl mt-6 mb-4">Sustainability</div>
+        <div className="text-xl mt-6 mb-4 font-bold">Sustainability</div>
         <div className="">
           Use a clean and eco-friendly charging solution to reduce your carbon footprint.
         </div>

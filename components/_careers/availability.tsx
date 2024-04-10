@@ -16,7 +16,7 @@ export default function Availability() {
           <div className="text-4xl md:text-4xl text-center  font-bold">
             Guaranteed availability of swift and potent EV charging whenever needed
           </div>
-          <div className="mt-10 mb-20 text-center  md:text-lg ">
+          <div className="mt-6 mb-16 text-center  md:text-lg ">
             We provide a variety of engaging employment options in areas including engineering,
             marketing, sales, and mobile operations, among others.
           </div>
@@ -39,7 +39,7 @@ export default function Availability() {
             />
           </div>
         </div>
-        <div className="w-full flex justify-center mt-10">
+        <div className="w-full flex justify-center mt-6">
           <Link
             href={"/roles"}
             className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md"

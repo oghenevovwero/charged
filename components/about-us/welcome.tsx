@@ -7,7 +7,7 @@ export default function Welcome() {
   return (
     <Container className="flex flex-col items-center justify-between md:flex-row bg-[#F6F8F7] text-black">
       <div className="flex-1">
-        <div className="text-4xl font-medium md:font-bold">
+        <div className="text-4xl font-bold">
           Welcome to Charge Me Now. We are pioneers in Mobile EV Charging
         </div>
         <div className="my-10">

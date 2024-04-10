@@ -25,7 +25,7 @@ export default function Reliability() {
       </div>
 
       <div>
-        <div className="text-xl mt-6 mb-4">Reliability</div>
+        <div className="text-xl mt-6 mb-4 font-bold">Reliability</div>
         <div className="">
           Experienced and certified experts to deliver safe and efficient charging for your electric
           vehicle.

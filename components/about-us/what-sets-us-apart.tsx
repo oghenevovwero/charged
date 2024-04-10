@@ -32,10 +32,10 @@ export default function WhatSetsUsApart() {
 
   return (
     <Container className="bg-[#2A322F] text-white  ">
-      <div className="text-5xl font-medium mb-10 md:mb-20 md:font-bold">What sets us apart</div>
+      <div className="text-4xl mb-10 md:mb-20 font-bold">What sets us apart</div>
       <div className="flex flex-col items-center md:flex-row gap-6">
         <div className="flex-1 flex flex-col justify-center sm:pl-16 md:pl-20 lg:pl-24">
-          <div className="text-4xl font-medium md:font-bold my-10">On-Demand convenience</div>
+          <div className="text-3xl font-bold mb-6 md:mb-8">On-Demand convenience</div>
           <div>
             At Charge Me Now, we are on a mission to revolutionize the way people charge their
             electric vehicles, making sustainable and convenient energy accessible to everyone,

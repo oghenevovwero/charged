@@ -7,7 +7,7 @@ import Padding from "../padding";
 export default function ExpandedContactNav() {
   return (
     <div
-      className={`fixed flex z-10 text-semibold text-lg bg-white text-black shadow-lg left-0 top-0 right-0`}
+      className={`fixed h-[71px] flex z-10 text-semibold text-lg bg-gray-700 text-white shadow-lg left-0 top-0 right-0`}
     >
       <Padding
         className="
@@ -15,7 +15,7 @@ export default function ExpandedContactNav() {
         flex 
         justify-between 
         items-center
-        h-[90px]
+        
         w-full"
       >
         <Link href={"/"} className="cursor-pointer hover:opacity-75 active:opacity-100">

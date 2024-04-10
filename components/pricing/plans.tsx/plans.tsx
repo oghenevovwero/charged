@@ -7,7 +7,7 @@ import greenTickImg from "@/public/green-tick.png";
 export default function Plans() {
   return (
     <Container className="bg-white text-black">
-      <div className="flex flex-col sm:flex-row gap-10 md:gap-3 lg:gap-10 mb-12">
+      <div className="flex flex-col sm:flex-row gap-8 md:gap-3 lg:gap-10 mb-10">
         {plans.map((plan) => (
           <Plan key={plan.plan} {...plan} />
         ))}
@@ -24,7 +24,7 @@ export default function Plans() {
 
         <div className="flex-[4] w-full flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-4">
           <div className="flex items-end gap-1">
-            <div className="font-extrabold text-5xl">$20</div>
+            <div className="font-bold text-5xl">$20</div>
             <div>/</div>
             <div className="text-[11px]  align-sub">Month</div>
           </div>

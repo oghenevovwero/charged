@@ -32,7 +32,7 @@ export default function ExpandedNav() {
   return (
     <div
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed h-[71px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
@@ -40,7 +40,6 @@ export default function ExpandedNav() {
         flex 
         justify-between 
         items-center
-        h-[90px]
         w-full"
       >
         <Link

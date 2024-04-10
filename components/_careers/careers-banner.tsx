@@ -16,8 +16,8 @@ export default function CareersBanner() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <Container className="flex flex-col h-full md:w-[50%] justify-end pb-28 md:pb-16 text-white">
-          <div className="text-5xl md:text-6xl font-semibold">Join our fast growing team</div>
+        <Container className="flex flex-col h-full md:w-[50%] justify-end pb-32 md:pb-16 text-white">
+          <div className="text-6xl font-bold">Join our fast growing team</div>
         </Container>
       </div>
     </div>
