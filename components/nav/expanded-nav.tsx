@@ -6,7 +6,7 @@ import Padding from "../padding";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-lg";
+  const nonTransparentStyle = "bg-gray-700 text-white shadow-lg h-[94px]";
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
@@ -50,7 +50,7 @@ export default function ExpandedNav() {
           }}
         >
           <div className="">
-            <Image src={logoImg} height={134} width={153} alt="Our logo" />
+            <Image src={logoImg} height={80} width={100} alt="Our logo" />
           </div>
         </Link>
         <div className="flex gap-6 justify-around items-center font-medium">

@@ -5,6 +5,7 @@ import Reliability from "./reliability";
 import Sustainability from "./sustainability";
 import chargeMeImg from "@/public/charge-me.png";
 import Container from "@/components/container";
+import Link from "next/link";
 
 export default function ChargeMe() {
   return (
@@ -21,9 +22,9 @@ export default function ChargeMe() {
           <Sustainability />
         </div>
         <div className="w-full flex justify-start sm:justify-center items-center">
-          <button className="mt-6 md:mt-12 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
+          <Link href={"/contact"} className="mt-6 md:mt-12 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
             Book a charge
-          </button>
+          </Link>
         </div>
       </div>
     </Container>
