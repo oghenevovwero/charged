@@ -8,7 +8,7 @@ export default function OurPromise() {
   return (
     <Container className="bg-[#EEFFF4] text-black ">
       <div className="text-center ">
-        <div className="font-bold text-4xl mb-14">Our promise to you</div>
+        <div className="font-bold text-4xl mb:14 md:mb-16">Our promise to you</div>
       </div>
       <div className="flex flex-col max-sm:gap-8 sm:flex-row sm:items-center justify-around items-center">
         <Reliability />
