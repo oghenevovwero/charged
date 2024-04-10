@@ -21,7 +21,7 @@ export default function ChargeMe() {
           <Sustainability />
         </div>
         <div className="w-full flex justify-start sm:justify-center items-center">
-          <button className="mt-6 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-6 py-[6px] rounded-lg text-lg ">
+          <button className="mt-6 md:mt-12 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
             Book a charge
           </button>
         </div>

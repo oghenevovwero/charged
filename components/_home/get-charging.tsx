@@ -19,7 +19,7 @@ export default function GetCharging() {
           <div className="text-5xl font-bold w-[90%] sm:w-3/4 md:w-1/2 leading-[60px]">
             Get 24/7charging delivery service for up to $0.58/KWh
           </div>
-          <button className="mt-6 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-6 py-[6px] rounded-lg text-lg ">
+          <button className="mt-6 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
             Become a member
           </button>
         </Container>
