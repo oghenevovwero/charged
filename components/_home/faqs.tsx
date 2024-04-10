@@ -19,10 +19,10 @@ export default function FAQs() {
         </div>
       </div>
       <div className="flex gap-6 flex-col md:flex-row justify-around">
-        <div className="md:flex-1 w-full md:pl-20">
+        <div className="md:flex-1 w-full md:pl-20 ">
           <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
-        <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-8 lg:pl-28 font-medium text-lg">
+        <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-8 lg:pl-24 font-medium text-lg">
           {faqs.map((faq, index) => (
             <div key={index} className="w-full">
               <div>
