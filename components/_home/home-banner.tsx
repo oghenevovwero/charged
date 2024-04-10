@@ -26,7 +26,7 @@ export default function HomeBanner() {
             </div>
           </div>
           <div className="flex gap-3 justify-center items-center">
-            <div className="p-2 cursor-pointer active:opacity-50 hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+            <div className="p-2 cursor-pointer bg-[#1A202B] active:opacity-50 hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
               <div>
                 <Image src={appleImg} width={20} height={20} alt="Get on app store" quality={100} />
               </div>
@@ -35,7 +35,7 @@ export default function HomeBanner() {
                 <div className="text-[12px] font-semibold">App Store</div>
               </div>
             </div>
-            <div className="p-2 rounded-lg cursor-pointer hover:opacity-75 active:opacity-50 text-white border border-gray-500 flex gap-1 items-center">
+            <div className="p-2 rounded-lg bg-[#1A202B] cursor-pointer hover:opacity-75 active:opacity-50 text-white border border-gray-500 flex gap-1 items-center">
               <div>
                 <Image src={playImg} width={20} height={20} alt="Get on play store" quality={100} />
               </div>
