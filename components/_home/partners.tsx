@@ -10,7 +10,7 @@ import Padding from "../padding";
 export default function Partners() {
   return (
     <Padding
-      className="grid grid-cols-3 md:grid-cols-6
+      className="grid grid-cols-6
    items-center justify-items-center
      gap-6 w-full h-full  py-4 md:py-6 bg-white"
     >

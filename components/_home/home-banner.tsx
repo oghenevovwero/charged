@@ -6,7 +6,7 @@ import Container from "../container";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen relative">
+    <div className="h-screen  relative overflow-x-clip">
       <Image
         src={bannerImg}
         placeholder="blur"
@@ -14,7 +14,7 @@ export default function HomeBanner() {
         quality={100}
         priority
         fill
-        sizes="100vw"
+        sizes="120vw"
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
