@@ -12,14 +12,14 @@ export default function FAQs() {
     <Container className="bg-white text-black">
       <div className="flex flex-col md:flex-row max-md:gap-6 mb-16">
         <div className="font-bold text-4xl flex-1">Frequently Asked Questions</div>
-        <div className="flex-1 w-full md:flex md:justify-end">
+        <div className="flex-1 w-full md:flex md:justify-end h-fit">
           <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 font-medium text-sm text-black border  border-gray-400 px-[33px] py-[14px] rounded-lg md:text-lg">
             Other FAQs
           </Link>
         </div>
       </div>
       <div className="flex gap-6 flex-col md:flex-row justify-around">
-        <div className="md:flex-1 lg:flex-1 w-full pl-20">
+        <div className="md:flex-1 w-full md:pl-20">
           <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
         <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-16 lg:pl-28 font-medium text-lg">
