@@ -15,10 +15,10 @@ export default function Partners() {
      gap-6 w-full h-full  py-4 md:py-6 bg-white"
     >
       <Image src={fordImg} className="justify-self-start" alt="ford logo" />
-      <Image src={teslaImg} className="" alt="Tesla logo" />
+      <Image src={teslaImg} className="h-4" alt="Tesla logo" />
       <Image src={nissanImg} className="max-md:justify-self-end" alt="nissan logo" />
       <Image src={bydImg} className="max-md:justify-self-start" alt="byd logo" />
-      <Image src={bmwImg} alt="BMW logo" />
+      <Image src={bmwImg} className="" alt="BMW logo" />
 
       <Image src={hyundaiImg} className="justify-self-end" alt="hyundai logo" />
     </Padding>
