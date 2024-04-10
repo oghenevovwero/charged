@@ -19,9 +19,7 @@ export default function HomeBanner() {
       />
       <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
         <Container className="flex flex-col gap-5 items-start text-white">
-          <div className="text-6xl font-semibold">Get charged</div>
-          <div className="text-6xl font-semibold">Anytime</div>
-          <div className="text-6xl font-semibold">Anywhere!</div>
+          <div className="text-6xl font-semibold">Get charged, anytime, anywhere</div>
           <div className="text-xl my-5 font-light sm:w-[60%] md:w-1/2">
             Introducing a revolutionary charging service that brings the power to you
           </div>

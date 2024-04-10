@@ -6,16 +6,16 @@ export default function WaitList() {
   return (
     <Container className="bg-[#F6F8F7] text-black flex justify-center items-center">
       <div className="flex flex-col md:flex-row md:h-96">
-        <div className="flex-1 bg-[#54645D] text-white rounded-3xl md:rounded-tr-none md:rounded-br-none flex flex-col p-6 sm:p-20 md:p-20 justify-center items-center">
+        <div className="flex-1 bg-[#54645D] text-white rounded-3xl md:rounded-tr-none md:rounded-br-none flex flex-col p-6 sm:p-20 md:p-20 justify-center">
           <div className="font-bold text-4xl">Join the WaitList</div>
-          <div className="my-6 text-lg ">
+          <div className="mt-4 mb-14 text-lg">
             Be among the first to experience the future of EV charging. Enter your email address and
             phone number to secure your spot.
           </div>
-          <div className="w-full relative">
+          <div className="w-full relative h-16">
             <input
               placeholder="Enter your email"
-              className="bg-[#54645D] w-full py-4 px-2 text-lg  placeholder:text-white placeholder:text-lg placeholder: outline-none border border-white rounded-xl"
+              className="bg-[#54645D] w-full h-full pl-6 py-2 pr-2 text-lg  placeholder:text-white placeholder: outline-none border border-white rounded-lg"
             />
             <button className="bg-[#00A63D] text-lg absolute right-[4px] top-[5px] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-3 py-3 rounded-lg ">
               Join waitlist

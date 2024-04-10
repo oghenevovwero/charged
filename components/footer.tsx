@@ -8,14 +8,14 @@ import Padding from "./padding";
 
 export default function Footer() {
   return (
-    <div className="bg-[#1C211F] py-12 md:py-24 text-[#EDF0EF]">
+    <div className="bg-[#1C211F] py-12 md:py-24 text-white">
       <Padding className="py-0">
         <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
               <Image src={logoImg} height={40} width={100} alt="Our logo" />
             </Link>
-            <div>Mobile EV charge that has your back</div>
+            <div className="text-[#EDF0EF]">Mobile EV charge that has your back</div>
           </div>
           <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
@@ -53,32 +53,32 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-start flex-col md:flex-row gap-4 text-gray-300">
-          <Link href={"/about"} className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+        <div className="flex justify-start text-sm flex-col md:flex-row gap-7 md:gap-10">
+          <Link href={"/about"} className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             About us
           </Link>
           <Link
             href="/pricing"
-            className="cursor-pointer md:hover:opacity-75 active:opacity-60"
+            className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60"
           >
             Pricing
           </Link>
-          <Link href="/faqs" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/faqs" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             FAQs
           </Link>
-          <Link href="/careers" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/careers" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             Careers
           </Link>
-          <Link href="/roles" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/roles" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             Roles
           </Link>
-          <Link href="/contact" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/contact" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             Contact us
           </Link>
-          <Link href="/policy" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/policy" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             Privacy policy
           </Link>
-          <Link href="/conditions" className="cursor-pointer md:hover:opacity-75 active:opacity-60">
+          <Link href="/conditions" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
             Terms & Conditions
           </Link>
         </div>
