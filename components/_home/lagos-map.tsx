@@ -19,7 +19,7 @@ export default function LagosMap() {
         <Padding className="flex justify-end h-full">
           <Image
             src={chargeImg}
-            className="h-full mix-blend-multiply blur-[3px]"
+            className="h-full mix-blend-multiply blur-[2px]"
             alt="charge station"
           />
         </Padding>
