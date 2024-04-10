@@ -74,7 +74,7 @@ export default function WhatSetsUsApart() {
           <Image className="rounded-lg" src={trailerImg} alt="charging trailer" />
         </div>
       </div>
-      <div className="mt-10 flex justify-end">{indicators[indicatorIndex]}</div>
+      <div className="mt-10 flex justify-end" key={indicatorIndex}>{indicators.at(indicatorIndex)}</div>
     </Container>
   );
 }
