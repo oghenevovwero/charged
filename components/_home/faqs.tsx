@@ -18,7 +18,7 @@ export default function FAQs() {
           </Link>
         </div>
       </div>
-      <div className="flex gap-6 flex-col md:flex-row justify-around">
+      <div className="flex gap-12 md:gap-6 flex-col md:flex-row justify-around">
         <div className="md:flex-1 w-full md:pl-20 ">
           <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
