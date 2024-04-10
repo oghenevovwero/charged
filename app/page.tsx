@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Nav />
       <HomeBanner />
-      <div className="h-[10px] w-screen bg-black mt-[-10px]" />
+      <div className="h-2 w-screen bg-black mt-[-10px]" />
       <Partners />
       <LagosMap />
       <ChargeMe />
