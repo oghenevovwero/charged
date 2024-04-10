@@ -32,7 +32,7 @@ export default function ExpandedNav() {
   return (
     <div
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed h-[71px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed h-[155px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
@@ -49,11 +49,11 @@ export default function ExpandedNav() {
             scrollHandler();
           }}
         >
-          <div className="h-20 w-20">
-            <Image src={logoImg} alt="Our logo" />
+          <div className="">
+            <Image src={logoImg} height={134} width={153} alt="Our logo" />
           </div>
         </Link>
-        <div className="flex gap-6 justify-around items-center">
+        <div className="flex gap-6 justify-around items-center font-medium">
           <Link
             href={"/about"}
             className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
@@ -105,7 +105,7 @@ export default function ExpandedNav() {
             <div>Contact</div>
             <div>us</div>
           </Link>
-          <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md ">
+          <button className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-75 active:opacity-100 text-white px-[33px] py-[14px] rounded-md ">
             <div className="flex gap-1">
               <div>Access</div>
               <div>App</div>

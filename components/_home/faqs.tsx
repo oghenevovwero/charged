@@ -10,19 +10,19 @@ export default function FAQs() {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
   return (
     <Container className="bg-white text-black">
-      <div className="flex flex-col md:flex-row max-md:gap-6  mb-16 items-center">
+      <div className="flex flex-col md:flex-row max-md:gap-6 mb-16">
         <div className="font-bold text-4xl flex-1">Frequently Asked Questions</div>
         <div className="flex-1 w-full md:flex md:justify-end">
-          <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 text-black border  border-gray-400 px-3 md:px-6 py-2 rounded-lg text-sm md:text-lg">
+          <Link href={"/faqs"} className="cursor-pointer hover:bg-gray-100 font-medium text-sm text-black border  border-gray-400 px-3 md:px-6 py-2 rounded-lg md:text-lg">
             Other FAQs
           </Link>
         </div>
       </div>
-      <div className="flex gap-6 flex-col md:flex-row justify-around items-center">
-        <div className="md:flex-1 lg:flex-1 w-full">
+      <div className="flex gap-6 flex-col md:flex-row justify-around">
+        <div className="md:flex-1 lg:flex-1 w-full pl-20">
           <Image className="w-full" src={plugImg} alt="plug in" />
         </div>
-        <div className="md:flex-1 lg:flex-[1.5] flex flex-col justify-between gap-10 lg:pl-28">
+        <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-16 lg:pl-28 font-medium text-lg">
           {faqs.map((faq, index) => (
             <div key={index} className="w-full">
               <div>
@@ -47,7 +47,7 @@ export default function FAQs() {
                 >
                   {faq.answer}
                 </div>
-                <div className="h-[1px] w-full bg-gray-300 mt-3" />
+                <div className="h-[1px] w-full bg-gray-300 mt-4" />
               </div>
             </div>
           ))}

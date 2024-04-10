@@ -7,7 +7,7 @@ import Padding from "../padding";
 export default function ExpandedContactNav() {
   return (
     <div
-      className={`fixed h-[71px] flex z-10 text-semibold text-lg bg-gray-700 text-white shadow-lg left-0 top-0 right-0`}
+      className={`fixed h-[155px] flex z-10 text-semibold text-lg bg-gray-700 text-white shadow-lg left-0 top-0 right-0`}
     >
       <Padding
         className="
@@ -19,7 +19,7 @@ export default function ExpandedContactNav() {
         w-full"
       >
         <Link href={"/"} className="cursor-pointer hover:opacity-75 active:opacity-100">
-          <Image src={logoImg} height={30} width={70} alt="Our logo" />
+          <Image src={logoImg} height={134} width={153} alt="Our logo" />
         </Link>
         <div className="flex gap-6 justify-around items-center">
           <Link
@@ -49,7 +49,7 @@ export default function ExpandedContactNav() {
             <div>Contact</div>
             <div>us</div>
           </Link>
-          <button className="bg-[#00A63D] cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-2 rounded-md ">
+          <button className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-75 active:opacity-100 text-white px-[33px] py-[14px] rounded-md ">
             <div className="flex gap-1">
               <div>Access</div>
               <div>App</div>

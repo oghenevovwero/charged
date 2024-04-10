@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chargeImg from "@/public/charger.png";
+import chargeImg from "@/public/close-up.png";
 import mapImg from "@/public/florida.png";
 import Padding from "../padding";
 
@@ -16,13 +16,15 @@ export default function LagosMap() {
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 w-screen h-full">
-        <Padding className="flex justify-end h-full">
+        <div className="flex justify-end h-full relative">
           <Image
+            fill
             src={chargeImg}
-            className="h-full mix-blend-multiply blur-[2px] md:blur-[4px]"
+            style={{ objectFit: "cover" }}
+            className="h-full mix-blend-multiply"
             alt="charge station"
           />
-        </Padding>
+        </div>
       </div>
     </div>
   );
