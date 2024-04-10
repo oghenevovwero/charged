@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoImg from "@/public/the-logo.png";
 import appleImg from "@/public/apple.png";
-import playImg from "@/public/playstore.png";
+import playImg from "@/public/footer-play.png";
 import footerChargeImg from "@/public/footer-charge.png";
 import Padding from "./padding";
 
@@ -46,7 +46,7 @@ export default function Footer() {
                   />
                 </div>
                 <div>
-                  <div className="text-[9px]">Get it on</div>
+                  <div className="text-[9px]">GET IT ON</div>
                   <div className="text-[13px] font-semibold">Google play</div>
                 </div>
               </div>

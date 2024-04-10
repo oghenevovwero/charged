@@ -5,7 +5,7 @@ import GetCharging from "@/components/_home/get-charging";
 import HomeBanner from "@/components/_home/home-banner";
 import HowItWorks from "@/components/_home/how-it-works/how-it-works";
 import WaitList from "@/components/_home/join-waitlist";
-import LagosMap from "@/components/_home/lagos-map";
+import LagosMap from "@/components/_home/florida-map";
 import Nav from "@/components/nav/nav";
 import Partners from "@/components/_home/partners";
 
