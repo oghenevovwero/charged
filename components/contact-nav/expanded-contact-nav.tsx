@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
 
 export default function ExpandedContactNav() {
   return (
     <div
-      className={`fixed h-[94px] flex z-10 text-semibold text-lg bg-gray-700 text-white shadow-lg left-0 top-0 right-0`}
+      className={`fixed h-[94px] flex z-10 text-semibold text-lg bg-[#1A202B] text-white shadow-lg left-0 top-0 right-0`}
     >
       <Padding
         className="

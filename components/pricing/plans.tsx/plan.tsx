@@ -1,15 +1,8 @@
 import Image from "next/image";
 import greenTickImg from "@/public/green-tick.png";
+import { PricingPlan } from "@/types";
 
-type PlanProps = {
-  plan: string;
-  duration: string;
-  features: string[];
-  recommended: boolean;
-  cost: string;
-};
-
-export default function Plan({ plan, cost, duration, features, recommended }: PlanProps) {
+export default function Plan({ plan, cost, duration, features, recommended }: PricingPlan) {
   return (
     <div className="rounded-lg border shadow-md p-2 md:p-3 lg:p-5">
       <div>
@@ -29,7 +22,7 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pl
           {features.map((feature, index) => (
             <div key={index} className="flex gap-[6px] items-start">
               <div className="flex-[1]">
-                <Image src={greenTickImg} width={25} height={25} alt="included in plan" />
+                <Image src={greenTickImg} width={20} height={20} alt="included in plan" />
               </div>
               <div className="text-sm font-medium flex-[10]">{feature}</div>
             </div>
@@ -37,7 +30,7 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pl
         </div>
       </div>
       <div className="w-full mt-10">
-        <button className="border bg-white rounded-lg w-full p-2 cursor-pointer active:opacity-50 font-medium text-lg border-[#00A63D]">Get started</button>
+        <button className="border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[#00A63D]">Get started</button>
       </div>
     </div>
   );

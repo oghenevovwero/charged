@@ -6,7 +6,7 @@ import Container from "../container";
 export default function ContactUs() {
   return (
     <Container className="bg-white text-black flex flex-col items-center sm:flex-row gap-12 sm:gap-5 justify-between">
-      <div className="flex-1 mt-9">
+      <div className="flex-1 mt-10">
         <Image src={chargeImg} alt="charging" />
       </div>
       <div className="flex-1 w-full flex flex-col gap-5">
@@ -53,7 +53,7 @@ export default function ContactUs() {
           <div className="font-semibold text-sm mb-1">Message</div>
           <textarea
             className="border border-gray-300 w-full rounded-lg outline-none py-1 px-2"
-            rows={5}
+            rows={6}
           />
         </div>
         <div className="flex flex-col items-center w-full">
@@ -62,7 +62,7 @@ export default function ContactUs() {
             <div className="text-lg font-medium">You agree to our friendly privacy policy.</div>
           </div>
           <div className="w-full flex justify-center mt-10">
-            <button className="bg-[#00A63D] font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md">
+            <button className="bg-[#00A63D] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md">
               Send Message
             </button>
           </div>

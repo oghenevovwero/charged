@@ -14,7 +14,7 @@ export default function MinimizedContactTopNav() {
     <header
       className={`${
         openNav ? "h-screen" : "h-fit"
-      } text-white fixed inset-0 z-10 transition-all bg-gray-700 shadow-lg`}
+      } text-white fixed inset-0 z-10 transition-all bg-[#1A202B] shadow-lg`}
     >
       <div className="">
         <Padding className={`flex h-[71px] items-center justify-between`}>

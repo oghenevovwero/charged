@@ -6,7 +6,7 @@ import Padding from "../padding";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-gray-700 text-white shadow-lg h-[94px]";
+  const nonTransparentStyle = "bg-[#1A202B] text-white shadow-lg h-[94px]";
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 

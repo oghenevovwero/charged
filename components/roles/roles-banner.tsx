@@ -21,7 +21,7 @@ export default function RolesBanner() {
             infrastructure for electric vehicles
           </div>
           <div>
-            <div className="text-5xl font-bold mb-10">Open positions</div>
+            <div className="text-5xl font-extrabold mb-10">Open positions</div>
             <div>
               Work with some of the best global talent to push a sustainable and convenient charging
               infrastructure for electric vehicles

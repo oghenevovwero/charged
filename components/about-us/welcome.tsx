@@ -10,7 +10,7 @@ export default function Welcome() {
         <div className="text-4xl font-bold">
           Welcome to Charge Me Now. We are pioneers in Mobile EV Charging
         </div>
-        <div className="my-10">
+        <div className="my-10 md:w-[80%] text-lg">
           At Charge Me Now, we are on a mission to revolutionize the way people charge their
           electric vehicles, making sustainable and convenient energy accessible to everyone,
           anywhere. Our journey began with a vision to create a greener tomorrow, powered by
