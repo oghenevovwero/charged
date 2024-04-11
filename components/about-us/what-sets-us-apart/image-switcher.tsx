@@ -1,19 +1,22 @@
 "use client";
 
 import greenEarthImg from "@/public/green-earth.png";
-import plugImg from "@/public/road.png";
+import plugImg from "@/public/refuel.jpeg";
 import trailerImg from "@/public/trailer.png";
 import Image from "next/image";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import SwitcherButtons from "./switcher-btns";
 import FadeInRender from "../../fade-in-render";
 
-export default function ImageSwitcher() {
-  const [indicatorIndex, setIndicatorIndex] = useState(1);
+type Props = {
+  setIndicatorIndex: Dispatch<SetStateAction<number>>;
+  indicatorIndex: number;
+};
 
+export default function ImageSwitcher({indicatorIndex, setIndicatorIndex}: Props) {
   return (
     <div className="w-full">
-      <div className="flex items-end gap-6 justify-between w-full h-[300px] sm:h-[350] md:h-[400px] lg:h-[487px]">
+      <div className="flex items-end gap-6 justify-between w-full h-[350px] md:h-[400px] lg:h-[487px]">
         <div className="flex justify-between w-full items-center h-full gap-2 sm:gap-5 lg:gap-5">
           <div className="hidden sm:block lg:hidden min-[1500px]:block h-full">
             <SwitcherButtons
@@ -28,7 +31,7 @@ export default function ImageSwitcher() {
                   <Image
                     style={{ transition: "all 1s linear" }}
                     className="rounded-lg h-full w-full"
-                    src={greenEarthImg}
+                    src={trailerImg}
                     alt="charging trailer"
                   />
                 </FadeInRender>
@@ -37,7 +40,7 @@ export default function ImageSwitcher() {
                 <FadeInRender>
                   <Image
                     className="rounded-lg h-full w-full"
-                    src={trailerImg}
+                    src={greenEarthImg}
                     alt="charging trailer"
                   />
                 </FadeInRender>
@@ -62,7 +65,7 @@ export default function ImageSwitcher() {
                     className="rounded-lg h-full w-full"
                     quality={50}
                     placeholder="blur"
-                    src={plugImg}
+                    src={greenEarthImg}
                     alt="charging trailer"
                   />
                 </FadeInRender>
@@ -72,7 +75,7 @@ export default function ImageSwitcher() {
                   <Image
                     className="rounded-lg h-full w-full"
                     quality={50}
-                    src={greenEarthImg}
+                    src={plugImg}
                     placeholder="blur"
                     alt="charging trailer"
                   />

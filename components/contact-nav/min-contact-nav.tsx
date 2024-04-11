@@ -11,7 +11,7 @@ export default function MinimizedContactTopNav() {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <header
+    <nav
       className={`${
         openNav ? "h-screen" : "h-fit"
       } text-white fixed inset-0 z-10 transition-all bg-[#1A202B] shadow-lg`}
@@ -108,6 +108,6 @@ export default function MinimizedContactTopNav() {
           </div>
         </Padding>
       </div>
-    </header>
+    </nav>
   );
 }

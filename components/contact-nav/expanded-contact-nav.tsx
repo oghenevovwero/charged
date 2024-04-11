@@ -5,7 +5,7 @@ import Padding from "../padding";
 
 export default function ExpandedContactNav() {
   return (
-    <div
+    <nav
       className={`fixed h-[94px] flex z-10 text-semibold text-lg bg-[#1A202B] text-white shadow-lg left-0 top-0 right-0`}
     >
       <Padding
@@ -53,6 +53,6 @@ export default function ExpandedContactNav() {
           </button>
         </div>
       </Padding>
-    </div>
+    </nav>
   );
 }

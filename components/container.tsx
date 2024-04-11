@@ -9,7 +9,7 @@ type Props = {
 
 export default function Container({ children, className, excludeTop, excludeBottom }: Props) {
   return (
-    <div className={`
+    <section className={`
       px-3 
       sm:px-8 
       md:px-[60px] 
@@ -19,6 +19,6 @@ export default function Container({ children, className, excludeTop, excludeBott
       ${className}
     `}>
       {children}
-    </div>
+    </section>
   );
 }

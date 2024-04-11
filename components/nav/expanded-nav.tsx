@@ -30,7 +30,7 @@ export default function ExpandedNav() {
   }, []);
 
   return (
-    <div
+    <nav
       style={{ transition: "all 0.35s linear" }}
       className={`fixed h-[155px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
@@ -110,6 +110,6 @@ export default function ExpandedNav() {
           </button>
         </div>
       </Padding>
-    </div>
+    </nav>
   );
 }

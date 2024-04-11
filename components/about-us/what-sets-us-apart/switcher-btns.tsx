@@ -22,7 +22,7 @@ export default function SwitcherButtons({ setIndicatorIndex, indicatorIndex }: S
           });
         }}
         style={{ opacity: indicatorIndex === 1 ? "50%" : "100%" }}
-        className="h-11 w-11 cursor-pointer active:opacity-50 rotate-180 rounded-full bg-gray-100 flex justify-center items-center"
+        className="h-11 w-11 cursor-pointer active:bg-gray-500 rotate-180 rounded-full bg-gray-100 flex justify-center items-center"
       >
         <Image src={arrowImg} width={25} height={10} alt="next" />
       </div>
@@ -37,7 +37,7 @@ export default function SwitcherButtons({ setIndicatorIndex, indicatorIndex }: S
           });
         }}
         style={{ opacity: indicatorIndex === 3 ? "50%" : "100%" }}
-        className="h-11 w-11 cursor-pointer active:opacity-50 rounded-full bg-gray-100 flex justify-center items-center"
+        className="h-11 w-11 cursor-pointer active:bg-gray-500 rounded-full bg-gray-100 flex justify-center items-center"
       >
         <Image src={arrowImg} width={25} height={10} alt="previous" />
       </div>
