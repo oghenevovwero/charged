@@ -8,7 +8,7 @@ export default function Flexibility() {
 
       <div>
         <div className="mb-4 font-semibold text-2xl">Flexibility</div>
-        <div className="">
+        <div className="text-lg">
           Your schedule is our priority. Request a charge at a time and location that suits you
           best.
         </div>

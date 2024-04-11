@@ -92,9 +92,6 @@ export default function ExpandedNav() {
           >
             Careers
           </Link>
-          <Link href={"/roles"} className="cursor-pointer hover:opacity-75 active:opacity-50">
-            Roles
-          </Link>
           <Link
             href={"/contact"}
             className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"

@@ -27,7 +27,7 @@ export default function Convenience() {
 
       <div>
         <div className="text-xl mt-6 mb-4 font-bold">Convenience</div>
-        <div className="">
+        <div className="text-lg">
           Schedule a charging appointment at your preferred location, eliminating the hassle of
           searching for stations.
         </div>

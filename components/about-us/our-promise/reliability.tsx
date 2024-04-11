@@ -8,7 +8,7 @@ export default function Reliability() {
 
       <div>
         <div className="mb-4 font-semibold text-2xl">Reliability</div>
-        <div className="">
+        <div className="text-lg">
           Count on us to deliver a reliable and efficient charging experience whenever you request
           our services.
         </div>

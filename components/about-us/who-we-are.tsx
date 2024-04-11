@@ -15,7 +15,7 @@ export default function WhoWeAre() {
           ensuring that clean and convenient energy is always within reach.
         </div>
       </div>
-      <div className="flex-1 ">
+      <div className="flex-1 flex justify-end">
         <Image className="rounded-md" src={teamImg} alt="collaborative workers" />
       </div>
     </Container>

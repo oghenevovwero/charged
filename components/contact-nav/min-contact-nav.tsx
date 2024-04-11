@@ -92,12 +92,6 @@ export default function MinimizedContactTopNav() {
             Careers
           </Link>
           <Link
-            href={"/roles"}
-            className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
-          >
-            Roles
-          </Link>
-          <Link
             href={"/contact"}
             className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
           ></Link>

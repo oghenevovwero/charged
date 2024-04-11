@@ -8,7 +8,7 @@ export default function Eco() {
 
       <div>
         <div className="mb-4 font-semibold text-2xl">Environmental impact</div>
-        <div className="">
+        <div className="text-lg">
           Join us in making a positive impact on the environment. Every charge with us contributes
           to a more sustainable future.
         </div>
