@@ -1,5 +1,4 @@
 import Container from "@/components/container";
-import MdImageSwitcher from "./md-image-switcher";
 import ImageSwitcher from "./image-switcher";
 
 export default function WhatSetsUsApart() {
@@ -7,7 +6,7 @@ export default function WhatSetsUsApart() {
     <Container className="bg-[#2A322F] text-white ">
       <div className="text-4xl mb-10 font-bold">What sets us apart</div>
       <div className="flex flex-col md:items-center lg:flex-row gap-6">
-        <div className="flex-1 flex flex-col justify-center sm:pl-2 md:pl-4 lg:pl-24">
+        <div className="flex-1 flex flex-col justify-center pl-4 lg:pl-12 xl:pl-24">
           <div className="text-3xl font-bold mb-6 md:mb-8">On-Demand convenience</div>
           <div className="text-lg">
             At Charge Me Now, we are on a mission to revolutionize the way people charge their
@@ -17,7 +16,7 @@ export default function WhatSetsUsApart() {
           </div>
         </div>
         <div className="flex-1 w-full max-lg:mt-10">
-          <MdImageSwitcher />
+          <ImageSwitcher />
         </div>
       </div>
     </Container>

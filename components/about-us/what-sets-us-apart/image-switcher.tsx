@@ -1,67 +1,90 @@
 "use client";
 
-import Image from "next/image";
-import arrowImg from "@/public/arrow-forward.svg";
-import trailerImg from "@/public/trailer.png";
 import greenEarthImg from "@/public/green-earth.png";
 import plugImg from "@/public/plugged-in.png";
+import trailerImg from "@/public/trailer.png";
+import Image from "next/image";
 import { useState } from "react";
-import Padding from "@/components/padding";
+import SwitcherButtons from "./switcher-btns";
 
 export default function ImageSwitcher() {
   const [indicatorIndex, setIndicatorIndex] = useState(1);
 
   return (
-    <div className="w-full flex flex-col justify-between h-full">
-      <div className="w-full h-[400px] aspect-square">
-        {indicatorIndex === 1 && (
-          <Image className="rounded-lg aspect-square h-full w-full" src={greenEarthImg} alt="charging trailer" />
-        )}
-        {indicatorIndex === 2 && (
-          <Image className="rounded-lg aspect-square h-full w-full" src={plugImg} alt="charging trailer" />
-        )}
-        {indicatorIndex === 3 && (
-          <Image className="rounded-lg aspect-square h-full w-full" src={trailerImg} alt="charging trailer" />
-        )}
-      </div>
-      <div className="flex justify-between mt-10 gap-5">
-        <div className="flex-1 flex gap-6">
-          <div
-            onClick={() => {
-              setIndicatorIndex((prev) => {
-                if (prev === 1) {
-                  return prev;
-                }
-                return prev - 1;
-              });
-            }}
-            style={{ opacity: indicatorIndex === 1 ? "50%" : "100%" }}
-            className="h-11 w-11 cursor-pointer active:opacity-50 rotate-180 rounded-full bg-gray-100 flex justify-center items-center"
-          >
-            <Image src={arrowImg} width={25} height={10} alt="next" />
+    <div className="w-full">
+      <div className="flex items-end gap-6 justify-between w-full h-[300px] md:h-[350px] lg:h-[406px]">
+        <div className="flex justify-between w-full items-center h-full gap-2 sm:gap-5 lg:gap-5">
+          <div className="hidden sm:block lg:hidden min-[1500px]:block h-full">
+            <SwitcherButtons
+              setIndicatorIndex={setIndicatorIndex}
+              indicatorIndex={indicatorIndex}
+            />
           </div>
-
-          <div
-            onClick={() => {
-              setIndicatorIndex((prev) => {
-                if (prev === 3) {
-                  return prev;
-                }
-                return prev + 1;
-              });
-            }}
-            style={{ opacity: indicatorIndex === 3 ? "50%" : "100%" }}
-            className="h-11 w-11 cursor-pointer active:opacity-50 rounded-full bg-gray-100 flex justify-center items-center"
-          >
-            <Image src={arrowImg} width={25} height={10} alt="previous" />
+          <div className="h-full flex items-end w-full sm:pr-5 lg:pr-2 xl:pr-5">
+            <div className="w-full h-[80%]">
+              {indicatorIndex === 1 && (
+                <Image
+                  className="rounded-lg h-full w-full"
+                  src={trailerImg}
+                  alt="charging trailer"
+                />
+              )}
+              {indicatorIndex === 2 && (
+                <Image
+                  className="rounded-lg h-full w-full"
+                  src={greenEarthImg}
+                  alt="charging trailer"
+                />
+              )}
+              {indicatorIndex === 3 && (
+                <Image className="rounded-lg h-full w-full" src={plugImg} alt="charging trailer" />
+              )}
+            </div>
+          </div>
+          <div className="w-[50%] flex h-full items-start  relative overflow-clip">
+            <div className="w-[200%] h-[80%] absolute">
+              {indicatorIndex === 1 && (
+                <Image
+                  className="rounded-lg h-full w-full"
+                  quality={50}
+                  src={greenEarthImg}
+                  placeholder="blur"
+                  alt="charging trailer"
+                />
+              )}
+              {indicatorIndex === 2 && (
+                <Image
+                  className="rounded-lg h-full w-full"
+                  quality={50}
+                  placeholder="blur"
+                  src={plugImg}
+                  alt="charging trailer"
+                />
+              )}
+              {indicatorIndex === 3 && (
+                <Image
+                  className="rounded-lg h-full w-full"
+                  quality={50}
+                  placeholder="blur"
+                  src={trailerImg}
+                  alt="charging trailer"
+                />
+              )}
+            </div>
           </div>
         </div>
-        <div className="flex-[2] flex justify-end">
-          <div className="w-[75%] flex gap-1 items-center" key={0}>
-            <div className="h-[6px] w-full bg-gray-500 rounded-full flex items-center">
+      </div>
+
+      <div className="flex justify-between items-center mt-8">
+        <div className="sm:hidden lg:block min-[1500px]:hidden h-full">
+          <SwitcherButtons setIndicatorIndex={setIndicatorIndex} indicatorIndex={indicatorIndex} />
+        </div>
+        <div className="flex w-full justify-end">
+          <div className="flex gap-1 items-center" key={0}>
+            <div className="h-[6px] w-36 bg-gray-500 rounded-full flex items-center">
               <div
                 style={{ width: `${(indicatorIndex / 3) * 100}%`, transition: "all 0.2s linear" }}
-                className="h-1 bg-gray-100 rounded-full"
+                className="h-full bg-gray-100 rounded-full"
               />
             </div>
             <div className="font-bold text-sm">{indicatorIndex}/3</div>
