@@ -11,7 +11,7 @@ export default function WhatSetsUsApart() {
     <Container className="bg-[#2A322F] text-white ">
       <div className="text-4xl mb-10 font-bold">What sets us apart</div>
       <div className="flex flex-col md:items-center lg:flex-row gap-6">
-        <div className="">
+        <div className="flex-[2]">
           <Reason
             name={reasons[indicatorIndex - 1].name}
             summary={reasons[indicatorIndex - 1].summary}
