@@ -16,7 +16,7 @@ type Props = {
 export default function ImageSwitcher({indicatorIndex, setIndicatorIndex}: Props) {
   return (
     <div className="w-full">
-      <div className="flex items-end gap-6 justify-between w-full h-[350px] md:h-[400px] lg:h-[487px]">
+      <div className="flex items-end gap-6 justify-between w-full h-[350px] md:h-[400px] lg:h-[500px]">
         <div className="flex justify-between w-full items-center h-full gap-2 sm:gap-5 lg:gap-5">
           <div className="hidden sm:block lg:hidden min-[1500px]:block h-full">
             <SwitcherButtons
