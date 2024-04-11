@@ -43,11 +43,11 @@ export default function FadeInRender({
 }: FadeInProps) {
   const [opacity, setOpacity] = useState(startOpacity);
   useEffect(() => {
-    const a = setTimeout(() => {
+    const opacityTimeout = setTimeout(() => {
       setOpacity(1);
     }, delayMs);
 
-    return () => clearTimeout(a);
+    return () => clearTimeout(opacityTimeout);
   }, []);
 
   return (

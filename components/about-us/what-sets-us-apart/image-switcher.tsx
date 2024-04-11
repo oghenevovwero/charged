@@ -1,12 +1,12 @@
 "use client";
 
 import greenEarthImg from "@/public/green-earth.png";
-import plugImg from "@/public/plugged-in.png";
+import plugImg from "@/public/road.png";
 import trailerImg from "@/public/trailer.png";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SwitcherButtons from "./switcher-btns";
-import FadeInRender from "./image-render";
+import FadeInRender from "../../fade-in-render";
 
 export default function ImageSwitcher() {
   const [indicatorIndex, setIndicatorIndex] = useState(1);
