@@ -4,15 +4,16 @@ import greenEarthImg from "@/public/green-earth.png";
 import plugImg from "@/public/plugged-in.png";
 import trailerImg from "@/public/trailer.png";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SwitcherButtons from "./switcher-btns";
+import FadeInRender from "./image-render";
 
 export default function ImageSwitcher() {
   const [indicatorIndex, setIndicatorIndex] = useState(1);
 
   return (
     <div className="w-full">
-      <div className="flex items-end gap-6 justify-between w-full h-[300px] md:h-[350px] lg:h-[406px]">
+      <div className="flex items-end gap-6 justify-between w-full h-[300px] sm:h-[350] md:h-[400px] lg:h-[487px]">
         <div className="flex justify-between w-full items-center h-full gap-2 sm:gap-5 lg:gap-5">
           <div className="hidden sm:block lg:hidden min-[1500px]:block h-full">
             <SwitcherButtons
@@ -22,53 +23,69 @@ export default function ImageSwitcher() {
           </div>
           <div className="h-full flex items-end w-full sm:pr-5 lg:pr-2 xl:pr-5">
             <div className="w-full h-[80%]">
-              {indicatorIndex === 1 && (
-                <Image
-                  className="rounded-lg h-full w-full"
-                  src={trailerImg}
-                  alt="charging trailer"
-                />
+            {indicatorIndex === 1 && (
+                <FadeInRender>
+                  <Image
+                    style={{ transition: "all 1s linear" }}
+                    className="rounded-lg h-full w-full"
+                    src={greenEarthImg}
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
               )}
               {indicatorIndex === 2 && (
-                <Image
-                  className="rounded-lg h-full w-full"
-                  src={greenEarthImg}
-                  alt="charging trailer"
-                />
-              )}
+                <FadeInRender>
+                  <Image
+                    className="rounded-lg h-full w-full"
+                    src={trailerImg}
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
+              )}              
               {indicatorIndex === 3 && (
-                <Image className="rounded-lg h-full w-full" src={plugImg} alt="charging trailer" />
+                <FadeInRender>
+                  <Image
+                    style={{ transition: "all 1s linear" }}
+                    className="rounded-lg h-full w-full"
+                    src={plugImg}
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
               )}
             </div>
           </div>
-          <div className="w-[50%] flex h-full items-start  relative overflow-clip">
-            <div className="w-[200%] h-[80%] absolute">
+          <div className="w-[40%] flex h-full items-start  relative overflow-clip">
+            <div className="w-[200%] h-[80%] absolute">              
               {indicatorIndex === 1 && (
-                <Image
-                  className="rounded-lg h-full w-full"
-                  quality={50}
-                  src={greenEarthImg}
-                  placeholder="blur"
-                  alt="charging trailer"
-                />
+                <FadeInRender>
+                  <Image
+                    className="rounded-lg h-full w-full"
+                    quality={50}
+                    placeholder="blur"
+                    src={plugImg}
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
               )}
               {indicatorIndex === 2 && (
-                <Image
-                  className="rounded-lg h-full w-full"
-                  quality={50}
-                  placeholder="blur"
-                  src={plugImg}
-                  alt="charging trailer"
-                />
+                <FadeInRender>
+                  <Image
+                    className="rounded-lg h-full w-full"
+                    quality={50}
+                    src={greenEarthImg}
+                    placeholder="blur"
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
               )}
               {indicatorIndex === 3 && (
-                <Image
-                  className="rounded-lg h-full w-full"
-                  quality={50}
-                  placeholder="blur"
-                  src={trailerImg}
-                  alt="charging trailer"
-                />
+                <FadeInRender>
+                  <Image
+                    className="rounded-lg h-full w-full"
+                    src={trailerImg}
+                    alt="charging trailer"
+                  />
+                </FadeInRender>
               )}
             </div>
           </div>
