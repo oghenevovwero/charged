@@ -6,18 +6,22 @@ import { useEffect, useRef, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
 import BtnLink from "../btn-link";
-import { EXPANDED_NAV_HEIGHT, NORNAL_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
+import {
+  EXPANDED_NAV_HEIGHT,
+  NORNAL_NAV_HEIGHT,
+  PRIMARY_BLUE,
+} from "@/constants";
 
-export default function MinimizedTopNav() { 
-  const transparentStyle = `bg-transparent h-[125px]`;
-  const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] shadow-lg h-[100px]`;
+export default function MinimizedTopNav() {
+  const transparentStyle = `bg-transparent h-28`;
+  const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] shadow-xl h-20 sm:h-24`;
 
   const navIsOpen = useRef(false);
   const [openNav, setOpenNav] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - 125) {
+    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       if (navIsOpen.current) {
@@ -94,7 +98,11 @@ export default function MinimizedTopNav() {
           </svg>
         </button>
       </Padding>
-      <Padding className={`${openNav ? `block bg-[${primaryBlue}] h-screen` : "hidden"} pt-7 gap-6 text-lg`}>
+      <Padding
+        className={`${
+          openNav ? `block bg-[${PRIMARY_BLUE}] h-screen` : "hidden"
+        } pt-7 gap-6 text-lg`}
+      >
         <Link
           onClick={() => {
             scrollHandler();

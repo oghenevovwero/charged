@@ -9,7 +9,6 @@ export default function AboutUsBanner() {
         src={chargingImg}
         placeholder="blur"
         alt="welcome to get charged"
-        priority
         quality={100}
         fill
         sizes="100vw"

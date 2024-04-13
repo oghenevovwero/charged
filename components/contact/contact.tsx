@@ -2,6 +2,7 @@ import Image from "next/image";
 import chevronImg from "@/public/down-chevron.png";
 import chargeImg from "@/public/charge-at-station.png";
 import Container from "../container";
+import { PRIMARY_GREEN } from "@/constants";
 
 export default function ContactUs() {
   return (
@@ -11,8 +12,10 @@ export default function ContactUs() {
       </div>
       <div className="flex-1 w-full flex flex-col gap-5">
         <div className="text-5xl font-bold">Get in touch</div>
-        <div className="text-light">Our friendly team would love to hear from you</div>
-        <div className="w-full flex flex-col md:flex-row justify-between gap-4">
+        <div className="text-light">
+          Our friendly team would love to hear from you
+        </div>
+        <div className="w-full flex flex-col md:flex-row justify-between gap-2">
           <div className="w-full">
             <div className="font-semibold text-sm mb-1">First name</div>
             <input
@@ -45,7 +48,12 @@ export default function ContactUs() {
           <div className="flex gap-2 items-center absolute left-2 bottom-3">
             <div className="text-gray-400 text-lg">US</div>
             <div>
-              <Image src={chevronImg} alt="more countries" width={10} height={20} />
+              <Image
+                src={chevronImg}
+                alt="more countries"
+                width={10}
+                height={20}
+              />
             </div>
           </div>
         </div>
@@ -59,10 +67,19 @@ export default function ContactUs() {
         <div className="flex flex-col items-center w-full">
           <div className="flex gap-2 items-center">
             <input type="checkbox" />
-            <div className="text-lg font-medium">You agree to our friendly privacy policy.</div>
+            <div className="text-lg font-medium">
+              You agree to our friendly privacy policy.
+            </div>
           </div>
           <div className="w-full flex justify-center mt-10">
-            <button className={`bg-[${process.env.NEXT_PUBLIC_PG}] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md`}>
+            <button
+              style={{ backgroundColor: PRIMARY_GREEN }}
+              className={`text-lg font-medium w-full cursor-pointer transition-transform
+            duration-300 
+            hover:scale-x-95 
+            active:opacity-50 
+            text-white px-2 py-[14px] rounded-md`}
+            >
               Send Message
             </button>
           </div>

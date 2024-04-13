@@ -11,11 +11,13 @@ export default function WhatSetsUsApart() {
     <Container className="bg-[#2A322F] text-white ">
       <div className="text-4xl mb-10 font-bold">What sets us apart</div>
       <div className="flex flex-col md:items-center lg:flex-row gap-6">
-        <div className="flex-[2]">
+        <div className="flex-[2] flex justify-end">
+          <div className="w-full md:w-[90%]">
           <Reason
             name={reasons[indicatorIndex - 1].name}
             summary={reasons[indicatorIndex - 1].summary}
           />
+          </div>
         </div>
         <div className="flex-[3] w-full max-lg:mt-8">
           <ImageSwitcher indicatorIndex={indicatorIndex} setIndicatorIndex={setIndicatorIndex} />

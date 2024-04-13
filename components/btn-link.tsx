@@ -8,13 +8,16 @@ export default function BtnLink({ title, to = "#" }: { title: string; to?: strin
         <div
         style={{backgroundColor: PRIMARY_GREEN}}
           className={`
-          cursor-pointer 
-          hover:opacity-70 
-          active:opacity-100 
+          cursor-pointer
+          transition-transform
+          duration-300 
+          hover:scale-95 
+          active:opacity-50
           text-white 
           px-[33px] 
           py-[14px] 
           rounded-lg 
+          text-center
           text-lg`}
         >
           {title}

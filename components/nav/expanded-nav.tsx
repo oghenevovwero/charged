@@ -9,8 +9,8 @@ import BtnLink from "../btn-link";
 import { EXPANDED_NAV_HEIGHT, NORNAL_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
 
 export default function ExpandedNav() {
-  const transparentStyle = `bg-transparent text-white pt-2 h-[${EXPANDED_NAV_HEIGHT}px]`;
-  const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] text-white shadow-lg py-2 h-[${NORNAL_NAV_HEIGHT}px]`;
+  const transparentStyle = `bg-transparent text-white pt-2 h-28`;
+  const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] text-white shadow-xl py-2 h-20 sm:h-24`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
@@ -34,7 +34,7 @@ export default function ExpandedNav() {
   return (
     <nav
       style={{ transition: "all 0.35s linear"}}
-      className={`fixed  flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed  flex left-0 right-0 z-10 text-semibold h-24 text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
