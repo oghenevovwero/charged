@@ -5,10 +5,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
-import { extendedNavHeight, normalNavHeight, primaryBlue } from "@/constants";
+import { primaryBlue } from "@/constants";
 import BtnLink from "../btn-link";
 
 export default function ExpandedNav() {
+  const extendedNavHeight = 155;
+  const normalNavHeight = 100;
   const transparentStyle = `bg-transparent text-white pt-2 h-[${extendedNavHeight}px]`;
   const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg py-2 h-[${normalNavHeight}px]`;
 
