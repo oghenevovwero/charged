@@ -2,7 +2,6 @@ import Image from "next/image";
 import chevronImg from "@/public/down-chevron.png";
 import chargeImg from "@/public/charge-at-station.png";
 import Container from "../container";
-import { primaryGreen } from "@/constants";
 
 export default function ContactUs() {
   return (
@@ -63,7 +62,7 @@ export default function ContactUs() {
             <div className="text-lg font-medium">You agree to our friendly privacy policy.</div>
           </div>
           <div className="w-full flex justify-center mt-10">
-            <button className={`bg-[${primaryGreen}] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md`}>
+            <button className={`bg-[${process.env.primaryGreen}] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md`}>
               Send Message
             </button>
           </div>

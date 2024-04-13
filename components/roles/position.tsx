@@ -3,12 +3,11 @@ import clockImg from "@/public/clock-icon.png";
 import locationImg from "@/public/location-icon.png";
 import jobImg from "@/public/view-job.png";
 import { Role } from "@/types";
-import { primaryGreen } from "@/constants";
 
 export default function Position({ name, role }: Role) {
   return (
     <div className="rounded-lg border text-sm md:w-1/2 p-2 sm:p-4">
-      <div className={`flex justify-between text-[${primaryGreen}] text-sm items-center font-medium`}>
+      <div className={`flex justify-between text-[${process.env.primaryGreen}] text-sm items-center font-medium`}>
         <div className="font-bold text-sm">{name}</div>
         <div className="flex gap-1 items-center">
           <div className="cursor-pointer active:opacity-50 font-medium">View job</div>
