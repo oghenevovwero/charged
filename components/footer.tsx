@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className="bg-[#1C211F] py-12 md:py-24 text-white">
       <Padding className="py-0">
-        <div className="flex flex-col mb-6 sm:flex-row sm:justify-between items-start">
+        <div className="flex flex-col mb-6 sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
               <Image src={logoImg} height={40} width={100} alt="Our logo" />
