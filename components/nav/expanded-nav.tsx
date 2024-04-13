@@ -9,7 +9,7 @@ import { extendedNavHeight, normalNavHeight, primaryBlue } from "@/constants";
 import BtnLink from "../btn-link";
 
 export default function ExpandedNav() {
-  const transparentStyle = "bg-transparent text-white";
+  const transparentStyle = `bg-transparent text-white h-[${extendedNavHeight}px]`;
   const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg h-[${normalNavHeight}px]`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
@@ -34,7 +34,7 @@ export default function ExpandedNav() {
   return (
     <nav
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed h-[${extendedNavHeight}px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed  flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
@@ -44,17 +44,17 @@ export default function ExpandedNav() {
         items-center
         w-full"
       >
-        <Link
-          href={"/"}
-          className="cursor-pointer hover:opacity-75 active:opacity-100"
-          onClick={() => {
-            scrollHandler();
-          }}
-        >
-          <div className="">
-            <Image src={logoImg} height={80} width={100} alt="Our logo" />
-          </div>
-        </Link>
+        <div className="py-2 h-full w-fit flex items-center">
+          <Link
+            href={"/"}
+            className="cursor-pointer hover:opacity-75 active:opacity-100"
+            onClick={() => {
+              scrollHandler();
+            }}
+          >
+            <Image src={logoImg} height={70} width={85} alt="Our logo" />
+          </Link>
+        </div>
         <div className="flex gap-6 justify-around items-center font-medium">
           <Link
             href={"/about"}
