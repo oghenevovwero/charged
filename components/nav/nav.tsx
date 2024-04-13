@@ -1,5 +1,3 @@
-'use client';
-
 import ExpandedNav from "./expanded-nav";
 import MinimizedTopNav from "./minimized-nav";
 

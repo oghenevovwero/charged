@@ -3,30 +3,40 @@ import bannerImg from "@/public/charger2.png";
 import appleImg from "@/public/apple.png";
 import playImg from "@/public/playstore.png";
 import Container from "../container";
+import ExpandedNav from "../nav/expanded-nav";
+import Nav from "../nav/nav";
+import BannerContent from "../banner";
+import Padding from "../padding";
+import { primaryBlue } from "@/constants";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen  relative overflow-x-clip">
-      <Image
-        src={bannerImg}
-        placeholder="blur"
-        alt="welcome to get charged"
-        quality={100}
-        priority
-        fill
-        sizes="120vw"
-        style={{ objectFit: "cover" }}
-      />
-      <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
-        <Container className="flex flex-col gap-5 items-start text-white">
+    <div className="h-screen w-screen bg-white relative overflow-x-clip">
+      <div className="w-[100.5%] h-full absolute right-0">
+        <Image
+          src={bannerImg}
+          placeholder="blur"
+          alt="welcome to get charged"
+          quality={100}
+          priority
+          className="absolute w-[200%]"
+          fill
+          // sizes="120vw"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+      <BannerContent className="flex items-center text-white">
+        <Padding className="">
           <div className="sm:w-[60%]">
             <div className="text-6xl font-semibold">Get charged, anytime, anywhere</div>
-            <div className="text-xl mt-10 mb-8 font-light">
+            <div className="text-xl mt-8 mb-6 font-light">
               Introducing a revolutionary charging service that brings the power to you
             </div>
           </div>
-          <div className="flex gap-3 justify-center items-center">
-            <div className="p-2 cursor-pointer bg-[#1A202B] active:opacity-50 hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+          <div className="flex gap-3 items-center">
+            <div
+              className={`p-2 cursor-pointer bg-[${primaryBlue}] active:opacity-50 hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center`}
+            >
               <div>
                 <Image src={appleImg} width={20} height={20} alt="Get on app store" quality={100} />
               </div>
@@ -35,7 +45,9 @@ export default function HomeBanner() {
                 <div className="text-[12px] font-semibold">App Store</div>
               </div>
             </div>
-            <div className="p-2 rounded-lg bg-[#1A202B] cursor-pointer hover:opacity-75 active:opacity-50 text-white border border-gray-500 flex gap-1 items-center">
+            <div
+              className={`p-2 rounded-lg bg-[${primaryBlue}] cursor-pointer hover:opacity-75 active:opacity-50 text-white border border-gray-500 flex gap-1 items-center`}
+            >
               <div>
                 <Image src={playImg} width={20} height={20} alt="Get on play store" quality={100} />
               </div>
@@ -45,8 +57,8 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-        </Container>
-      </div>
+        </Padding>
+      </BannerContent>
     </div>
   );
 }

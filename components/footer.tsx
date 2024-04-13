@@ -5,6 +5,7 @@ import appleImg from "@/public/apple.png";
 import playImg from "@/public/footer-play.png";
 import footerChargeImg from "@/public/footer-charge.png";
 import Padding from "./padding";
+import { primaryGreen } from "@/constants";
 
 export default function Footer() {
   return (
@@ -54,28 +55,46 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-start text-sm flex-col md:flex-row gap-7 md:gap-10">
-          <Link href={"/about"} className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href={"/about"}
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             About us
           </Link>
           <Link
             href="/pricing"
-            className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
           >
             Pricing
           </Link>
-          <Link href="/faqs" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href="/faqs"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             FAQs
           </Link>
-          <Link href="/careers" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href="/careers"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             Careers
           </Link>
-          <Link href="/contact" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href="/contact"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             Contact us
           </Link>
-          <Link href="/policy" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href="/policy"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             Privacy policy
           </Link>
-          <Link href="/conditions" className="cursor-pointer md:hover:text-[#00A63D] active:opacity-60">
+          <Link
+            href="/conditions"
+            className={`cursor-pointer md:hover:text-[${primaryGreen}] active:opacity-60`}
+          >
             Terms & Conditions
           </Link>
         </div>

@@ -7,6 +7,8 @@ import customerImg from "@/public/man-in-suit.png";
 import Link from "next/link";
 import Container from "../container";
 import Padding from "../padding";
+import { primaryGreen } from "@/constants";
+import BtnLink from "../btn-link";
 
 export default function Availability() {
   return (
@@ -41,10 +43,8 @@ export default function Availability() {
             />
           </div>
         </div>
-        <div className="w-full flex justify-start sm:justify-center items-center">
-          <Link href={"/roles"} className="mt-6 md:mt-12 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
-            View open roles
-          </Link>
+        <div className="w-full flex justify-start sm:justify-center items-center mt-6 md:mt-12">
+          <BtnLink to="roles" title="View open roles" />
         </div>
       </div>
     </Container>

@@ -6,6 +6,7 @@ import bootImg from "@/public/boot.png";
 import customerImg from "@/public/customer.png";
 import Container from "../container";
 import Padding from "../padding";
+import { primaryGreen } from "@/constants";
 
 export default function OurMission() {
   return (
@@ -16,7 +17,7 @@ export default function OurMission() {
       <div>
         <div className="flex justify-center">
           <div className="md:w-2/3 lg:w-1/2">
-            <div className="text-[#00A63D] text-center mb-8 text-lg font-bold">Our Mission</div>
+            <div className={`text-[${primaryGreen}] text-center mb-8 text-lg font-bold`}>Our Mission</div>
             <div className="text-4xl text-center  font-bold">
               Your Charge, Your way: Anytime, Anywhere you want it
             </div>

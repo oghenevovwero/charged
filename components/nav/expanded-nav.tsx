@@ -1,22 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
+import { extendedNavHeight, normalNavHeight, primaryBlue } from "@/constants";
+import BtnLink from "../btn-link";
 
 export default function ExpandedNav() {
   const transparentStyle = "bg-transparent text-white";
-  const nonTransparentStyle = "bg-[#1A202B] text-white shadow-lg h-[94px]";
+  const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg h-[${normalNavHeight}px]`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - 230) {
+    if (window.scrollY >= window.screen.height - 300) {
       setDynamicStyles(nonTransparentStyle);
     } else {
-      if (window.scrollY <= window.screen.height - 230) {
-        setDynamicStyles(transparentStyle);
-      }
+      setDynamicStyles(transparentStyle);
     }
   };
 
@@ -32,7 +34,7 @@ export default function ExpandedNav() {
   return (
     <nav
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed h-[155px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
+      className={`fixed h-[${extendedNavHeight}px] flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
@@ -102,14 +104,10 @@ export default function ExpandedNav() {
             <div>Contact</div>
             <div>us</div>
           </Link>
-          <button className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-75 active:opacity-100 text-white px-[33px] py-[14px] rounded-md ">
-            <div className="flex gap-1">
-              <div>Access</div>
-              <div>App</div>
-            </div>
-          </button>
+          <BtnLink title="Access App" />
         </div>
       </Padding>
+      <div className="h-[300px]"></div>
     </nav>
   );
 }

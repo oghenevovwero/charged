@@ -6,12 +6,13 @@ import Sustainability from "./sustainability";
 import chargeMeImg from "@/public/charge-me.png";
 import Container from "@/components/container";
 import Link from "next/link";
+import BtnLink from "@/components/btn-link";
 
 export default function ChargeMe() {
   return (
     <Container className="bg-[#F6F8F7] flex flex-col sm:flex-row justify-between gap-4">
       <div className="max-sm:hidden flex w-64 xl:w-80">
-        <Image src={chargeMeImg} alt="charge me" height={1050}  />
+        <Image src={chargeMeImg} alt="charge me" height={1050} />
       </div>
       <div className="text-4xl sm:hidden font-bold">CHARGE ME</div>
       <div className="">
@@ -21,10 +22,8 @@ export default function ChargeMe() {
           <Reliability />
           <Sustainability />
         </div>
-        <div className="w-full flex justify-start sm:justify-center items-center">
-          <Link href={"/contact"} className="mt-6 md:mt-12 bg-[#00A63D] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-[33px] py-[14px] rounded-lg text-lg ">
-            Book a charge
-          </Link>
+        <div className="mt-6 sm:mt-8 flex w-full justify-center items-center">
+          <BtnLink title="Book a charge" to="contact" />
         </div>
       </div>
     </Container>

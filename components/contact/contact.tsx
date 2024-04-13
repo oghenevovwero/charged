@@ -2,15 +2,16 @@ import Image from "next/image";
 import chevronImg from "@/public/down-chevron.png";
 import chargeImg from "@/public/charge-at-station.png";
 import Container from "../container";
+import { primaryGreen } from "@/constants";
 
 export default function ContactUs() {
   return (
-    <Container className="bg-white text-black flex flex-col items-center sm:flex-row gap-12 sm:gap-5 justify-between">
-      <div className="flex-1 mt-10">
+    <Container className="bg-white mt-10 text-black flex flex-col sm:flex-row gap-12 sm:gap-5 justify-between">
+      <div className="flex-1">
         <Image src={chargeImg} alt="charging" />
       </div>
       <div className="flex-1 w-full flex flex-col gap-5">
-        <div className="text-4xl font-bold">Get in touch</div>
+        <div className="text-5xl font-bold">Get in touch</div>
         <div className="text-light">Our friendly team would love to hear from you</div>
         <div className="w-full flex flex-col md:flex-row justify-between gap-4">
           <div className="w-full">
@@ -62,7 +63,7 @@ export default function ContactUs() {
             <div className="text-lg font-medium">You agree to our friendly privacy policy.</div>
           </div>
           <div className="w-full flex justify-center mt-10">
-            <button className="bg-[#00A63D] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md">
+            <button className={`bg-[${primaryGreen}] text-sm font-medium w-full cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-[14px] rounded-md`}>
               Send Message
             </button>
           </div>

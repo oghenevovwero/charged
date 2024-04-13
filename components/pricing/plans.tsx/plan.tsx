@@ -1,6 +1,7 @@
 import Image from "next/image";
 import greenTickImg from "@/public/green-tick.png";
 import { PricingPlan } from "@/types";
+import { primaryGreen } from "@/constants";
 
 export default function Plan({ plan, cost, duration, features, recommended }: PricingPlan) {
   return (
@@ -30,7 +31,7 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pr
         </div>
       </div>
       <div className="w-full mt-10">
-        <button className="border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[#00A63D]">Get started</button>
+        <button className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[${primaryGreen}]`}>Get started</button>
       </div>
     </div>
   );

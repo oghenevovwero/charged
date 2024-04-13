@@ -4,6 +4,7 @@ import Image from "next/image";
 import vanImg from "@/public/van.png";
 import greenTickImg from "@/public/green-tick.png";
 import { pricingPlans } from "@/data/pricing-plans";
+import { primaryGreen } from "@/constants";
 
 export default function Plans() {
   return (
@@ -50,7 +51,7 @@ export default function Plans() {
         </div>
 
         <div className="max-sm:w-full">
-          <button className="border w-full bg-white cursor-pointer active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[#00A63D]">
+          <button className={`border w-full bg-white cursor-pointer active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[${primaryGreen}]`}>
             <div className="flex items-center justify-center gap-1">
               <div>Get</div>
               <div>started</div>

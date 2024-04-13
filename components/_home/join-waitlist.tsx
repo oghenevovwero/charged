@@ -1,6 +1,7 @@
 import Image from "next/image";
 import plugImg from "@/public/unrounded-plug.png";
 import Container from "../container";
+import { primaryGreen } from "@/constants";
 
 export default function WaitList() {
   return (
@@ -17,7 +18,9 @@ export default function WaitList() {
               placeholder="Enter your email"
               className="bg-[#54645D] w-full h-full pl-2 sm:pl-6 py-5 pr-2 text-lg  placeholder:text-white  outline-none border border-white rounded-lg"
             />
-            <button className="bg-[#00A63D] text-lg absolute right-[6px] top-[6px] px-3 py-3 cursor-pointer hover:opacity-70 active:opacity-100 text-white rounded-md ">
+            <button
+              className={`bg-[${primaryGreen}] text-lg absolute right-[6px] top-[6px] px-3 py-3 cursor-pointer hover:opacity-70 active:opacity-100 text-white rounded-md`}
+            >
               Join waitlist
             </button>
           </div>

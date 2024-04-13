@@ -2,6 +2,7 @@ import Image from "next/image";
 import memberImg from "@/public/members.png";
 import Link from "next/link";
 import Container from "../container";
+import BtnLink from "../btn-link";
 
 export default function JoinTheTeam() {
   return (
@@ -13,12 +14,7 @@ export default function JoinTheTeam() {
           infrastructure for electric vehicles
         </div>
         <div className="mt-10">
-        <Link
-          href={"/roles"}
-          className="bg-[#00A63D] mt-10 cursor-pointer hover:opacity-75 active:opacity-100 text-white px-2 py-4 rounded-md "
-        >
-          View open roles
-        </Link>
+        <BtnLink title="View open roles" to="roles" />
         </div>
       </div>
       <div className="flex-1 relative">

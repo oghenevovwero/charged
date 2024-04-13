@@ -1,5 +1,3 @@
-'use client';
-
 import ExpandedContactNav from "./expanded-contact-nav";
 import MinimizedContactTopNav from "./min-contact-nav";
 

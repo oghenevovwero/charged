@@ -1,7 +1,10 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
+import BtnLink from "../btn-link";
 
 export default function ExpandedContactNav() {
   return (
@@ -45,12 +48,7 @@ export default function ExpandedContactNav() {
             <div>Contact</div>
             <div>us</div>
           </Link>
-          <button className="bg-[#00A63D] font-medium cursor-pointer hover:opacity-75 active:opacity-100 text-white px-[33px] py-[14px] rounded-md ">
-            <div className="flex gap-1">
-              <div>Access</div>
-              <div>App</div>
-            </div>
-          </button>
+          <BtnLink title="Access App" />
         </div>
       </Padding>
     </nav>
