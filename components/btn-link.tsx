@@ -1,3 +1,4 @@
+import { PRIMARY_GREEN } from "@/constants";
 import Link from "next/link";
 
 export default function BtnLink({ title, to = "#" }: { title: string; to?: string }) {
@@ -5,8 +6,8 @@ export default function BtnLink({ title, to = "#" }: { title: string; to?: strin
     <div className="w-fit">
       <Link href={`/${to}`}>
         <div
+        style={{backgroundColor: PRIMARY_GREEN}}
           className={`
-          bg-[${process.env.primaryGreen}]
           cursor-pointer 
           hover:opacity-70 
           active:opacity-100 

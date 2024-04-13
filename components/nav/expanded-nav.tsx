@@ -6,15 +6,16 @@ import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
 import BtnLink from "../btn-link";
+import { EXPANDED_NAV_HEIGHT, NORNAL_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
 
 export default function ExpandedNav() {
-  const transparentStyle = `bg-transparent text-white pt-2 h-[${process.env.extendedNavHeight}px]`;
-  const nonTransparentStyle = `bg-[${process.env.primaryBlue}] text-white shadow-lg py-2 h-[${process.env.normalNavHeight}px]`;
+  const transparentStyle = `bg-transparent text-white pt-2 h-[${EXPANDED_NAV_HEIGHT}px]`;
+  const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] text-white shadow-lg py-2 h-[${NORNAL_NAV_HEIGHT}px]`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - parseFloat(process.env.extendedNavHeight!)) {
+    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       setDynamicStyles(transparentStyle);
@@ -32,7 +33,7 @@ export default function ExpandedNav() {
 
   return (
     <nav
-      style={{ transition: "all 0.35s linear" }}
+      style={{ transition: "all 0.35s linear"}}
       className={`fixed  flex left-0 right-0 z-10 text-semibold text-lg ${dynamicStyles}`}
     >
       <Padding

@@ -15,7 +15,7 @@ export default function OurMission() {
       <div>
         <div className="flex justify-center">
           <div className="md:w-2/3 lg:w-1/2">
-            <div className={`text-[${process.env.primaryGreen}] text-center mb-8 text-lg font-bold`}>Our Mission</div>
+            <div className={`text-[${process.env.NEXT_PUBLIC_PG}] text-center mb-8 text-lg font-bold`}>Our Mission</div>
             <div className="text-4xl text-center  font-bold">
               Your Charge, Your way: Anytime, Anywhere you want it
             </div>

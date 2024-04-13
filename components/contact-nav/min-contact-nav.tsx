@@ -14,9 +14,9 @@ export default function MinimizedContactTopNav() {
     <nav
       className={`${
         openNav ? "h-screen" : "h-fit"
-      } text-white fixed inset-0 z-10 transition-all bg-[${process.env.primaryBlue}] shadow-lg`}
+      } text-white fixed inset-0 z-10 transition-all bg-[${process.env.NEXT_PUBLIC_PB}] shadow-lg`}
     >
-      <Padding className={`flex h-[${process.env.normalNavHeight}px] items-center justify-between`}>
+      <Padding className={`flex h-[${process.env.NEXT_PUBLIC_NH}px] items-center justify-between`}>
         <div className="w-fit h-full py-2">
           <Link href={"/"} className="cursor-pointer hover:opacity-75 active:opacity-50">
             <Image src={logoImg} height={50} width={80} alt="Our logo" />
@@ -99,7 +99,7 @@ export default function MinimizedContactTopNav() {
         </Link>
         <div className="w-fit">
           <button
-            className={`bg-[${process.env.primaryGreen}] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md`}
+            className={`bg-[${process.env.NEXT_PUBLIC_PG}] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md`}
           >
             Access App
           </button>

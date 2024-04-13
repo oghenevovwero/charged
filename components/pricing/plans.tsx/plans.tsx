@@ -50,7 +50,7 @@ export default function Plans() {
         </div>
 
         <div className="max-sm:w-full">
-          <button className={`border w-full bg-white cursor-pointer active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[${process.env.primaryGreen}]`}>
+          <button className={`border w-full bg-white cursor-pointer active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[${process.env.NEXT_PUBLIC_PG}]`}>
             <div className="flex items-center justify-center gap-1">
               <div>Get</div>
               <div>started</div>

@@ -30,7 +30,7 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pr
         </div>
       </div>
       <div className="w-full mt-10">
-        <button className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[${process.env.primaryGreen}]`}>Get started</button>
+        <button className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[${process.env.NEXT_PUBLIC_PG}]`}>Get started</button>
       </div>
     </div>
   );
