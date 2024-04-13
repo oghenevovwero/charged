@@ -1,13 +1,9 @@
-import Image from "next/image";
-import bannerImg from "@/public/charger2.png";
 import appleImg from "@/public/apple.png";
+import bannerImg from "@/public/charger2.png";
 import playImg from "@/public/playstore.png";
-import Container from "../container";
-import ExpandedNav from "../nav/expanded-nav";
-import Nav from "../nav/nav";
+import Image from "next/image";
 import BannerContent from "../banner";
 import Padding from "../padding";
-import { primaryBlue } from "@/constants";
 
 export default function HomeBanner() {
   return (
