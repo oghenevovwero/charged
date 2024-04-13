@@ -5,21 +5,24 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
-import { primaryBlue, normalNavHeight, primaryGreen } from "@/constants";
+import { primaryBlue, normalNavHeight, primaryGreen, extendedNavHeight } from "@/constants";
 
 export default function MinimizedTopNav() {
+  const transparentStyle = `bg-transparent h-[${extendedNavHeight}px]`;
+  const nonTransparentStyle = `bg-[${primaryBlue}] shadow-lg h-[${normalNavHeight}px]`;
+
   const navIsOpen = useRef(false);
   const [openNav, setOpenNav] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - 100) {
-      setDynamicStyles(`bg-[${primaryBlue}] shadow-lg`);
+    if (window.scrollY >= window.screen.height - extendedNavHeight) {
+      setDynamicStyles(nonTransparentStyle);
     } else {
       if (navIsOpen.current) {
-        setDynamicStyles(`bg-[${primaryBlue}] shadow-lg`);
+        setDynamicStyles(nonTransparentStyle);
       } else {
-        setDynamicStyles("bg-transparent");
+        setDynamicStyles(transparentStyle);
       }
     }
   };
@@ -35,20 +38,20 @@ export default function MinimizedTopNav() {
 
   return (
     <header
-      className={`${
-        openNav ? "h-screen" : `h-fit`
-      } text-white fixed inset-0 z-10  transition-all ${dynamicStyles}`}
+      style={{ transition: "all 0.35s linear" }}
+      className={`
+       text-white fixed right-0 left-0 z-10 transition-all py-2 ${dynamicStyles}`}
     >
-      <Padding className={`flex h-[${normalNavHeight}px] items-center justify-between`}>
-        <div className="w-fit h-full py-2">
+      <Padding className={`flex h-full items-center justify-between`}>
+        <div className="w-fit h-full flex items-center">
           <Link
             onClick={() => {
               scrollHandler();
             }}
             href={"/"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            className="cursor-pointer h-full w-full hover:opacity-75 active:opacity-50"
           >
-            <Image src={logoImg} height={50} width={80} alt="Our logo" />
+            <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
         </div>
         <button
@@ -90,7 +93,7 @@ export default function MinimizedTopNav() {
           </svg>
         </button>
       </Padding>
-      <Padding className={`${openNav ? "block" : "hidden"} py-4 h-full gap-6 text-xl `}>
+      <Padding className={`${openNav ? `block bg-[${primaryBlue}] h-screen` : "hidden"} pt-7 gap-6 text-lg`}>
         <Link
           onClick={() => {
             scrollHandler();

@@ -9,13 +9,13 @@ import { extendedNavHeight, normalNavHeight, primaryBlue } from "@/constants";
 import BtnLink from "../btn-link";
 
 export default function ExpandedNav() {
-  const transparentStyle = `bg-transparent text-white h-[${extendedNavHeight}px]`;
-  const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg h-[${normalNavHeight}px]`;
+  const transparentStyle = `bg-transparent text-white pt-2 h-[${extendedNavHeight}px]`;
+  const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg py-2 h-[${normalNavHeight}px]`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - 300) {
+    if (window.scrollY >= window.screen.height - extendedNavHeight) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       setDynamicStyles(transparentStyle);
@@ -38,21 +38,21 @@ export default function ExpandedNav() {
     >
       <Padding
         className="
-        py-2
         flex 
         justify-between 
         items-center
+        h-full
         w-full"
       >
-        <div className="py-2 h-full w-fit flex items-center">
+        <div className="h-full w-fit flex items-center">
           <Link
             href={"/"}
-            className="cursor-pointer hover:opacity-75 active:opacity-100"
+            className="cursor-pointer h-full w-full hover:opacity-75 active:opacity-100"
             onClick={() => {
               scrollHandler();
             }}
           >
-            <Image src={logoImg} height={70} width={85} alt="Our logo" />
+            <Image src={logoImg} className="w-full h-full" alt="Our logo" />
           </Link>
         </div>
         <div className="flex gap-6 justify-around items-center font-medium">
@@ -107,7 +107,6 @@ export default function ExpandedNav() {
           <BtnLink title="Access App" />
         </div>
       </Padding>
-      <div className="h-[300px]"></div>
     </nav>
   );
 }
