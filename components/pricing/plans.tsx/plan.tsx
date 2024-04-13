@@ -1,8 +1,15 @@
 import Image from "next/image";
 import greenTickImg from "@/public/green-tick.png";
 import { PricingPlan } from "@/types";
+import Link from "next/link";
 
-export default function Plan({ plan, cost, duration, features, recommended }: PricingPlan) {
+export default function Plan({
+  plan,
+  cost,
+  duration,
+  features,
+  recommended,
+}: PricingPlan) {
   return (
     <div className="rounded-lg border shadow-md p-2 md:p-3 lg:p-5">
       <div>
@@ -22,7 +29,12 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pr
           {features.map((feature, index) => (
             <div key={index} className="flex gap-[6px] items-start">
               <div className="flex-[1]">
-                <Image src={greenTickImg} width={20} height={20} alt="included in plan" />
+                <Image
+                  src={greenTickImg}
+                  width={20}
+                  height={20}
+                  alt="included in plan"
+                />
               </div>
               <div className="text-sm font-medium flex-[10]">{feature}</div>
             </div>
@@ -30,7 +42,17 @@ export default function Plan({ plan, cost, duration, features, recommended }: Pr
         </div>
       </div>
       <div className="w-full mt-10">
-        <button className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer active:opacity-50 font-medium text-sm border-[${process.env.NEXT_PUBLIC_PG}]`}>Get started</button>
+        <Link href="/contact">
+          <div
+            className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer 
+          transition-transform
+          duration-300 
+          hover:scale-95           
+          active:opacity-50 font-medium text-center text-sm border-[#00A63D]`}
+          >
+            Get started
+          </div>
+        </Link>
       </div>
     </div>
   );

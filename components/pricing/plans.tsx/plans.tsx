@@ -4,6 +4,7 @@ import Image from "next/image";
 import vanImg from "@/public/van.png";
 import greenTickImg from "@/public/green-tick.png";
 import { pricingPlans } from "@/data/pricing-plans";
+import Link from "next/link";
 
 export default function Plans() {
   return (
@@ -18,8 +19,8 @@ export default function Plans() {
         <div className="">
           <div className="font-bold mb-5 text-2xl">Roadside Assistance</div>
           <div className="">
-            Additionally, we offer a standalone roadside assistance plan aimed at providing peace of
-            mind to EV owners
+            Additionally, we offer a standalone roadside assistance plan aimed
+            at providing peace of mind to EV owners
           </div>
         </div>
 
@@ -33,7 +34,12 @@ export default function Plans() {
             <div className="w-full flex-1">
               <div className="flex gap-3 mb-5">
                 <div className="">
-                  <Image src={greenTickImg} width={20} height={20} alt="included in plan" />
+                  <Image
+                    src={greenTickImg}
+                    width={20}
+                    height={20}
+                    alt="included in plan"
+                  />
                 </div>
                 <div className="text-sm font-medium">
                   $0 for the first 10kWh during service calls.
@@ -41,28 +47,42 @@ export default function Plans() {
               </div>
               <div className="flex gap-3">
                 <div className="">
-                  <Image src={greenTickImg} width={20} height={20} alt="included in plan" />
+                  <Image
+                    src={greenTickImg}
+                    width={20}
+                    height={20}
+                    alt="included in plan"
+                  />
                 </div>
-                <div className="text-sm font-medium">3 service calls per year</div>
+                <div className="text-sm font-medium">
+                  3 service calls per year
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="max-sm:w-full">
-          <button className={`border w-full bg-white cursor-pointer active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[${process.env.NEXT_PUBLIC_PG}]`}>
-            <div className="flex items-center justify-center gap-1">
-              <div>Get</div>
-              <div>started</div>
+          <Link href={"/contact"}>
+            <div
+              className={`border w-full bg-white cursor-pointer transition-transform
+              duration-300 
+              hover:scale-95 
+              active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[#00A63D]`}
+            >
+              <div className="flex items-center justify-center gap-1">
+                <div>Get</div>
+                <div>started</div>
+              </div>
             </div>
-          </button>
+          </Link>
         </div>
       </div>
 
       <div className="shadow-lg px-2 py-5 md:p-3 lg:p-5 rounded-lg relative min-[1110px]:h-[400px]">
         <div className="font-medium text-lg lg:w-[70%] ">
-          We also do One-Time Service Call, For non-subscribers or customers who require occasional
-          assistance, we offer one-time service call requests
+          We also do One-Time Service Call, For non-subscribers or customers who
+          require occasional assistance, we offer one-time service call requests
         </div>
         <div className="max-lg:my-10">
           <Image src={vanImg} alt="van" className="min-[1110px]:float-end" />
@@ -77,8 +97,8 @@ export default function Plans() {
             *Additional Charge: $10 for every extra 10 kWh
           </div>
           <div className="text-[12px] ">
-            This option caters to individuals who may not require frequent charging services or
-            prefer a pay-as-you-go approach.
+            This option caters to individuals who may not require frequent
+            charging services or prefer a pay-as-you-go approach.
           </div>
         </div>
       </div>
