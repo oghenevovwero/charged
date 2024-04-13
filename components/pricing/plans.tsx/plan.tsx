@@ -11,7 +11,22 @@ export default function Plan({
   recommended,
 }: PricingPlan) {
   return (
-    <div className="rounded-lg border shadow-md p-2 md:p-3 lg:p-5">
+    <div
+      className="
+    rounded-lg 
+    border 
+    shadow-md 
+    p-2 
+    md:p-3 
+    lg:p-5 
+    transition-transform
+    duration-300 
+    hover:opacity-90
+    hover:shadow-xl
+    cursor-pointer
+    hover:scale-[97.5%]
+    "
+    >
       <div>
         <div className="flex items-center gap-3">
           <div className="font-medium text-lg">{plan}</div>
