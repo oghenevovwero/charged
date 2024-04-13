@@ -5,19 +5,16 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
-import { primaryBlue } from "@/constants";
 import BtnLink from "../btn-link";
 
 export default function ExpandedNav() {
-  const extendedNavHeight = 155;
-  const normalNavHeight = 100;
-  const transparentStyle = `bg-transparent text-white pt-2 h-[${extendedNavHeight}px]`;
-  const nonTransparentStyle = `bg-[${primaryBlue}] text-white shadow-lg py-2 h-[${normalNavHeight}px]`;
+  const transparentStyle = `bg-transparent text-white pt-2 h-[${process.env.extendedNavHeight}px]`;
+  const nonTransparentStyle = `bg-[${process.env.primaryBlue}] text-white shadow-lg py-2 h-[${process.env.normalNavHeight}px]`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - extendedNavHeight) {
+    if (window.scrollY >= window.screen.height - parseFloat(process.env.extendedNavHeight!)) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       setDynamicStyles(transparentStyle);

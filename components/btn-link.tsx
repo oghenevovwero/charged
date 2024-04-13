@@ -1,4 +1,3 @@
-import { primaryGreen } from "@/constants";
 import Link from "next/link";
 
 export default function BtnLink({ title, to = "#" }: { title: string; to?: string }) {
@@ -7,7 +6,7 @@ export default function BtnLink({ title, to = "#" }: { title: string; to?: strin
       <Link href={`/${to}`}>
         <div
           className={`
-          bg-[${primaryGreen}] 
+          bg-[${process.env.primaryGreen}]
           cursor-pointer 
           hover:opacity-70 
           active:opacity-100 

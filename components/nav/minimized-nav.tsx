@@ -5,18 +5,17 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logoImg from "@/public/the-logo.png";
 import Padding from "../padding";
-import { primaryBlue, normalNavHeight, primaryGreen, extendedNavHeight } from "@/constants";
 
 export default function MinimizedTopNav() {
-  const transparentStyle = `bg-transparent h-[${extendedNavHeight}px]`;
-  const nonTransparentStyle = `bg-[${primaryBlue}] shadow-lg h-[${normalNavHeight}px]`;
+  const transparentStyle = `bg-transparent h-[${process.env.extendedNavHeight}px]`;
+  const nonTransparentStyle = `bg-[${process.env.primaryBlue}] shadow-lg h-[${process.env.normalNavHeight}px]`;
 
   const navIsOpen = useRef(false);
   const [openNav, setOpenNav] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - extendedNavHeight) {
+    if (window.scrollY >= window.screen.height - parseFloat(process.env.extendedNavHeight!)) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       if (navIsOpen.current) {
@@ -93,7 +92,7 @@ export default function MinimizedTopNav() {
           </svg>
         </button>
       </Padding>
-      <Padding className={`${openNav ? `block bg-[${primaryBlue}] h-screen` : "hidden"} pt-7 gap-6 text-lg`}>
+      <Padding className={`${openNav ? `block bg-[${process.env.primaryBlue}] h-screen` : "hidden"} pt-7 gap-6 text-lg`}>
         <Link
           onClick={() => {
             scrollHandler();
@@ -129,7 +128,7 @@ export default function MinimizedTopNav() {
         </Link>
         <div className="w-fit">
           <button
-            className={`bg-[${primaryGreen}] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md`}
+            className={`bg-[${process.env.primaryGreen}] cursor-pointer hover:opacity-70 active:opacity-100 text-white px-2 py-2 rounded-md`}
           >
             Access App
           </button>
