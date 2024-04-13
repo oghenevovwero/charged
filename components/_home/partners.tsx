@@ -12,7 +12,7 @@ export default function Partners() {
     <Padding
       className="grid grid-cols-6
    items-center justify-items-center
-     gap-6 w-full h-full  py-4 md:py-6 bg-white"
+     gap-6 w-full h-full  py-5 bg-white"
     >
       <Image src={fordImg} className="justify-self-start" alt="ford logo" />
       <Image src={teslaImg} width={102} height={22} alt="Tesla logo" />

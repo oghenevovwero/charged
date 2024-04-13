@@ -5,7 +5,7 @@ import Padding from "../padding";
 
 export default function LagosMap() {
   return (
-    <div className="h-[55vh] relative overflow-clip">
+    <div className="h-[70vh] relative overflow-clip">
       <Image
         src={mapImg}
         placeholder="blur"
