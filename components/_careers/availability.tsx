@@ -1,14 +1,10 @@
-import Image from "next/image";
-import chargeImg from "@/public/about-charge.png";
-import pluggedInImg from "@/public/mechanic.png";
-import driverImg from "@/public/young-lady.png";
 import bootImg from "@/public/happy-driver.png";
 import customerImg from "@/public/man-in-suit.png";
-import Link from "next/link";
-import Container from "../container";
-import Padding from "../padding";
-import { primaryGreen } from "@/constants";
+import pluggedInImg from "@/public/mechanic.png";
+import driverImg from "@/public/young-lady.png";
+import Image from "next/image";
 import BtnLink from "../btn-link";
+import Container from "../container";
 
 export default function Availability() {
   return (

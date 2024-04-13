@@ -1,7 +1,6 @@
 import getChargingImg from "@/public/charger3.png";
 import Image from "next/image";
 import Container from "../container";
-import { primaryGreen } from "@/constants";
 import BtnLink from "../btn-link";
 
 export default function GetCharging() {
