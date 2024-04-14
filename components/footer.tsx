@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 max-sm:mb-6 max-sm:mt-10">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
-            <div className="flex flex-row items-center justify-center gap-2 md:flex-col">
+            <div className="flex flex-row items-center gap-2 md:flex-col">
               <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
                   <Image
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-7 text-sm md:flex-row md:gap-10">
+        <div className="flex flex-col justify-start gap-7 md:text-sm md:flex-row md:gap-10">
           <Link
             href={"/about"}
             className={`cursor-pointer md:hover:text-[${process.env.NEXT_PUBLIC_PG}] active:opacity-60`}

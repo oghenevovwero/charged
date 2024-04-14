@@ -39,6 +39,9 @@ export default function FAQs() {
         </div>
         <RenderFAQs questions={homePageQuestions} />
       </div>
+      {/* even though waitlist comes after this section,
+       we this here, so that the jump to that section can be more accurate */}
+      <div id="waitlist" className="h-0 w-0" />
     </Container>
   );
 }

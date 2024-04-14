@@ -6,11 +6,11 @@ import { PRIMARY_GREEN } from "@/constants";
 
 export default function ContactUs() {
   return (
-    <Container className="mt-10 flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
-      <div className="flex-1">
+    <Container className="flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
+      <div className="flex-1 mt-12">
         <Image src={chargeImg} alt="charging" />
       </div>
-      <div className="flex w-full flex-1 flex-col gap-5">
+      <div className="flex w-full flex-1 flex-col gap-5 sm:mt-12">
         <div className="text-5xl font-bold">Get in touch</div>
         <div className="text-light">
           Our friendly team would love to hear from you

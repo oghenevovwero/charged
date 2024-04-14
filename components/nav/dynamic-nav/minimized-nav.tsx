@@ -13,7 +13,7 @@ export default function MinimizedDynamicNav() {
   const transparentStyle = `bg-transparent h-28`;
   const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] shadow-xl h-20 sm:h-24`;
 
-  const pathName = usePathname()
+  const pathName = usePathname();
 
   const navIsOpen = useRef(false);
   const [openNav, setOpenNav] = useState(false);
@@ -50,7 +50,7 @@ export default function MinimizedDynamicNav() {
         <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="h-full w-full cursor-pointer md:hover:opacity-60 active:opacity-50"
+            className="h-full w-full cursor-pointer active:opacity-50 md:hover:opacity-60"
           >
             <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
@@ -101,31 +101,31 @@ export default function MinimizedDynamicNav() {
       >
         <Link
           href={"/about"}
-          className={`${pathName === "/about" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
+          className={`${pathName === "/about" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           About us
         </Link>
         <Link
           href={"/pricing"}
-          className={`${pathName === "/pricing" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
+          className={`${pathName === "/pricing" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Pricing
         </Link>
         <Link
           href={"/faqs"}
-          className={`${pathName === "/faqs" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
+          className={`${pathName === "/faqs" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           FAQs
         </Link>
         <Link
           href={"/careers"}
-          className={`${pathName === "/careers" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
+          className={`${pathName === "/careers" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Careers
         </Link>
         <Link
           href={"/contact"}
-          className={`${pathName === "/contact" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
+          className={`${pathName === "/contact" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Contact us
         </Link>

@@ -28,7 +28,7 @@ export default function RenderFAQs({ questions }: { questions: FAQ[] }) {
                 display: openedQuestionIndex === index ? "block" : "none",
                 transition: "display 0.5s linear",
               }}
-              className="mt-4 text-gray-500"
+              className="mt-4 text-gray-500 font-light"
             >
               {faq.answer}
             </div>

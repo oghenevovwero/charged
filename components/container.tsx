@@ -5,6 +5,7 @@ type Props = {
   className?: string;
   excludeTop?: boolean;
   excludeBottom?: boolean;
+  id?: string;
 };
 
 export default function Container({
@@ -12,9 +13,11 @@ export default function Container({
   className,
   excludeTop,
   excludeBottom,
+  id,
 }: Props) {
   return (
     <section
+      id={id}
       className={`
       px-3 
       sm:px-8 
