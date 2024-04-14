@@ -16,9 +16,9 @@ export default function Plans() {
       </div>
 
       <div className="mb-12 flex flex-col items-center justify-between gap-10 rounded-lg px-2 pb-6 pt-2 shadow-lg sm:flex-row sm:gap-2 md:px-3 md:pb-10 md:pt-3 lg:gap-4 lg:px-5 lg:pb-20 lg:pt-5">
-        <div className="">
+        <div>
           <div className="mb-5 text-2xl font-bold">Roadside Assistance</div>
-          <div className="">
+          <div>
             Additionally, we offer a standalone roadside assistance plan aimed
             at providing peace of mind to EV owners
           </div>
@@ -33,7 +33,7 @@ export default function Plans() {
 
             <div className="w-full flex-1">
               <div className="mb-5 flex gap-3">
-                <div className="">
+                <div>
                   <Image
                     src={greenTickImg}
                     width={20}
@@ -46,7 +46,7 @@ export default function Plans() {
                 </div>
               </div>
               <div className="flex gap-3">
-                <div className="">
+                <div>
                   <Image
                     src={greenTickImg}
                     width={20}

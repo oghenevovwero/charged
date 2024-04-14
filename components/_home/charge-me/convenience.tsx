@@ -10,7 +10,7 @@ export default function Convenience() {
           className="w-full rounded-lg"
           alt="get convenience"
         />
-        <div className="absolute bottom-4  flex w-full items-center justify-center">
+        <div className="absolute animate-bounce bottom-4  flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
               src={"/e1.png"}
@@ -19,7 +19,7 @@ export default function Convenience() {
               className="rounded-lg object-cover"
               alt="BMW logo"
             />
-            <div className="">
+            <div>
               <div className="text-sm font-semibold sm:text-[12px] md:text-sm">
                 Charge scheduled successfully
               </div>
@@ -30,11 +30,11 @@ export default function Convenience() {
       </div>
 
       <div>
-        <div className="mb-4 mt-6 text-xl font-bold">Convenience</div>
-        <div className="text-lg">
+        <header className="mb-4 mt-6 text-xl font-bold">Convenience</header>
+        <p className="text-lg">
           Schedule a charging appointment at your preferred location,
           eliminating the hassle of searching for stations.
-        </div>
+        </p>
       </div>
     </div>
   );

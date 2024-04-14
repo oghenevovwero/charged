@@ -103,7 +103,7 @@ export default function Footer() {
       <div className="my-8 flex items-center justify-center px-2 md:my-16">
         <Image src={footerChargeImg} alt="charge" quality={100} />
       </div>
-      <Padding className="">
+      <Padding>
         <div className="mb-2 h-[1px] w-full bg-gray-400" />
         <div className="flex items-center justify-between text-[#8C9E96] ">
           <div className=" text-sm">

@@ -26,7 +26,7 @@ export default function Partners() {
         className="max-md:justify-self-start"
         alt="byd logo"
       />
-      <Image src={bmwImg} className="" width={73} height={53} alt="BMW logo" />
+      <Image src={bmwImg} width={73} height={53} alt="BMW logo" />
 
       <Image src={hyundaiImg} className="justify-self-end" alt="hyundai logo" />
     </Padding>

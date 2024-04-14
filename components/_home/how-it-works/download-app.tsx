@@ -1,6 +1,5 @@
-import Image from "next/image";
 import downloadImg from "@/public/asd.png";
-import Padding from "@/components/padding";
+import Image from "next/image";
 
 export default function DownloadApp() {
   return (
@@ -13,7 +12,7 @@ export default function DownloadApp() {
         alt={"Download our app"}
       />
       <div className="mb-4 mt-8 text-2xl font-semibold">Download the app</div>
-      <div className="">
+      <div>
         Our user-friendly app is your gateway to our charging control center.
       </div>
     </div>

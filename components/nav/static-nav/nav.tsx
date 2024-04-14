@@ -3,7 +3,7 @@ import MinimizedStaticNav from "./minimized-nav";
 
 export default function ContactNav() {
   return (
-    <div className="">
+    <div>
       <div className="lg:hidden">
         <MinimizedStaticNav />
       </div>

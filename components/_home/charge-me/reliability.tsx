@@ -19,7 +19,7 @@ export default function Reliability() {
               className="rounded-lg object-cover"
               alt="We are reliable"
             />
-            <div className="">
+            <div>
               <div className="text-sm font-semibold sm:text-[12px] md:text-sm">
                 Service man is on his way
               </div>
@@ -29,11 +29,11 @@ export default function Reliability() {
       </div>
 
       <div>
-        <div className="mb-4 mt-6 text-xl font-bold">Reliability</div>
-        <div className="text-lg">
+        <header className="mb-4 mt-6 text-xl font-bold">Reliability</header>
+        <p className="text-lg">
           Experienced and certified experts to deliver safe and efficient
           charging for your electric vehicle.
-        </div>
+        </p>
       </div>
     </div>
   );

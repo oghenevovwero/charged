@@ -7,7 +7,7 @@ import Padding from "../padding";
 
 export default function HomeBanner() {
   return (
-    <div className="relative h-screen w-screen overflow-x-clip bg-white">
+    <section className="relative h-screen w-screen overflow-x-clip bg-white">
       <div className="absolute right-0 h-full w-[100.5%]">
         <Image
           src={bannerImg}
@@ -22,15 +22,15 @@ export default function HomeBanner() {
         />
       </div>
       <BannerContent className="flex items-center text-white">
-        <Padding className="">
+        <Padding>
           <div className="sm:w-[60%]">
-            <div className="text-6xl font-semibold">
+            <header className="text-6xl font-semibold">
               Get charged, anytime, anywhere
-            </div>
-            <div className="mb-6 mt-8 text-xl font-light">
+            </header>
+            <header className="mb-6 mt-8 text-xl font-light">
               Introducing a revolutionary charging service that brings the power
               to you
-            </div>
+            </header>
           </div>
           <div className="flex items-center gap-3">
             <div
@@ -70,6 +70,6 @@ export default function HomeBanner() {
           </div>
         </Padding>
       </BannerContent>
-    </div>
+    </section>
   );
 }

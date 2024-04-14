@@ -19,7 +19,7 @@ export default function Sustainability() {
               className="rounded-lg object-cover"
               alt="BMW logo"
             />
-            <div className="">
+            <div>
               <div className="text-sm font-semibold sm:text-[12px] md:text-sm">
                 Charging completed
               </div>
@@ -29,11 +29,11 @@ export default function Sustainability() {
       </div>
 
       <div>
-        <div className="mb-4 mt-6 text-xl font-bold">Sustainability</div>
-        <div className="text-lg">
+        <header className="mb-4 mt-6 text-xl font-bold">Sustainability</header>
+        <p className="text-lg">
           Use a clean and eco-friendly charging solution to reduce your carbon
           footprint.
-        </div>
+        </p>
       </div>
     </div>
   );

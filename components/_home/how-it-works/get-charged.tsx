@@ -13,7 +13,7 @@ export default function GetCharged() {
         alt={"Download our app"}
       />
       <div className="mb-4 mt-8 text-2xl font-semibold">Get charged</div>
-      <div className="">
+      <div>
         Our truck arrives on time and powers up your vehicle as per requirement.
       </div>
     </div>

@@ -12,7 +12,7 @@ export default function Flexibility() {
         />
         <div className="absolute bottom-4 flex w-full items-center justify-center">
           <div className="rounded-lg bg-white p-2 text-black">
-            <div className="">
+            <div>
               <div className="mb-1 text-sm font-semibold">
                 What would you like to do
               </div>
@@ -48,11 +48,11 @@ export default function Flexibility() {
       </div>
 
       <div>
-        <div className="mb-4 mt-6 text-xl font-bold">Flexibility</div>
-        <div className="text-lg">
+        <header className="mb-4 mt-6 text-xl font-bold">Flexibility</header>
+        <p className="text-lg">
           Choose from various charging options to fit your needs, from quick
           top-ups to full charges.
-        </div>
+        </p>
       </div>
     </div>
   );

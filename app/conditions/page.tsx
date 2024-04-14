@@ -11,7 +11,7 @@ export default function TermsAndConditions() {
           <div className="mb-5 text-2xl font-bold">
             Last updated : March 19, 2024
           </div>
-          <div className="">
+          <div>
             We, Charge Me Now LLC (&apos;C M N&apos;, &apos;Company&apos;,
             &apos;we&apos;, &apos;us&apos;, or &apos;our&apos;), are a
             registered company located in Broward County, Coral Springs,
@@ -44,7 +44,7 @@ export default function TermsAndConditions() {
             <div className="mt-8 text-xl font-bold">
               1. Acceptance of Terms:
             </div>
-            <div className="">
+            <div>
               By using the Services provided by Charge Me Now, you agree to be
               bound by these Terms of Service. If you do not agree with any part
               of these Terms, you may not access or use our Services.
@@ -52,74 +52,74 @@ export default function TermsAndConditions() {
             <div className="mt-8 text-xl font-bold">
               2. Description of Services:
             </div>
-            <div className="">
+            <div>
               Charge Me Now provides mobile EV charging stations and roadside
               assistance for electric vehicles. Our services aim to assist EV
               owners in recharging their vehicles conveniently and providing
               roadside support in case of emergencies or technical difficulties.
             </div>
             <div className="mt-8 text-xl font-bold">Service Coverage:</div>
-            <div className="">Limited to Broward County area.</div>
+            <div>Limited to Broward County area.</div>
             <div className="mt-8 text-xl font-bold">Service Location:</div>
-            <div className="">
+            <div>
               Our services are primarily conducted in covered car parks.
               However, services will not be carried out in open outdoor areas
               during rainy conditions.
             </div>
             <div className="mt-8 text-xl font-bold">Safety Compliance:</div>
-            <div className="">
+            <div>
               Charging operations must adhere to all traffic and safety
               regulations.
             </div>
             <div className="mt-8 text-xl font-bold">Liability:</div>
-            <div className="">
+            <div>
               We will address any damage caused during our services, excluding
               those resulting from manufacturer defects.
             </div>
             <div className="mt-8 text-xl font-bold">Non-Transferability:</div>
-            <div className="">
+            <div>
               Each service package is tied to a CMN registered member and cannot
               be transferred to someone else.
             </div>
             <div className="mt-8 text-xl font-bold">
               Minimum Charge Requirement
             </div>
-            <div className="">
+            <div>
               Charges below 20 kWh will be calculated based on emergency
               recovery rates.
             </div>
             <div className="mt-8 text-xl font-bold">
               Minimum Charge Limitation
             </div>
-            <div className="">
+            <div>
               Charging will cease at 80% of the vehicle&apos;s battery capacity
               to maintain battery efficiency.
             </div>
             <div className="mt-8 text-xl font-bold">
               Booking Procedure and Availability:
             </div>
-            <div className="">
+            <div>
               All bookings must be made through the designated App.
             </div>
             <div className="mt-8 text-xl font-bold">Cancellation Policy:</div>
-            <div className="">
+            <div>
               It is advisable to provide at least 60 minutes&apos; notice for
               cancellations. Failure to do so will result in the full booking
               charge.
             </div>
           </div>
           <div className="mt-8 text-xl font-bold">Parking Consideration:</div>
-          <div className="">
+          <div>
             Please ensure that parked vehicles are easily accessible and
             preferably under shelter.
           </div>
           <div className="mt-8 text-xl font-bold">Access Requirement:</div>
-          <div className="">
+          <div>
             It is recommended to remain reachable during charging in case access
             to the vehicle is necessary.
           </div>
           <div className="mt-8 text-xl font-bold">Payment Processing:</div>
-          <div className="">
+          <div>
             Following each service, you will be provided with a breakdown of
             charges, including consumed kWh and additional services. Payment or
             credit deduction will only occur upon completion of the service.
@@ -127,7 +127,7 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             3. Registration and Account Security:
           </div>
-          <div className="">
+          <div>
             To access certain features of our Services, you may be required to
             register an account. You agree to provide accurate and complete
             information during the registration process and to keep your account
@@ -138,25 +138,25 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             4. User Responsibilities:
           </div>
-          <div className="">
-            <div className="">
+          <div>
+            <div>
               a. You agree to provide accurate and up-to-date information when
               using our Service.
             </div>
-            <div className="">
+            <div>
               b. You are responsible for maintaining the confidentiality of your
               account information and for all activities that occur under your
               account.
             </div>
-            <div className="">
+            <div>
               c. You agree not to use the Service for any illegal or
               unauthorized purpose.
             </div>
           </div>
           <div className="mt-8 text-xl font-bold">5. Charging Services:</div>
           <div className="mt-4 font-bold">1. Subscription</div>
-          <div className="">
-            <div className="">
+          <div>
+            <div>
               a. Your CMN Subscription is tied to you, not your vehicle. You can
               access our services even when you&apos;re a passenger in another
               vehicle. However, non-members who drive your vehicle are not
@@ -195,7 +195,7 @@ export default function TermsAndConditions() {
               location and demand.
             </div>
 
-            <div className="">
+            <div>
               d. We strive to ensure the quality and safety of our charging
               stations, but we do not guarantee uninterrupted or error-free
               charging services.
@@ -203,14 +203,14 @@ export default function TermsAndConditions() {
           </div>
 
           <div className="mt-4 font-bold">2. Roadside Assistance</div>
-          <div className="">
+          <div>
             a. Charge Me Now offers roadside assistance services to EV owners.
           </div>
           <div className="my-4">
             b. Roadside assistance is subject to availability and may vary
             depending on location and circumstances.
           </div>
-          <div className="">
+          <div>
             c. To access our Services, your presence alongside the vehicle and
             verification of your subscription are required on-site. Our
             assistance is only provided when you&apos;re physically present with
@@ -226,7 +226,7 @@ export default function TermsAndConditions() {
             subscription level chosen by new subscribers.
           </div>
           <div className="mt-4 font-bold">3. Payment and Billing</div>
-          <div className="">
+          <div>
             a. The use of our Services may involve charges, which will be
             clearly communicated to you before you incur them. By using our
             Services, you agree to pay all applicable charges associated with
@@ -238,12 +238,12 @@ export default function TermsAndConditions() {
             b. Users are responsible for paying the fees associated with the use
             of our Service.
           </div>
-          <div className="">
+          <div>
             c. Payment methods accepted will be clearly outlined on our platform
           </div>
           <div className="mt-8 text-xl font-bold">6. Subscription renewal</div>
 
-          <div className="">
+          <div>
             Your subscription with Charge Me Now lasts for one year and will
             automatically extend for another year unless you inform us of your
             cancellation before the anniversary of your subscription. It&apos;s
@@ -251,14 +251,14 @@ export default function TermsAndConditions() {
             through the term.
           </div>
           <div className="mt-4 font-bold">1. Payment Options:</div>
-          <div className="">
+          <div>
             You have the choice to pay for your subscription upfront for the
             entire year or opt for monthly payments. If you choose the monthly
             payment plan, you are responsible for paying the full annual
             subscription amount.
           </div>
           <div className="mt-4 font-bold">2. Lapsed Subscriptions:</div>
-          <div className="">
+          <div>
             If subscription fees are not paid within 30 days after the expiry
             date, your subscription will be considered lapsed. If payment is
             made between 30 and 90 days after expiry, you can retain your
@@ -268,18 +268,18 @@ export default function TermsAndConditions() {
             will be treated as a new subscription.
           </div>
           <div className="mt-4 font-bold">3. Subscription Changes</div>
-          <div className="">
+          <div>
             You can modify your subscription, including upgrades, downgrades, or
             changes to payment methods, by accessing your account settings on
             the Charge Me Now mobile app or by contacting our customer support.
           </div>
           <div className="mt-4 font-bold">4. Subscription Pricing:</div>
-          <div className="">
+          <div>
             Subscription prices may change at any time. Charge Me Now reserves
             the right to adjust subscription fees, providing prior notice to
             subscribers as required by law.
           </div>
-          <div className="">
+          <div>
             Subscription prices may change at any time. Charge Me Now reserves
             the right to adjust subscription fees, providing prior notice to
             subscribers as required by law. By subscribing to Charge Me Now, you
@@ -289,7 +289,7 @@ export default function TermsAndConditions() {
           </div>
 
           <div className="mt-8 text-xl font-bold">7. Service Availability:</div>
-          <div className="">
+          <div>
             While we strive to provide reliable and uninterrupted Services, we
             do not guarantee that our Services will always be available. We may
             suspend or terminate the provision of our Services without prior
@@ -297,7 +297,7 @@ export default function TermsAndConditions() {
             unforeseen circumstances.
           </div>
           <div className="mt-8 text-xl font-bold">8. User Conduct:</div>
-          <div className="">
+          <div>
             You agree to use our Services in compliance with all applicable laws
             and regulations. You further agree not to engage in any activity
             that may interfere with or disrupt the proper functioning of our
@@ -307,7 +307,7 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             9. Intellectual Property:
           </div>
-          <div className="">
+          <div>
             All content and materials available through our Services, including
             but not limited to logos, trademarks, and software, are the property
             of Charge Me Now LLC or its licensors and are protected by
@@ -318,7 +318,7 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             10. Mobile Application License Agreement
           </div>
-          <div className="">
+          <div>
             This Mobile Application License Agreement (&quot;Agreement&quot;) is
             a legal agreement between you and Charge Me Now LLC
             (&quot;Licensor&quot;) for the use of the Charge Me Now mobile
@@ -326,7 +326,7 @@ export default function TermsAndConditions() {
             the App, you agree to be bound by the terms and conditions of this
             Agreement.
           </div>
-          <div className="">
+          <div>
             When utilizing the App acquired from either the Apple Store or
             Google Play (each referred to as an &apos;App Distributor&apos;) to
             access the Services, the following conditions are applicable:
@@ -382,14 +382,14 @@ export default function TermsAndConditions() {
             as a third-party beneficiary.
           </div>
           <div className="mt-8 text-xl font-bold">11. License Grant:</div>
-          <div className="">
+          <div>
             Licensor grants you a limited, non-exclusive, non-transferable,
             revocable license to download, install, and use the App solely for
             your personal, non-commercial use on a mobile device owned or
             controlled by you, in accordance with the terms of this Agreement.
           </div>
           <div className="mt-8 text-xl font-bold">12. Restrictions:</div>
-          <div className="">
+          <div>
             a. You may not modify, adapt, translate, reverse engineer,
             decompile, disassemble, or create derivative works based on the App.
           </div>
@@ -398,31 +398,31 @@ export default function TermsAndConditions() {
             otherwise transfer the App or any of its rights under this
             Agreement.
           </div>
-          <div className="">
+          <div>
             c. You may not remove, alter, or obscure any copyright, trademark,
             or other proprietary notices displayed in the App.
           </div>
           <div className="mt-8 text-xl font-bold">13. Ownership</div>
-          <div className="">
+          <div>
             The App and all intellectual property rights therein are owned by
             Licensor and its licensors. This Agreement does not convey any
             ownership rights in the App, but only a limited license to use as
             expressly set forth herein.
           </div>
           <div className="mt-8 text-xl font-bold">14. Updates:</div>
-          <div className="">
+          <div>
             Licensor may, from time to time, provide updates, modifications, or
             new versions of the App. You agree to promptly install and use such
             updates, modifications, or new versions as they become available.
           </div>
           <div className="mt-8 text-xl font-bold">15. Privacy Policy:</div>
-          <div className="">
+          <div>
             By using our Service, you agree to the collection and use of your
             information in accordance with our Privacy Policy, which can be
             found on our website.
           </div>
           <div className="mt-8 text-xl font-bold">16. Termination:</div>
-          <div className="">
+          <div>
             This Agreement is effective until terminated by you or Licensor. You
             may terminate this Agreement by uninstalling the App and ceasing all
             use. Licensor may terminate this Agreement at any time without
@@ -432,7 +432,7 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             17. Disclaimer of Warranty:
           </div>
-          <div className="">
+          <div>
             THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot;
             WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. LICENSOR
             DISCLAIMS ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, IMPLIED
@@ -440,7 +440,7 @@ export default function TermsAndConditions() {
             NONINFRINGEMENT.
           </div>
           <div className="mt-8 text-xl font-bold">18. Governing Law:</div>
-          <div className="">
+          <div>
             This Agreement shall be governed by and construed in accordance with
             the laws of the State of Florida, without regard to its conflict of
             law provisions.
@@ -448,7 +448,7 @@ export default function TermsAndConditions() {
           <div className="mt-8 text-xl font-bold">
             19. Limitation of Liability:
           </div>
-          <div className="">
+          <div>
             To the maximum extent permitted by law, Charge Me Now shall not be
             liable for any indirect, incidental, special, consequential, or
             punitive damages arising out of or related to your use of our
@@ -456,7 +456,7 @@ export default function TermsAndConditions() {
             damages.
           </div>
           <div className="mt-8 text-xl font-bold">20. Indemnification:</div>
-          <div className="">
+          <div>
             You agree to indemnify and hold Charge Me Now and its affiliates,
             officers, directors, employees, and agents harmless from any claims,
             liabilities, damages, losses, or expenses, including legal fees,
@@ -464,39 +464,39 @@ export default function TermsAndConditions() {
             your violation of these Terms.
           </div>
           <div className="mt-8 text-xl font-bold">21. Changes to Terms:</div>
-          <div className="">
+          <div>
             Charge Me Now reserves the right to modify or revise these Terms at
             any time, and such changes will be effective immediately upon
             posting. Your continued use of our Services following the posting of
             any changes to these Terms constitutes acceptance of those changes.
           </div>
           <div className="mt-8 text-xl font-bold">22. Governing Law:</div>
-          <div className="">
+          <div>
             These Terms shall be governed by and construed in accordance with
             the laws of the state of Florida where Charge Me Now is
             headquartered, without regard to its conflict of law principles.
           </div>
-          <div className="">
+          <div>
             The App and all intellectual property rights therein are owned by
             Licensor and its licensors. This Agreement does not convey any
             ownership rights in the App, but only a limited license to use as
             expressly set forth herein.
           </div>
           <div className="mt-8 text-xl font-bold">23. Updates:</div>
-          <div className="">
+          <div>
             Licensor may, from time to time, provide updates, modifications, or
             new versions of the App. You agree to promptly install and use such
             updates, modifications, or new versions as they become available.
           </div>
           <div className="mt-8 text-xl font-bold">24. Entire Agreement:</div>
-          <div className="">
+          <div>
             a. This Agreement constitutes the entire agreement between you and
             Licensor regarding the subject matter herein and supersedes all
             prior or contemporaneous agreements, communications, and proposals,
             whether oral or written, between you and Licensor regarding the
             subject matter herein.
           </div>
-          <div className="">
+          <div>
             b. By clicking &quot;I agree&quot; or by downloading, installing, or
             using the App, you acknowledge that you have read, understood, and
             agree to be bound by the terms and conditions of this Agreement. If
@@ -504,7 +504,7 @@ export default function TermsAndConditions() {
             the App.
           </div>
           <div className="mt-8 text-xl font-bold">25. Contact Us:</div>
-          <div className="">
+          <div>
             If you have any questions or concerns about these Terms of Service,
             please contact us at help@gochargemenow.com.By using our Services,
             you acknowledge that you have read, understood, and agree to be

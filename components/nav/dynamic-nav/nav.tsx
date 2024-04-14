@@ -3,7 +3,7 @@ import MinimizedDynamicNav from "./minimized-nav";
 
 export default function Nav() {
   return (
-    <div className="">
+    <div>
       <div className="lg:hidden">
         <MinimizedDynamicNav />
       </div>
