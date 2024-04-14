@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import Nav from "@/components/nav/nav";
+import Nav from "@/components/nav/dynamic-nav/nav";
 import AboutUsBanner from "@/components/about-us/about-banner";
 import JoinTheTeam from "@/components/about-us/join-team";
 import OurMission from "@/components/about-us/our-mission";

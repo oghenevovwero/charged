@@ -1,5 +1,5 @@
 import Container from "@/components/container";
-import ContactNav from "@/components/contact-nav/contact-nav";
+import ContactNav from "@/components/nav/static-nav/nav";
 
 export default function Policy() {
   return (

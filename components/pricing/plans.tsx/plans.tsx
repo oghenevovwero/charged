@@ -1,10 +1,10 @@
 import Container from "@/components/container";
-import Plan from "./plan";
-import Image from "next/image";
-import vanImg from "@/public/van.png";
-import greenTickImg from "@/public/green-tick.png";
 import { pricingPlans } from "@/data/pricing-plans";
+import greenTickImg from "@/public/green-tick.png";
+import vanImg from "@/public/van.png";
+import Image from "next/image";
 import Link from "next/link";
+import Plan from "./plan";
 
 export default function Plans() {
   return (

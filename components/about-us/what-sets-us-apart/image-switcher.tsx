@@ -29,7 +29,7 @@ export default function ImageSwitcher({
           </div>
           <div className="h-full flex items-end justify-center w-full">
             <div className="w-full xl:max-w-[350px] h-[85%]">
-              {indicatorIndex === 1 && (
+              {indicatorIndex === 0 && (
                 <FadeInRender>
                   <Image
                     style={{ transition: "all 1s linear" }}
@@ -40,7 +40,7 @@ export default function ImageSwitcher({
                   />
                 </FadeInRender>
               )}
-              {indicatorIndex === 2 && (
+              {indicatorIndex === 1 && (
                 <FadeInRender>
                   <Image
                     className="rounded-lg h-full w-full"
@@ -50,7 +50,7 @@ export default function ImageSwitcher({
                   />
                 </FadeInRender>
               )}
-              {indicatorIndex === 3 && (
+              {indicatorIndex === 2 && (
                 <FadeInRender>
                   <Image
                     style={{ transition: "all 1s linear" }}
@@ -65,7 +65,7 @@ export default function ImageSwitcher({
           </div>
           <div className="w-[40%] flex h-full items-start  relative overflow-clip">
             <div className="w-[200%] h-[80%] absolute">
-              {indicatorIndex === 1 && (
+              {indicatorIndex === 0 && (
                 <FadeInRender>
                   <Image
                     className="rounded-lg h-full w-full"
@@ -76,7 +76,7 @@ export default function ImageSwitcher({
                   />
                 </FadeInRender>
               )}
-              {indicatorIndex === 2 && (
+              {indicatorIndex === 1 && (
                 <FadeInRender>
                   <Image
                     className="rounded-lg h-full w-full"
@@ -87,7 +87,7 @@ export default function ImageSwitcher({
                   />
                 </FadeInRender>
               )}
-              {indicatorIndex === 3 && (
+              {indicatorIndex === 2 && (
                 <FadeInRender>
                   <Image
                     className="rounded-lg h-full w-full"

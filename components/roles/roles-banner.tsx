@@ -7,7 +7,7 @@ export default function RolesBanner() {
       <Image
         src={chargingImg}
         placeholder="blur"
-        alt="welcome to get charged"
+        alt="roles pages"
         priority
         quality={100}
         fill

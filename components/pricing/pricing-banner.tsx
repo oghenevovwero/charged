@@ -8,7 +8,7 @@ export default function PricingBanner() {
       <Image
         src={chargingImg}
         placeholder="blur"
-        alt="welcome to get charged"
+        alt="pricing page"
         priority
         quality={100}
         fill

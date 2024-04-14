@@ -1,12 +1,14 @@
 import { PRIMARY_GREEN } from "@/constants";
 import Link from "next/link";
 
-export default function BtnLink({ title, to = "#" }: { title: string; to?: string }) {
+type Props = { title: string; to?: string };
+
+export default function BtnLink({ title, to = "#" }: Props) {
   return (
     <div className="w-fit">
       <Link href={`/${to}`}>
         <div
-        style={{backgroundColor: PRIMARY_GREEN}}
+          style={{ backgroundColor: PRIMARY_GREEN }}
           className={`
           cursor-pointer
           transition-transform

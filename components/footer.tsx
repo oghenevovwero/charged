@@ -1,9 +1,9 @@
+import appleImg from "@/public/apple.png";
+import footerChargeImg from "@/public/footer-charge.png";
+import playImg from "@/public/footer-play.png";
+import logoImg from "@/public/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import logoImg from "@/public/the-logo.png";
-import appleImg from "@/public/apple.png";
-import playImg from "@/public/footer-play.png";
-import footerChargeImg from "@/public/footer-charge.png";
 import Padding from "./padding";
 
 export default function Footer() {
@@ -15,7 +15,9 @@ export default function Footer() {
             <Link href={"/"} className="cursor-pointer">
               <Image src={logoImg} height={40} width={100} alt="Our logo" />
             </Link>
-            <div className="text-[#EDF0EF]">Mobile EV charge that has your back</div>
+            <div className="text-[#EDF0EF]">
+              Mobile EV charge that has your back
+            </div>
           </div>
           <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
@@ -104,7 +106,9 @@ export default function Footer() {
       <Padding className="">
         <div className="h-[1px] bg-gray-400 w-full mb-2" />
         <div className="flex justify-between items-center text-[#8C9E96] ">
-          <div className=" text-sm">&copy; 2024 Charge Me. All Rights Reserved</div>
+          <div className=" text-sm">
+            &copy; 2024 Charge Me. All Rights Reserved
+          </div>
           <div className="flex gap-3 items-center">
             <div className="font-extrabold text-lg">X</div>
             <div>

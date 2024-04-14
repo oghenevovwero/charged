@@ -1,6 +1,6 @@
-import Image from "next/image";
 import greenTickImg from "@/public/green-tick.png";
 import { PricingPlan } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Plan({

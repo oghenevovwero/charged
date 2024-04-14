@@ -11,4 +11,6 @@ export type PricingPlan = {
   cost: string;
 };
 
+export type UniqueTrait = { name: string; summary: string };
+
 export type Role = { name: string; role: string };

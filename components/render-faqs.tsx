@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { FAQ } from "@/types";
 import { useState } from "react";

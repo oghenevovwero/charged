@@ -1,5 +1,5 @@
 import ContactUs from "@/components/contact/contact";
-import ContactNav from "@/components/contact-nav/contact-nav";
+import ContactNav from "@/components/nav/static-nav/nav";
 import Footer from "@/components/footer";
 
 export default function Contact(){

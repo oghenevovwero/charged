@@ -51,7 +51,10 @@ export default function FadeInRender({
   }, []);
 
   return (
-    <div style={{ transition: "all 0.7s linear", opacity: opacity }} className="h-full w-full">
+    <div
+      style={{ transition: "all 0.7s linear", opacity: opacity }}
+      className="h-full w-full"
+    >
       {children}
     </div>
   );

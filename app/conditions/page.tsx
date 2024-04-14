@@ -1,4 +1,4 @@
-import ContactNav from "@/components/contact-nav/contact-nav";
+import ContactNav from "@/components/nav/static-nav/nav";
 import Container from "@/components/container";
 
 export default function TermsAndConditions() {

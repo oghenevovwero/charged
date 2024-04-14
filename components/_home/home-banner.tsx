@@ -2,7 +2,7 @@ import appleImg from "@/public/apple.png";
 import bannerImg from "@/public/charger2.png";
 import playImg from "@/public/playstore.png";
 import Image from "next/image";
-import BannerContent from "../banner";
+import BannerContent from "../banner-content";
 import Padding from "../padding";
 
 export default function HomeBanner() {
