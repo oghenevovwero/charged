@@ -11,7 +11,7 @@ export default function ExpandedStaticNav() {
   const pathName = usePathname();
   return (
     <nav
-      className={`text-semibold fixed left-0 right-0 top-0 z-10 flex h-[94px] bg-[#1A202B] text-lg text-white shadow-lg`}
+      className={`text-semibold fixed left-0 right-0 top-0 z-10 flex h-20 sm:h-24 py-2 bg-[#1A202B] text-lg text-white shadow-lg`}
     >
       <Padding
         className="

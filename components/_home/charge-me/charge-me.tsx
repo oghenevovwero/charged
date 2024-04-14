@@ -23,7 +23,7 @@ export default function ChargeMe() {
           <Sustainability />
         </div>
         <div className="mt-6 flex w-full items-center justify-center sm:mt-8">
-          <BtnLink title="Book a charge" to="contact" />
+          <BtnLink title="Book a charge" to="#waitlist" />
         </div>
       </div>
     </Container>

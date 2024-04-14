@@ -8,7 +8,7 @@ import Padding from "./padding";
 
 export default function Footer() {
   return (
-    <div className="bg-[#1C211F] py-12 text-white md:py-24">
+    <div className="bg-[#1C211F] py-12 text-white md:py-24" id="footer">
       <Padding className="py-0">
         <div className="mb-6 flex flex-col sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 max-sm:mb-6 max-sm:mt-10">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
-            <div className="flex flex-row items-center justify-center gap-2 md:flex-col" id="footer">
+            <div className="flex flex-row items-center justify-center gap-2 md:flex-col">
               <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
                   <Image

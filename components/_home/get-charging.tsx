@@ -21,7 +21,7 @@ export default function GetCharging() {
             Get 24/7 charging delivery service for up to $0.58/KWh
           </div>
           <div className="mt-6 sm:mt-8">
-            <BtnLink title="Become a member" to="contact" />
+            <BtnLink title="Become a member" to="#waitlist" />
           </div>
         </Container>
       </div>

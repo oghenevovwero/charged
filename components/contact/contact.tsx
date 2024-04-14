@@ -6,7 +6,7 @@ import { PRIMARY_GREEN } from "@/constants";
 
 export default function ContactUs() {
   return (
-    <Container className="mt-10 md:mt-14 flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
+    <Container className="mt-10 flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
       <div className="flex-1">
         <Image src={chargeImg} alt="charging" />
       </div>

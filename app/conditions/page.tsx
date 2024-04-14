@@ -5,8 +5,8 @@ export default function TermsAndConditions() {
   return (
     <div>
       <ContactNav />
-      <Container className="flex flex-col items-center bg-white text-black mt-5 md:mt-8">
-        <div className="mt-5 bg-white text-black">
+      <Container className="flex flex-col items-center bg-white text-black">
+        <div className="mt-12 sm:mt-10 bg-white text-black">
           <div className="mb-10 text-4xl font-bold">Terms and conditions</div>
           <div className="mb-5 text-2xl font-bold">
             Last updated : March 19, 2024
