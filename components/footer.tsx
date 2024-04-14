@@ -1,10 +1,11 @@
 import appleImg from "@/public/apple.png";
 import footerChargeImg from "@/public/footer-charge.png";
-import playImg from "@/public/footer-play.png";
+import playImg from "@/public/playstore.png";
 import logoImg from "@/public/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import Padding from "./padding";
+import { GET_APP_CALL } from "@/constants";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col gap-2 max-sm:mb-6 max-sm:mt-10">
-            <div className="mb-2 text-lg font-medium">Download our app now</div>
+            <div className="mb-2 text-lg font-medium">{GET_APP_CALL}</div>
             <div className="flex flex-row items-center gap-2 md:flex-col">
               <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
@@ -33,7 +34,7 @@ export default function Footer() {
                   />
                 </div>
                 <div>
-                  <div className="text-[9px]">Download on the</div>
+                  <div className="text-[9px]">COMING SOON ON</div>
                   <div className="text-[13px] font-semibold">App Store</div>
                 </div>
               </div>
@@ -48,7 +49,7 @@ export default function Footer() {
                   />
                 </div>
                 <div>
-                  <div className="text-[9px]">GET IT ON</div>
+                  <div className="text-[9px]">COMING SOON ON</div>
                   <div className="text-[13px] font-semibold">Google play</div>
                 </div>
               </div>
