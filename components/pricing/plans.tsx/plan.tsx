@@ -57,7 +57,7 @@ export default function Plan({
         </div>
       </div>
       <div className="mt-10 w-full">
-        <Link href="/contact">
+        <Link href="/pricing#footer" className="scroll">
           <div
             className={`w-full cursor-pointer rounded-lg border border-[#00A63D] bg-white 
           py-[14px]
@@ -65,7 +65,7 @@ export default function Plan({
           text-sm           
           font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}
           >
-            Get started
+            Get started now
           </div>
         </Link>
       </div>

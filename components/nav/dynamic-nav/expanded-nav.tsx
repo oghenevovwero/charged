@@ -7,12 +7,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import BtnLink from "../../btn-link";
 import Padding from "../../padding";
+import { usePathname } from "next/navigation";
 
 export default function ExpandedDynamicNav() {
   const transparentStyle = `bg-transparent text-white pt-2 h-28`;
   const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] text-white shadow-xl py-2 h-20 sm:h-24`;
 
   const [dynamicStyles, setDynamicStyles] = useState(nonTransparentStyle);
+  const pathName = usePathname();
 
   const scrollHandler = () => {
     if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT) {
@@ -47,7 +49,7 @@ export default function ExpandedDynamicNav() {
         <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="h-full w-full cursor-pointer hover:opacity-75 active:opacity-100"
+            className="h-full w-full cursor-pointer hover:opacity-60 active:opacity-100"
           >
             <Image src={logoImg} className="h-full w-full" alt="Our logo" />
           </Link>
@@ -55,33 +57,31 @@ export default function ExpandedDynamicNav() {
         <div className="flex items-center justify-around gap-6 font-medium">
           <Link
             href={"/about"}
-            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
+            className={`${pathName === "/about" ? "text-[#00A630]" : ""} flex cursor-pointer items-center gap-1 hover:opacity-60 active:opacity-50`}
           >
-            <div>About</div>
-            <div>us</div>
+            About us
           </Link>
-
           <Link
             href={"/pricing"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            className={`${pathName === "/pricing" ? "text-[#00A630]" : ""} cursor-pointer hover:opacity-60 active:opacity-50`}
           >
             Pricing
           </Link>
           <Link
             href={"/faqs"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            className={`${pathName === "/faqs" ? "text-[#00A630]" : ""} cursor-pointer hover:opacity-60 active:opacity-50`}
           >
             FAQs
           </Link>
           <Link
             href={"/careers"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            className={`${pathName === "/careers" ? "text-[#00A630]" : ""} cursor-pointer hover:opacity-60 active:opacity-50`}
           >
             Careers
           </Link>
           <Link
             href={"/contact"}
-            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
+            className={`${pathName === "/contact" ? "text-[#00A630]" : ""} flex cursor-pointer items-center gap-1 hover:opacity-60 active:opacity-50`}
           >
             <div>Contact</div>
             <div>us</div>

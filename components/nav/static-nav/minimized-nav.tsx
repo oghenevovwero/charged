@@ -1,38 +1,36 @@
 "use client";
 
+import { PRIMARY_BLUE } from "@/constants";
 import logoImg from "@/public/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import BtnLink from "../../btn-link";
 import Padding from "../../padding";
 
 export default function MinimizedStaticNav() {
-  const navIsOpen = useRef(false);
+  const pathName = usePathname();
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav
-      className={`${
-        openNav ? "h-screen" : "h-fit"
-      } fixed inset-0 z-10 text-white transition-all bg-[${
-        process.env.NEXT_PUBLIC_PB
-      }] shadow-lg`}
+    <header
+      style={{ transition: "all 0.35s linear" }}
+      className={`
+       fixed left-0 right-0 z-10 h-20 bg-[#1A202B] py-2 text-white shadow-xl transition-all sm:h-24`}
     >
-      <Padding
-        className={`flex h-[${process.env.NEXT_PUBLIC_NH}px] items-center justify-between`}
-      >
-        <div className="h-full w-fit py-2">
+      <Padding className={`flex h-full items-center justify-between`}>
+        <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50"
+            className="h-full w-full cursor-pointer active:opacity-50 md:hover:opacity-60"
           >
-            <Image src={logoImg} height={50} width={80} alt="Our logo" />
+            <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
         </div>
         <button
           onClick={() => {
             setOpenNav((prev) => {
-              navIsOpen.current = !prev;
               return !prev;
             });
           }}
@@ -68,50 +66,43 @@ export default function MinimizedStaticNav() {
           </svg>
         </button>
       </Padding>
-      <Padding className={`${openNav ? "block" : "hidden"} pt-5  text-xl`}>
+      <Padding
+        className={`${
+          openNav ? `block bg-[${PRIMARY_BLUE}] h-screen` : "hidden"
+        } gap-6 pt-7 text-lg`}
+      >
         <Link
           href={"/about"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/about" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           About us
         </Link>
-
         <Link
           href={"/pricing"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/pricing" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Pricing
         </Link>
         <Link
           href={"/faqs"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/faqs" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           FAQs
         </Link>
         <Link
           href={"/careers"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/careers" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Careers
         </Link>
         <Link
           href={"/contact"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
-        ></Link>
-        <Link
-          href={"/contact"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/contact" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer active:opacity-50 md:hover:opacity-60`}
         >
           Contact us
         </Link>
-        <div className="w-fit">
-          <button
-            className={`bg-[${process.env.NEXT_PUBLIC_PG}] cursor-pointer rounded-md px-2 py-2 text-white hover:opacity-70 active:opacity-100`}
-          >
-            Access App
-          </button>
-        </div>
+        <BtnLink title="Access App" />
       </Padding>
-    </nav>
+    </header>
   );
 }

@@ -11,7 +11,7 @@ export default function WaitList() {
           <div className="text-4xl font-bold">Join the WaitList</div>
           <div className="mb-14 mt-4 text-lg">
             Be among the first to experience the future of EV charging. Enter
-            your email address and phone number to secure your spot.
+            your email address to secure your spot.
           </div>
           <div className="relative h-16 w-full">
             <input

@@ -7,10 +7,13 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import BtnLink from "../../btn-link";
 import Padding from "../../padding";
+import { usePathname } from "next/navigation";
 
 export default function MinimizedDynamicNav() {
   const transparentStyle = `bg-transparent h-28`;
   const nonTransparentStyle = `bg-[${PRIMARY_BLUE}] shadow-xl h-20 sm:h-24`;
+
+  const pathName = usePathname()
 
   const navIsOpen = useRef(false);
   const [openNav, setOpenNav] = useState(false);
@@ -47,7 +50,7 @@ export default function MinimizedDynamicNav() {
         <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="h-full w-full cursor-pointer hover:opacity-75 active:opacity-50"
+            className="h-full w-full cursor-pointer md:hover:opacity-60 active:opacity-50"
           >
             <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
@@ -98,31 +101,31 @@ export default function MinimizedDynamicNav() {
       >
         <Link
           href={"/about"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/about" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
         >
           About us
         </Link>
         <Link
           href={"/pricing"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/pricing" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
         >
           Pricing
         </Link>
         <Link
           href={"/faqs"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/faqs" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
         >
           FAQs
         </Link>
         <Link
           href={"/careers"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/careers" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
         >
           Careers
         </Link>
         <Link
           href={"/contact"}
-          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
+          className={`${pathName === "/contact" ? "text-[#00A630]" : ""} mb-7 block w-fit cursor-pointer md:hover:opacity-60 active:opacity-50`}
         >
           Contact us
         </Link>

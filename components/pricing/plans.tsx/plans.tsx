@@ -63,7 +63,7 @@ export default function Plans() {
         </div>
 
         <div className="max-sm:w-full">
-          <Link href={"/contact"}>
+          <Link href="/pricing#footer" className="scroll">
             <div
               className={`w-full cursor-pointer rounded-lg border border-[#00A63D]
               bg-white 

@@ -5,7 +5,7 @@ export default function Policy() {
   return (
     <div>
       <ContactNav />
-      <Container className="flex flex-col items-center bg-white text-black max-md:mt-5">
+      <Container className="flex flex-col items-center bg-white text-black mt-5 md:mt-8">
         <div className="mt-5 bg-white text-black">
           <div className="mb-10 text-4xl font-bold">Privacy Policy</div>
           <div className="mb-5 text-2xl font-bold">
