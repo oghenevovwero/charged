@@ -19,7 +19,7 @@ export default function ImageSwitcher({
 }: Props) {
   return (
     <div className="w-full">
-      <div className="flex h-[350px] w-full items-end justify-between gap-6 md:h-[400px]">
+      <div className="flex h-[375px] w-full items-end justify-between gap-6 md:h-[400px]">
         <div className="flex h-full w-full items-center justify-between gap-2 sm:gap-5 lg:gap-5">
           <div className="hidden h-full sm:block lg:hidden xl:block min-[1500px]:block">
             <SwitcherButtons
@@ -28,7 +28,7 @@ export default function ImageSwitcher({
             />
           </div>
           <div className="flex h-full w-full items-end justify-center">
-            <div className="h-[85%] w-full xl:max-w-[350px]">
+            <div className="h-[85%] max-w-[300px] xl:max-w-[325px]">
               {indicatorIndex === 0 && (
                 <FadeInRender>
                   <Image
