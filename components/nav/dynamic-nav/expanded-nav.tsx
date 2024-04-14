@@ -17,7 +17,7 @@ export default function ExpandedDynamicNav() {
   const pathName = usePathname();
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT) {
+    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT * 2) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       setDynamicStyles(transparentStyle);
