@@ -1,4 +1,5 @@
 import Container from "@/components/container";
+import Footer from "@/components/footer";
 import ContactNav from "@/components/nav/static-nav/nav";
 
 export default function Policy() {
@@ -203,6 +204,7 @@ export default function Policy() {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 }

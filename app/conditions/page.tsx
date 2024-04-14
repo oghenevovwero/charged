@@ -1,5 +1,6 @@
 import ContactNav from "@/components/nav/static-nav/nav";
 import Container from "@/components/container";
+import Footer from "@/components/footer";
 
 export default function TermsAndConditions() {
   return (
@@ -512,6 +513,7 @@ export default function TermsAndConditions() {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 }
