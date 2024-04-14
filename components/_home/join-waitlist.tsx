@@ -5,41 +5,41 @@ import { PRIMARY_GREEN } from "@/constants";
 
 export default function WaitList() {
   return (
-    <Container className="bg-[#F6F8F7] text-black flex justify-center items-center">
-      <div className="flex flex-col md:flex-row md:h-96">
-        <div className="flex-1 bg-[#54645D] text-white rounded-3xl md:rounded-tr-none md:rounded-br-none flex flex-col p-6 sm:p-20 md:p-20 justify-center">
-          <div className="font-bold text-4xl">Join the WaitList</div>
-          <div className="mt-4 mb-14 text-lg">
+    <Container className="flex items-center justify-center bg-[#F6F8F7] text-black">
+      <div className="flex flex-col md:h-96 md:flex-row">
+        <div className="flex flex-1 flex-col justify-center rounded-3xl bg-[#54645D] p-6 text-white sm:p-20 md:rounded-br-none md:rounded-tr-none md:p-20">
+          <div className="text-4xl font-bold">Join the WaitList</div>
+          <div className="mb-14 mt-4 text-lg">
             Be among the first to experience the future of EV charging. Enter
             your email address and phone number to secure your spot.
           </div>
-          <div className="w-full relative h-16">
+          <div className="relative h-16 w-full">
             <input
               placeholder="Enter your email"
-              className="bg-[#54645D] w-full h-full pl-2 sm:pl-6 py-5 pr-2 text-lg  placeholder:text-white  outline-none border border-white rounded-lg"
+              className="h-full w-full rounded-lg border border-white bg-[#54645D] py-5 pl-2  pr-2  text-lg outline-none placeholder:text-white sm:pl-6"
             />
             <button
               style={{ backgroundColor: PRIMARY_GREEN }}
               className={`
-              text-lg absolute 
-              right-[6px] top-[6px] 
+              absolute right-[6px] 
+              top-[6px] cursor-pointer 
+              rounded-md 
               px-3 
               py-3 
-              cursor-pointer 
-              transition-transform
+              text-lg
+              text-white 
+              transition-transform 
               duration-300 
               hover:scale-95 
-              active:opacity-50 
-              text-white 
-              rounded-md`}
+              active:opacity-50`}
             >
               Join waitlist
             </button>
           </div>
         </div>
-        <div className="flex-1 w-full h-96 max-md:hidden">
+        <div className="h-96 w-full flex-1 max-md:hidden">
           <Image
-            className="w-full h-full rounded-r-3xl"
+            className="h-full w-full rounded-r-3xl"
             src={plugImg}
             alt="plug in"
           />

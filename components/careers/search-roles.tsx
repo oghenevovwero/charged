@@ -4,11 +4,11 @@ import Padding from "../padding";
 
 export default function SearchRoles() {
   return (
-    <Padding className="w-full py-5 bg-white">
+    <Padding className="w-full bg-white py-5">
       <div className="relative">
         <input
           placeholder="Enter your email"
-          className="bg-white text-black w-full border-b border-b-gray-300 focus::border-b-gray-500 py-3 px-2 text-lg placeholder:text-gray-500 placeholder:text-lg placeholder: outline-none border border-white"
+          className="focus::border-b-gray-500 placeholder: w-full border border-b border-white border-b-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg placeholder:text-gray-500"
         />
         <Image
           src={arrowImg}

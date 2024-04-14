@@ -7,8 +7,8 @@ import Padding from "../padding";
 
 export default function HomeBanner() {
   return (
-    <div className="h-screen w-screen bg-white relative overflow-x-clip">
-      <div className="w-[100.5%] h-full absolute right-0">
+    <div className="relative h-screen w-screen overflow-x-clip bg-white">
+      <div className="absolute right-0 h-full w-[100.5%]">
         <Image
           src={bannerImg}
           placeholder="blur"
@@ -27,14 +27,14 @@ export default function HomeBanner() {
             <div className="text-6xl font-semibold">
               Get charged, anytime, anywhere
             </div>
-            <div className="text-xl mt-8 mb-6 font-light">
+            <div className="mb-6 mt-8 text-xl font-light">
               Introducing a revolutionary charging service that brings the power
               to you
             </div>
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="flex items-center gap-3">
             <div
-              className={`p-2 cursor-pointer bg-[${process.env.NEXT_PUBLIC_PB}] active:opacity-50 hover:opacity-75 rounded-lg text-white border border-gray-500 flex gap-1 items-center`}
+              className={`cursor-pointer p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex items-center gap-1 rounded-lg border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
             >
               <div>
                 <Image
@@ -51,7 +51,7 @@ export default function HomeBanner() {
               </div>
             </div>
             <div
-              className={`p-2 rounded-lg bg-[${process.env.NEXT_PUBLIC_PB}] cursor-pointer hover:opacity-75 active:opacity-50 text-white border border-gray-500 flex gap-1 items-center`}
+              className={`rounded-lg p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex cursor-pointer items-center gap-1 border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
             >
               <div>
                 <Image

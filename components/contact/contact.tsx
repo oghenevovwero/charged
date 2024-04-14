@@ -6,47 +6,47 @@ import { PRIMARY_GREEN } from "@/constants";
 
 export default function ContactUs() {
   return (
-    <Container className="bg-white mt-10 text-black flex flex-col sm:flex-row gap-12 sm:gap-5 justify-between">
+    <Container className="mt-10 flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
       <div className="flex-1">
         <Image src={chargeImg} alt="charging" />
       </div>
-      <div className="flex-1 w-full flex flex-col gap-5">
+      <div className="flex w-full flex-1 flex-col gap-5">
         <div className="text-5xl font-bold">Get in touch</div>
         <div className="text-light">
           Our friendly team would love to hear from you
         </div>
-        <div className="w-full flex flex-col md:flex-row justify-between gap-2">
+        <div className="flex w-full flex-col justify-between gap-2 md:flex-row">
           <div className="w-full">
-            <div className="font-semibold text-sm mb-1">First name</div>
+            <div className="mb-1 text-sm font-semibold">First name</div>
             <input
               placeholder="First name"
-              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
+              className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
             />
           </div>
 
           <div className="w-full">
-            <div className="font-semibold text-sm mb-1">Last name</div>
+            <div className="mb-1 text-sm font-semibold">Last name</div>
             <input
               placeholder="Last name"
-              className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
+              className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
             />
           </div>
         </div>
         <div className="w-full">
-          <div className="font-semibold text-sm mb-1">Email</div>
+          <div className="mb-1 text-sm font-semibold">Email</div>
           <input
             placeholder="You@company.com"
-            className="bg-white text-black w-full  py-3 px-2 text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
+            className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
           />
         </div>
-        <div className="w-full relative text-sm">
-          <div className="font-semibold text-sm mb-1">Phone number</div>
+        <div className="relative w-full text-sm">
+          <div className="mb-1 text-sm font-semibold">Phone number</div>
           <input
             placeholder="+1 (555) 000-0000"
-            className="bg-white text-black w-full  py-3 pr-2 pl-[60px] text-lg placeholder:text-lg placeholder: outline-none border border-gray-300 rounded-lg"
+            className="placeholder: w-full rounded-lg  border border-gray-300 bg-white py-3 pl-[60px] pr-2 text-lg text-black outline-none placeholder:text-lg"
           />
-          <div className="flex gap-2 items-center absolute left-2 bottom-3">
-            <div className="text-gray-400 text-lg">US</div>
+          <div className="absolute bottom-3 left-2 flex items-center gap-2">
+            <div className="text-lg text-gray-400">US</div>
             <div>
               <Image
                 src={chevronImg}
@@ -58,27 +58,27 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="w-full">
-          <div className="font-semibold text-sm mb-1">Message</div>
+          <div className="mb-1 text-sm font-semibold">Message</div>
           <textarea
-            className="border border-gray-300 w-full rounded-lg outline-none py-1 px-2"
+            className="w-full rounded-lg border border-gray-300 px-2 py-1 outline-none"
             rows={6}
           />
         </div>
-        <div className="flex flex-col items-center w-full">
-          <div className="flex gap-2 items-center">
+        <div className="flex w-full flex-col items-center">
+          <div className="flex items-center gap-2">
             <input type="checkbox" />
             <div className="text-lg font-medium">
               You agree to our friendly privacy policy.
             </div>
           </div>
-          <div className="w-full flex justify-center mt-10">
+          <div className="mt-10 flex w-full justify-center">
             <button
               style={{ backgroundColor: PRIMARY_GREEN }}
-              className={`text-lg font-medium w-full cursor-pointer transition-transform
-            duration-300 
-            hover:scale-x-95 
-            active:opacity-50 
-            text-white px-2 py-[14px] rounded-md`}
+              className={`w-full cursor-pointer rounded-md px-2 py-[14px]
+            text-lg 
+            font-medium 
+            text-white 
+            transition-transform duration-300 hover:scale-x-95 active:opacity-50`}
             >
               Send Message
             </button>

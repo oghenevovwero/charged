@@ -7,10 +7,10 @@ export default function Flexibility() {
       <Image src={flexibilityImg} width={80} height={80} alt={"flexibility"} />
 
       <div>
-        <div className="mb-4 font-semibold text-2xl">Flexibility</div>
+        <div className="mb-4 text-2xl font-semibold">Flexibility</div>
         <div className="text-lg">
-          Your schedule is our priority. Request a charge at a time and location that suits you
-          best.
+          Your schedule is our priority. Request a charge at a time and location
+          that suits you best.
         </div>
       </div>
     </div>

@@ -9,15 +9,15 @@ import Padding from "../../padding";
 export default function ExpandedStaticNav() {
   return (
     <nav
-      className={`fixed h-[94px] flex z-10 text-semibold text-lg bg-[#1A202B] text-white shadow-lg left-0 top-0 right-0`}
+      className={`text-semibold fixed left-0 right-0 top-0 z-10 flex h-[94px] bg-[#1A202B] text-lg text-white shadow-lg`}
     >
       <Padding
         className="
-        py-2
-        flex 
-        justify-between 
-        items-center        
-        w-full"
+        flex
+        w-full 
+        items-center 
+        justify-between        
+        py-2"
       >
         <Link
           href={"/"}
@@ -25,10 +25,10 @@ export default function ExpandedStaticNav() {
         >
           <Image src={logoImg} height={80} width={100} alt="Our logo" />
         </Link>
-        <div className="flex gap-6 justify-around items-center">
+        <div className="flex items-center justify-around gap-6">
           <Link
             href={"/about"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
           >
             <div>About</div>
             <div>us</div>
@@ -54,7 +54,7 @@ export default function ExpandedStaticNav() {
           </Link>
           <Link
             href={"/contact"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
           >
             <div>Contact</div>
             <div>us</div>

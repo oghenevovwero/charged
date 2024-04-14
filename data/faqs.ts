@@ -18,7 +18,8 @@ export const homePageQuestions: FAQ[] = [
   },
   {
     question: "Is there a roadside assistance service available?",
-    answer: "Absolutely!, our roadside assistance currently covers EV mobile charging services",
+    answer:
+      "Absolutely!, our roadside assistance currently covers EV mobile charging services",
   },
 ];
 
@@ -46,20 +47,27 @@ export const faqsPageQuestions: FAQ[] = [
     answer: "Yes, our platform provides a mobile charging station anywhere",
   },
   {
-    question: "What types of charging connectors are available on the mobile station?",
-    answer: "This is a generic placeholder text to this question that will be answered later",
+    question:
+      "What types of charging connectors are available on the mobile station?",
+    answer:
+      "This is a generic placeholder text to this question that will be answered later",
   },
   {
     question:
       "How long does it take for the mobile charging station to arrive after a request is made?",
-    answer: "This is a generic placeholder text to this question that will be answered later",
+    answer:
+      "This is a generic placeholder text to this question that will be answered later",
   },
   {
-    question: "Are there any additional fees for using the mobile charging station service?",
-    answer: "This is a generic placeholder text to this question that will be answered later",
+    question:
+      "Are there any additional fees for using the mobile charging station service?",
+    answer:
+      "This is a generic placeholder text to this question that will be answered later",
   },
   {
-    question: "Can the mobile charging station accommodate multiple vehicles at once?",
-    answer: "This is a generic placeholder text to this question that will be answered later",
+    question:
+      "Can the mobile charging station accommodate multiple vehicles at once?",
+    answer:
+      "This is a generic placeholder text to this question that will be answered later",
   },
 ];

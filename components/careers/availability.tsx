@@ -9,15 +9,15 @@ import StackedImages from "../stacked-images";
 
 export default function Availability() {
   return (
-    <Container className="text-black bg-white ">
+    <Container className="bg-white text-black ">
       <div>
         <div className="flex justify-center">
           <div className="md:w-2/3 lg:w-1/2">
-            <div className="text-4xl md:text-4xl text-center  font-bold">
+            <div className="text-center text-4xl font-bold  md:text-4xl">
               Guaranteed availability of swift and potent EV charging whenever
               needed
             </div>
-            <div className="mt-6 mb-16 text-center  text-lg">
+            <div className="mb-16 mt-6 text-center  text-lg">
               We provide a variety of engaging employment options in areas
               including engineering, marketing, sales, and mobile operations,
               among others.
@@ -26,27 +26,27 @@ export default function Availability() {
         </div>
         <StackedImages>
           <Image
-            className="rounded-md md:rounded-xl h-full"
+            className="h-full rounded-md md:rounded-xl"
             src={pluggedInImg}
             alt="mechanic"
           />
           <Image
-            className="rounded-md md:rounded-xl h-full"
+            className="h-full rounded-md md:rounded-xl"
             src={driverImg}
             alt="girl with laptop"
           />
           <Image
-            className="rounded-md md:rounded-xl h-full"
+            className="h-full rounded-md md:rounded-xl"
             src={bootImg}
             alt="happy driver"
           />
           <Image
-            className="rounded-md md:rounded-xl h-full"
+            className="h-full rounded-md md:rounded-xl"
             src={customerImg}
             alt="an accountant"
           />
         </StackedImages>
-        <div className="w-full flex justify-start sm:justify-center items-center mt-6 md:mt-12">
+        <div className="mt-6 flex w-full items-center justify-start sm:justify-center md:mt-12">
           <BtnLink to="roles" title="View open roles" />
         </div>
       </div>

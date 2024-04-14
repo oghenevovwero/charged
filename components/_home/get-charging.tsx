@@ -5,7 +5,7 @@ import BtnLink from "../btn-link";
 
 export default function GetCharging() {
   return (
-    <div className="h-[70vh] relative text-white overflow-clip">
+    <div className="relative h-[70vh] overflow-clip text-white">
       <Image
         src={getChargingImg}
         placeholder="blur"
@@ -15,9 +15,9 @@ export default function GetCharging() {
         sizes="100vw"
         style={{ objectFit: "cover" }}
       />
-      <div className="absolute inset-0 w-screen h-full flex justify-start items-center">
+      <div className="absolute inset-0 flex h-full w-screen items-center justify-start">
         <Container>
-          <div className="text-5xl font-bold w-[90%] sm:w-[60%] lg:w-[50%] xl:w-[40%] leading-[55px] sm:leading-[60px]">
+          <div className="w-[90%] text-5xl font-bold leading-[55px] sm:w-[60%] sm:leading-[60px] lg:w-[50%] xl:w-[40%]">
             Get 24/7 charging delivery service for up to $0.58/KWh
           </div>
           <div className="mt-6 sm:mt-8">

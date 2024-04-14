@@ -6,13 +6,13 @@ import Image from "next/image";
 
 export default function Position({ name, role }: Role) {
   return (
-    <div className="rounded-lg border text-sm md:w-1/2 p-2 sm:p-4">
+    <div className="rounded-lg border p-2 text-sm sm:p-4 md:w-1/2">
       <div
-        className={`flex justify-between text-[${process.env.NEXT_PUBLIC_PG}] text-sm items-center font-medium`}
+        className={`flex justify-between text-[${process.env.NEXT_PUBLIC_PG}] items-center text-sm font-medium`}
       >
-        <div className="font-bold text-sm">{name}</div>
-        <div className="flex gap-1 items-center">
-          <div className="cursor-pointer active:opacity-50 font-medium">
+        <div className="text-sm font-bold">{name}</div>
+        <div className="flex items-center gap-1">
+          <div className="cursor-pointer font-medium active:opacity-50">
             View job
           </div>
           <div>
@@ -20,15 +20,15 @@ export default function Position({ name, role }: Role) {
           </div>
         </div>
       </div>
-      <div className="mt-2 mb-4 text-lg font-medium">{role}</div>
-      <div className="flex gap-6 text-sm items-center">
-        <div className="flex gap-1 items-center">
+      <div className="mb-4 mt-2 text-lg font-medium">{role}</div>
+      <div className="flex items-center gap-6 text-sm">
+        <div className="flex items-center gap-1">
           <div>
             <Image src={locationImg} alt="location" />
           </div>
           <div className="font-medium">Remote</div>
         </div>
-        <div className="flex gap-1 items-center">
+        <div className="flex items-center gap-1">
           <div>
             <Image src={clockImg} alt="clock" />
           </div>

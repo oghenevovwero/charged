@@ -1,9 +1,6 @@
 "use client";
 
-import {
-  EXPANDED_NAV_HEIGHT,
-  PRIMARY_BLUE
-} from "@/constants";
+import { EXPANDED_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
 import logoImg from "@/public/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,13 +41,13 @@ export default function MinimizedDynamicNav() {
     <header
       style={{ transition: "all 0.35s linear" }}
       className={`
-       text-white fixed right-0 left-0 z-10 transition-all py-2 ${dynamicStyles}`}
+       fixed left-0 right-0 z-10 py-2 text-white transition-all ${dynamicStyles}`}
     >
       <Padding className={`flex h-full items-center justify-between`}>
-        <div className="w-fit h-full flex items-center">
+        <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="cursor-pointer h-full w-full hover:opacity-75 active:opacity-50"
+            className="h-full w-full cursor-pointer hover:opacity-75 active:opacity-50"
           >
             <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
@@ -62,10 +59,10 @@ export default function MinimizedDynamicNav() {
               return !prev;
             });
           }}
-          className="block lg:hidden rounded focus:outline-none"
+          className="block rounded focus:outline-none lg:hidden"
         >
           <svg
-            className={`w-6 h-6 ${openNav ? "hidden" : "block"}`}
+            className={`h-6 w-6 ${openNav ? "hidden" : "block"}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -79,7 +76,7 @@ export default function MinimizedDynamicNav() {
             ></path>
           </svg>
           <svg
-            className={`w-6 h-6 ${openNav ? "block" : "hidden"}`}
+            className={`h-6 w-6 ${openNav ? "block" : "hidden"}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -97,35 +94,35 @@ export default function MinimizedDynamicNav() {
       <Padding
         className={`${
           openNav ? `block bg-[${PRIMARY_BLUE}] h-screen` : "hidden"
-        } pt-7 gap-6 text-lg`}
+        } gap-6 pt-7 text-lg`}
       >
         <Link
           href={"/about"}
-          className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
         >
           About us
         </Link>
         <Link
           href={"/pricing"}
-          className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
         >
           Pricing
         </Link>
         <Link
           href={"/faqs"}
-          className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
         >
           FAQs
         </Link>
         <Link
           href={"/careers"}
-          className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
         >
           Careers
         </Link>
         <Link
           href={"/contact"}
-          className="cursor-pointer mb-7 block w-fit hover:opacity-75 active:opacity-50"
+          className="mb-7 block w-fit cursor-pointer hover:opacity-75 active:opacity-50"
         >
           Contact us
         </Link>

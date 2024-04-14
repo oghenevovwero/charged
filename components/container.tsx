@@ -7,9 +7,15 @@ type Props = {
   excludeBottom?: boolean;
 };
 
-export default function Container({ children, className, excludeTop, excludeBottom }: Props) {
+export default function Container({
+  children,
+  className,
+  excludeTop,
+  excludeBottom,
+}: Props) {
   return (
-    <section className={`
+    <section
+      className={`
       px-3 
       sm:px-8 
       md:px-[60px] 
@@ -17,7 +23,8 @@ export default function Container({ children, className, excludeTop, excludeBott
       ${excludeTop ? "" : "pt-12 md:pt-20"}
       ${excludeBottom ? "" : "pb-12 md:pb-20"}
       ${className}
-    `}>
+    `}
+    >
       {children}
     </section>
   );

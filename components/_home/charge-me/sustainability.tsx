@@ -3,11 +3,15 @@ import sustainabilityImg from "@/public/p4.png";
 
 export default function Sustainability() {
   return (
-    <div className="w-full bg-white text-black p-2 lg:p-5 rounded-xl">
+    <div className="w-full rounded-xl bg-white p-2 text-black lg:p-5">
       <div className="relative">
-        <Image src={sustainabilityImg} className="rounded-lg w-full" alt="we are environmentally conscious" />
-        <div className="absolute bottom-4 w-full flex items-center justify-center">
-          <div className="bg-white text-black rounded-lg p-2 flex gap-2 items-center justify-start">
+        <Image
+          src={sustainabilityImg}
+          className="w-full rounded-lg"
+          alt="we are environmentally conscious"
+        />
+        <div className="absolute bottom-4 flex w-full items-center justify-center">
+          <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
               src={"/e1.png"}
               width={20}
@@ -16,7 +20,7 @@ export default function Sustainability() {
               alt="BMW logo"
             />
             <div className="">
-              <div className="font-semibold text-sm sm:text-[12px] md:text-sm">
+              <div className="text-sm font-semibold sm:text-[12px] md:text-sm">
                 Charging completed
               </div>
             </div>
@@ -25,9 +29,10 @@ export default function Sustainability() {
       </div>
 
       <div>
-        <div className="text-xl mt-6 mb-4 font-bold">Sustainability</div>
+        <div className="mb-4 mt-6 text-xl font-bold">Sustainability</div>
         <div className="text-lg">
-          Use a clean and eco-friendly charging solution to reduce your carbon footprint.
+          Use a clean and eco-friendly charging solution to reduce your carbon
+          footprint.
         </div>
       </div>
     </div>

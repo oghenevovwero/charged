@@ -19,21 +19,21 @@ export default function ImageSwitcher({
 }: Props) {
   return (
     <div className="w-full">
-      <div className="flex items-end gap-6 justify-between w-full h-[350px] md:h-[400px]">
-        <div className="flex justify-between w-full items-center h-full gap-2 sm:gap-5 lg:gap-5">
-          <div className="hidden sm:block lg:hidden xl:block min-[1500px]:block h-full">
+      <div className="flex h-[350px] w-full items-end justify-between gap-6 md:h-[400px]">
+        <div className="flex h-full w-full items-center justify-between gap-2 sm:gap-5 lg:gap-5">
+          <div className="hidden h-full sm:block lg:hidden xl:block min-[1500px]:block">
             <SwitcherButtons
               setIndicatorIndex={setIndicatorIndex}
               indicatorIndex={indicatorIndex}
             />
           </div>
-          <div className="h-full flex items-end justify-center w-full">
-            <div className="w-full xl:max-w-[350px] h-[85%]">
+          <div className="flex h-full w-full items-end justify-center">
+            <div className="h-[85%] w-full xl:max-w-[350px]">
               {indicatorIndex === 0 && (
                 <FadeInRender>
                   <Image
                     style={{ transition: "all 1s linear" }}
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     placeholder="blur"
                     src={trailerImg}
                     alt="charging trailer"
@@ -43,7 +43,7 @@ export default function ImageSwitcher({
               {indicatorIndex === 1 && (
                 <FadeInRender>
                   <Image
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     src={greenEarthImg}
                     placeholder="blur"
                     alt="charging trailer"
@@ -54,7 +54,7 @@ export default function ImageSwitcher({
                 <FadeInRender>
                   <Image
                     style={{ transition: "all 1s linear" }}
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     placeholder="blur"
                     src={plugImg}
                     alt="charging trailer"
@@ -63,12 +63,12 @@ export default function ImageSwitcher({
               )}
             </div>
           </div>
-          <div className="w-[40%] flex h-full items-start  relative overflow-clip">
-            <div className="w-[200%] h-[80%] absolute">
+          <div className="relative flex h-full w-[40%]  items-start overflow-clip">
+            <div className="absolute h-[80%] w-[200%]">
               {indicatorIndex === 0 && (
                 <FadeInRender>
                   <Image
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     quality={50}
                     placeholder="blur"
                     src={greenEarthImg}
@@ -79,7 +79,7 @@ export default function ImageSwitcher({
               {indicatorIndex === 1 && (
                 <FadeInRender>
                   <Image
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     quality={50}
                     src={plugImg}
                     placeholder="blur"
@@ -90,7 +90,7 @@ export default function ImageSwitcher({
               {indicatorIndex === 2 && (
                 <FadeInRender>
                   <Image
-                    className="rounded-lg h-full w-full"
+                    className="h-full w-full rounded-lg"
                     src={trailerImg}
                     placeholder="blur"
                     alt="charging trailer"
@@ -102,25 +102,25 @@ export default function ImageSwitcher({
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-8">
-        <div className="sm:hidden lg:block xl:hidden min-[1500px]:hidden h-full">
+      <div className="mt-8 flex items-center justify-between">
+        <div className="h-full sm:hidden lg:block xl:hidden min-[1500px]:hidden">
           <SwitcherButtons
             setIndicatorIndex={setIndicatorIndex}
             indicatorIndex={indicatorIndex}
           />
         </div>
         <div className="flex w-full justify-end">
-          <div className="flex gap-1 items-center" key={0}>
-            <div className="h-[6px] w-36 bg-gray-500 rounded-full flex items-center">
+          <div className="flex items-center gap-1" key={0}>
+            <div className="flex h-[6px] w-36 items-center rounded-full bg-gray-500">
               <div
                 style={{
                   width: `${(indicatorIndex / 3) * 100}%`,
                   transition: "all 0.2s linear",
                 }}
-                className="h-full bg-gray-100 rounded-full"
+                className="h-full rounded-full bg-gray-100"
               />
             </div>
-            <div className="font-bold text-sm">{indicatorIndex}/3</div>
+            <div className="text-sm font-bold">{indicatorIndex}/3</div>
           </div>
         </div>
       </div>

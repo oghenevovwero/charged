@@ -9,30 +9,30 @@ import Plan from "./plan";
 export default function Plans() {
   return (
     <Container className="bg-white text-black">
-      <div className="flex flex-col sm:flex-row justify-between gap-8 md:gap-3 lg:gap-10 mb-10">
+      <div className="mb-10 flex flex-col justify-between gap-8 sm:flex-row md:gap-3 lg:gap-10">
         {pricingPlans.map((plan) => (
           <Plan key={plan.plan} {...plan} />
         ))}
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-10 mb-12 sm:gap-2 lg:gap-4 rounded-lg shadow-lg px-2 md:px-3 lg:px-5 pt-2 md:pt-3 lg:pt-5 pb-6 md:pb-10 lg:pb-20">
+      <div className="mb-12 flex flex-col items-center justify-between gap-10 rounded-lg px-2 pb-6 pt-2 shadow-lg sm:flex-row sm:gap-2 md:px-3 md:pb-10 md:pt-3 lg:gap-4 lg:px-5 lg:pb-20 lg:pt-5">
         <div className="">
-          <div className="font-bold mb-5 text-2xl">Roadside Assistance</div>
+          <div className="mb-5 text-2xl font-bold">Roadside Assistance</div>
           <div className="">
             Additionally, we offer a standalone roadside assistance plan aimed
             at providing peace of mind to EV owners
           </div>
         </div>
 
-        <div className=" w-full flex flex-col sm:flex-row  sm:items-center">
-          <div className="flex flex-col sm:flex-row sm:justify-center sm:items-center gap-8 sm:gap-4">
+        <div className=" flex w-full flex-col sm:flex-row  sm:items-center">
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-center sm:gap-4">
             <div>
-              <span className="font-bold text-5xl">$20</span>
-              <span className="text-[11px]  align-sub">/ Month</span>
+              <span className="text-5xl font-bold">$20</span>
+              <span className="align-sub  text-[11px]">/ Month</span>
             </div>
 
             <div className="w-full flex-1">
-              <div className="flex gap-3 mb-5">
+              <div className="mb-5 flex gap-3">
                 <div className="">
                   <Image
                     src={greenTickImg}
@@ -65,10 +65,10 @@ export default function Plans() {
         <div className="max-sm:w-full">
           <Link href={"/contact"}>
             <div
-              className={`border w-full bg-white cursor-pointer transition-transform
-              duration-300 
-              hover:scale-95 
-              active:opacity-50 rounded-lg px-[33px] py-[14px] font-medium text-sm border-[#00A63D]`}
+              className={`w-full cursor-pointer rounded-lg border border-[#00A63D]
+              bg-white 
+              px-[33px] 
+              py-[14px] text-sm font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}
             >
               <div className="flex items-center justify-center gap-1">
                 <div>Get</div>
@@ -79,8 +79,8 @@ export default function Plans() {
         </div>
       </div>
 
-      <div className="shadow-lg px-2 py-5 md:p-3 lg:p-5 rounded-lg relative min-[1110px]:h-[400px]">
-        <div className="font-medium text-lg lg:w-[70%] ">
+      <div className="relative rounded-lg px-2 py-5 shadow-lg md:p-3 lg:p-5 min-[1110px]:h-[400px]">
+        <div className="text-lg font-medium lg:w-[70%] ">
           We also do One-Time Service Call, For non-subscribers or customers who
           require occasional assistance, we offer one-time service call requests
         </div>
@@ -88,9 +88,9 @@ export default function Plans() {
           <Image src={vanImg} alt="van" className="min-[1110px]:float-end" />
         </div>
 
-        <div className="h-full flex flex-col justify-around min-[1110px]:py-20">
+        <div className="flex h-full flex-col justify-around min-[1110px]:py-20">
           <div className="flex items-end gap-1 max-[1110px]:my-10">
-            <div className="font-bold text-5xl">$20</div>
+            <div className="text-5xl font-bold">$20</div>
             <div className="align-sub font-medium">for up to 10 kWh</div>
           </div>
           <div className="text-sm font-medium max-[1110px]:mb-6">

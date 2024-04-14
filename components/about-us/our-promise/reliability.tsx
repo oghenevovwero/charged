@@ -7,10 +7,10 @@ export default function Reliability() {
       <Image src={reliabilityImg} width={80} height={80} alt={"reliability"} />
 
       <div>
-        <div className="mb-4 font-semibold text-2xl">Reliability</div>
+        <div className="mb-4 text-2xl font-semibold">Reliability</div>
         <div className="text-lg">
-          Count on us to deliver a reliable and efficient charging experience whenever you request
-          our services.
+          Count on us to deliver a reliable and efficient charging experience
+          whenever you request our services.
         </div>
       </div>
     </div>

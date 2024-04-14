@@ -11,16 +11,16 @@ export default function BtnLink({ title, to = "#" }: Props) {
           style={{ backgroundColor: PRIMARY_GREEN }}
           className={`
           cursor-pointer
-          transition-transform
-          duration-300 
-          hover:scale-95 
-          active:opacity-50
-          text-white 
+          rounded-lg
           px-[33px] 
           py-[14px] 
-          rounded-lg 
           text-center
-          text-lg`}
+          text-lg 
+          text-white 
+          transition-transform 
+          duration-300 
+          hover:scale-95
+          active:opacity-50`}
         >
           {title}
         </div>

@@ -7,7 +7,7 @@ export default function RenderFAQs({ questions }: { questions: FAQ[] }) {
   const [openedQuestionIndex, setOpenIndex] = useState(-1);
 
   return (
-    <div className="md:flex-1 lg:flex-[1.5] flex flex-col gap-8 lg:pl-24 font-medium text-lg">
+    <div className="flex flex-col gap-8 text-lg font-medium md:flex-1 lg:flex-[1.5] lg:pl-24">
       {questions.map((faq, index) => (
         <div key={index} className="w-full">
           <div>
@@ -32,7 +32,7 @@ export default function RenderFAQs({ questions }: { questions: FAQ[] }) {
             >
               {faq.answer}
             </div>
-            <div className="h-[1px] w-full bg-gray-300 mt-8" />
+            <div className="mt-8 h-[1px] w-full bg-gray-300" />
           </div>
         </div>
       ))}

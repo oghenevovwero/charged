@@ -5,8 +5,14 @@ import Padding from "@/components/padding";
 export default function RequestCharge() {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <Image src={requestImg} quality={100} width={75} height={75} alt={"Request charge"} />
-      <div className="mt-8 mb-4 font-semibold text-2xl">Request charge</div>
+      <Image
+        src={requestImg}
+        quality={100}
+        width={75}
+        height={75}
+        alt={"Request charge"}
+      />
+      <div className="mb-4 mt-8 text-2xl font-semibold">Request charge</div>
       <div className=" lg:px-16">
         Select your location, desired service, and a time that works for you.
       </div>

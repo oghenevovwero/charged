@@ -8,9 +8,9 @@ import Padding from "./padding";
 
 export default function Footer() {
   return (
-    <div className="bg-[#1C211F] py-12 md:py-24 text-white">
+    <div className="bg-[#1C211F] py-12 text-white md:py-24">
       <Padding className="py-0">
-        <div className="flex flex-col mb-6 sm:flex-row sm:justify-between">
+        <div className="mb-6 flex flex-col sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
               <Image src={logoImg} height={40} width={100} alt="Our logo" />
@@ -19,10 +19,10 @@ export default function Footer() {
               Mobile EV charge that has your back
             </div>
           </div>
-          <div className="flex flex-col max-sm:mb-6 max-sm:mt-10 gap-2">
+          <div className="flex flex-col gap-2 max-sm:mb-6 max-sm:mt-10">
             <div className="mb-2 text-lg font-medium">Download our app now</div>
-            <div className="flex flex-row md:flex-col gap-2 justify-center items-center">
-              <div className="p-2 active:opacity-50 cursor-pointer rounded-lg text-white border border-gray-500 flex gap-1 items-center">
+            <div className="flex flex-row items-center justify-center gap-2 md:flex-col">
+              <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
                   <Image
                     src={appleImg}
@@ -37,7 +37,7 @@ export default function Footer() {
                   <div className="text-[13px] font-semibold">App Store</div>
                 </div>
               </div>
-              <div className="p-2 active:opacity-50 rounded-lg cursor-pointer text-white border border-gray-500 flex gap-1 items-center">
+              <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
                   <Image
                     src={playImg}
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-start text-sm flex-col md:flex-row gap-7 md:gap-10">
+        <div className="flex flex-col justify-start gap-7 text-sm md:flex-row md:gap-10">
           <Link
             href={"/about"}
             className={`cursor-pointer md:hover:text-[${process.env.NEXT_PUBLIC_PG}] active:opacity-60`}
@@ -100,17 +100,17 @@ export default function Footer() {
           </Link>
         </div>
       </Padding>
-      <div className="flex justify-center items-center my-8 md:my-16 px-2">
+      <div className="my-8 flex items-center justify-center px-2 md:my-16">
         <Image src={footerChargeImg} alt="charge" quality={100} />
       </div>
       <Padding className="">
-        <div className="h-[1px] bg-gray-400 w-full mb-2" />
-        <div className="flex justify-between items-center text-[#8C9E96] ">
+        <div className="mb-2 h-[1px] w-full bg-gray-400" />
+        <div className="flex items-center justify-between text-[#8C9E96] ">
           <div className=" text-sm">
             &copy; 2024 Charge Me. All Rights Reserved
           </div>
-          <div className="flex gap-3 items-center">
-            <div className="font-extrabold text-lg">X</div>
+          <div className="flex items-center gap-3">
+            <div className="text-lg font-extrabold">X</div>
             <div>
               <Image src={"/li.png"} width={15} height={15} alt="Linked in" />
             </div>

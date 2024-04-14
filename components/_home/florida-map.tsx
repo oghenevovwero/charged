@@ -5,7 +5,7 @@ import Padding from "../padding";
 
 export default function LagosMap() {
   return (
-    <div className="h-[60vh] relative overflow-clip">
+    <div className="relative h-[60vh] overflow-clip">
       <Image
         src={mapImg}
         placeholder="blur"
@@ -15,8 +15,8 @@ export default function LagosMap() {
         sizes="100vw"
         style={{ objectFit: "cover" }}
       />
-      <div className="absolute inset-0 w-screen h-full">
-        <div className="flex justify-end h-full relative">
+      <div className="absolute inset-0 h-full w-screen">
+        <div className="relative flex h-full justify-end">
           <Image
             fill
             src={chargeImg}

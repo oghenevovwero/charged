@@ -13,36 +13,36 @@ export default function Plan({
   return (
     <div
       className="
+    cursor-pointer 
     rounded-lg 
     border 
-    shadow-md 
     p-2 
-    md:p-3 
-    lg:p-5 
-    transition-transform
-    duration-300 
+    shadow-md 
+    transition-transform 
+    duration-300
+    hover:scale-[97.5%] 
     hover:opacity-90
     hover:shadow-xl
-    cursor-pointer
-    hover:scale-[97.5%]
+    md:p-3
+    lg:p-5
     "
     >
       <div>
         <div className="flex items-center gap-3">
-          <div className="font-medium text-lg">{plan}</div>
+          <div className="text-lg font-medium">{plan}</div>
           {recommended && (
-            <div className="text-[11px]  bg-[#E5F5FF] text-[#00A0FF] rounded-xl px-[6px] py-[2px]">
+            <div className="rounded-xl  bg-[#E5F5FF] px-[6px] py-[2px] text-[11px] text-[#00A0FF]">
               Recommended
             </div>
           )}
         </div>
-        <div className="mt-6 mb-8">
-          <span className="font-bold text-5xl">${cost}</span>
-          <span className="text-[11px]  align-sub">/ {duration}</span>
+        <div className="mb-8 mt-6">
+          <span className="text-5xl font-bold">${cost}</span>
+          <span className="align-sub  text-[11px]">/ {duration}</span>
         </div>
         <div className="flex flex-col gap-3">
           {features.map((feature, index) => (
-            <div key={index} className="flex gap-[6px] items-start">
+            <div key={index} className="flex items-start gap-[6px]">
               <div className="flex-[1]">
                 <Image
                   src={greenTickImg}
@@ -51,19 +51,19 @@ export default function Plan({
                   alt="included in plan"
                 />
               </div>
-              <div className="text-sm font-medium flex-[10]">{feature}</div>
+              <div className="flex-[10] text-sm font-medium">{feature}</div>
             </div>
           ))}
         </div>
       </div>
-      <div className="w-full mt-10">
+      <div className="mt-10 w-full">
         <Link href="/contact">
           <div
-            className={`border bg-white rounded-lg w-full py-[14px] cursor-pointer 
-          transition-transform
-          duration-300 
-          hover:scale-95           
-          active:opacity-50 font-medium text-center text-sm border-[#00A63D]`}
+            className={`w-full cursor-pointer rounded-lg border border-[#00A63D] bg-white 
+          py-[14px]
+          text-center 
+          text-sm           
+          font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}
           >
             Get started
           </div>

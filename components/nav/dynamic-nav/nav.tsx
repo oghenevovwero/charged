@@ -12,4 +12,4 @@ export default function Nav() {
       </div>
     </div>
   );
-};
+}

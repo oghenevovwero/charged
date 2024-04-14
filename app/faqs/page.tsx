@@ -4,12 +4,14 @@ import Support from "@/components/faqs/support";
 import Footer from "@/components/footer";
 import Nav from "@/components/nav/dynamic-nav/nav";
 
-export default function Faqs(){
-  return <div>
-    <Nav />
-    <FaqsBanner />
-    <Support />
-    <OtherQuestions />
-    <Footer />
-  </div>
+export default function Faqs() {
+  return (
+    <div>
+      <Nav />
+      <FaqsBanner />
+      <Support />
+      <OtherQuestions />
+      <Footer />
+    </div>
+  );
 }

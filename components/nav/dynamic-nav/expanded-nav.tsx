@@ -1,9 +1,6 @@
 "use client";
 
-import {
-  EXPANDED_NAV_HEIGHT,
-  PRIMARY_BLUE
-} from "@/constants";
+import { EXPANDED_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
 import logoImg from "@/public/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,28 +34,28 @@ export default function ExpandedDynamicNav() {
   return (
     <nav
       style={{ transition: "all 0.35s linear" }}
-      className={`fixed  flex left-0 right-0 z-10 text-semibold h-24 text-lg ${dynamicStyles}`}
+      className={`text-semibold  fixed left-0 right-0 z-10 flex h-24 text-lg ${dynamicStyles}`}
     >
       <Padding
         className="
         flex 
-        justify-between 
+        h-full 
+        w-full
         items-center
-        h-full
-        w-full"
+        justify-between"
       >
-        <div className="h-full w-fit flex items-center">
+        <div className="flex h-full w-fit items-center">
           <Link
             href={"/"}
-            className="cursor-pointer h-full w-full hover:opacity-75 active:opacity-100"
+            className="h-full w-full cursor-pointer hover:opacity-75 active:opacity-100"
           >
-            <Image src={logoImg} className="w-full h-full" alt="Our logo" />
+            <Image src={logoImg} className="h-full w-full" alt="Our logo" />
           </Link>
         </div>
-        <div className="flex gap-6 justify-around items-center font-medium">
+        <div className="flex items-center justify-around gap-6 font-medium">
           <Link
             href={"/about"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
           >
             <div>About</div>
             <div>us</div>
@@ -84,7 +81,7 @@ export default function ExpandedDynamicNav() {
           </Link>
           <Link
             href={"/contact"}
-            className="cursor-pointer hover:opacity-75 active:opacity-50 flex items-center gap-1"
+            className="flex cursor-pointer items-center gap-1 hover:opacity-75 active:opacity-50"
           >
             <div>Contact</div>
             <div>us</div>
