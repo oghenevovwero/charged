@@ -1,9 +1,9 @@
-import Image from "next/image";
 import chargeImg from "@/public/about-charge.png";
-import pluggedInImg from "@/public/plugged-in.png";
-import driverImg from "@/public/driver.png";
 import bootImg from "@/public/boot.png";
 import customerImg from "@/public/customer.png";
+import driverImg from "@/public/driver.png";
+import pluggedInImg from "@/public/plugged-in.png";
+import Image from "next/image";
 import Container from "../container";
 import StackedImages from "../stacked-images";
 
@@ -17,7 +17,7 @@ export default function OurMission() {
         <div className="flex justify-center">
           <div className="md:w-2/3 lg:w-1/2">
             <div
-              className={`text-[${process.env.NEXT_PUBLIC_PG}] mb-8 text-center text-lg font-bold`}
+              className={`text-[#00A63D] mb-8 text-center text-lg font-bold`}
             >
               Our Mission
             </div>

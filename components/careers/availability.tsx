@@ -46,7 +46,7 @@ export default function Availability() {
             alt="an accountant"
           />
         </StackedImages>
-        <div className="mt-6 flex w-full items-center justify-start sm:justify-center md:mt-12">
+        <div className="flex w-full items-center justify-start sm:justify-center mt:10 md:mt-20">
           <BtnLink to="roles" title="View open roles" />
         </div>
       </div>
