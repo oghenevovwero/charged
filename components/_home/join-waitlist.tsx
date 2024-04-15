@@ -30,7 +30,7 @@ export default function WaitList() {
               text-white 
               transition-transform 
               duration-300 
-              hover:scale-95 
+              md:hover:scale-95 
               active:opacity-50`}
             >
               Join waitlist
