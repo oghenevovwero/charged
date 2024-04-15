@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
 import SwitcherButtons from "./switcher-btns";
 import FadeInRender from "../../fade-in-render";
+import ImageIndicator from "./indicator";
 
 type Props = {
   setIndicatorIndex: Dispatch<SetStateAction<number>>;
@@ -109,20 +110,7 @@ export default function ImageSwitcher({
             indicatorIndex={indicatorIndex}
           />
         </div>
-        <div className="flex w-full justify-end">
-          <div className="flex items-center gap-1" key={0}>
-            <div className="flex h-[6px] w-36 items-center rounded-full bg-gray-500">
-              <div
-                style={{
-                  width: `${(indicatorIndex / 3) * 100}%`,
-                  transition: "all 0.2s linear",
-                }}
-                className="h-full rounded-full bg-gray-100"
-              />
-            </div>
-            <div className="text-sm font-bold">{indicatorIndex}/3</div>
-          </div>
-        </div>
+        <ImageIndicator indicatorIndex={indicatorIndex} />
       </div>
     </div>
   );

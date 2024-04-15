@@ -5,6 +5,7 @@ import ImageSwitcher from "./image-switcher";
 import { useState } from "react";
 import Reason from "./reason";
 import { uniqueTraits } from "@/data/unique-traits";
+import FadeInRender from "@/components/fade-in-render";
 
 export default function WhatSetsUsApart() {
   const [indicatorIndex, setIndicatorIndex] = useState(0);
