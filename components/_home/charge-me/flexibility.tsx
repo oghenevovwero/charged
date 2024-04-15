@@ -10,7 +10,7 @@ export default function Flexibility() {
           className="w-full rounded-lg"
           alt="we give you flexibility"
         />
-        <div className="absolute bottom-4 flex w-full items-center justify-center">
+        <div className="absolute animate-[bounce_3s_ease-in-out_infinite]  bottom-4 flex w-full items-center justify-center">
           <div className="rounded-lg bg-white p-2 text-black">
             <div>
               <div className="mb-1 text-sm font-semibold">

@@ -10,7 +10,7 @@ export default function Convenience() {
           className="w-full rounded-lg"
           alt="get convenience"
         />
-        <div className="absolute bottom-4  flex w-full items-center justify-center">
+        <div className="absolute animate-[bounce_2.5s_ease-in-out_infinite] bottom-4  flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
               src={"/e1.png"}
