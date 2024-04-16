@@ -1,11 +1,10 @@
 "use client";
 
 import Container from "@/components/container";
-import ImageSwitcher from "./image-switcher";
-import { useState } from "react";
-import Reason from "./reason";
 import { uniqueTraits } from "@/data/unique-traits";
-import FadeInRender from "@/components/fade-in-render";
+import { useState } from "react";
+import ImageSwitcher from "./image-switcher";
+import Reason from "./reason";
 
 export default function WhatSetsUsApart() {
   const [indicatorIndex, setIndicatorIndex] = useState(0);
@@ -22,7 +21,7 @@ export default function WhatSetsUsApart() {
           </div>
         </div>
         <div className="w-full flex-[3] max-lg:mt-8">
-          <ExportedImageSwitcher
+          <ImageSwitcher
             indicatorIndex={indicatorIndex}
             setIndicatorIndex={setIndicatorIndex}
           />

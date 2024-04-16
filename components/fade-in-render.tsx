@@ -42,13 +42,14 @@ export default function FadeInRender({
   startOpacity = 0.2,
 }: FadeInProps) {
   const [opacity, setOpacity] = useState(startOpacity);
+
   useEffect(() => {
     const opacityTimeout = setTimeout(() => {
       setOpacity(1);
     }, delayMs);
 
     return () => clearTimeout(opacityTimeout);
-  }, []);
+  });
 
   return (
     <div

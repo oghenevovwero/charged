@@ -70,7 +70,6 @@ export default function ImageSwitcher({
                 <FadeInRender>
                   <ExportedImage
                     className="h-full w-full rounded-lg"
-                    quality={50}
                     placeholder="blur"
                     src={greenEarthImg}
                     alt="charging trailer"
@@ -81,7 +80,6 @@ export default function ImageSwitcher({
                 <FadeInRender>
                   <ExportedImage
                     className="h-full w-full rounded-lg"
-                    quality={50}
                     src={plugImg}
                     placeholder="blur"
                     alt="charging trailer"
@@ -110,7 +108,7 @@ export default function ImageSwitcher({
             indicatorIndex={indicatorIndex}
           />
         </div>
-        <ExportedImageIndicator indicatorIndex={indicatorIndex} />
+        <ImageIndicator indicatorIndex={indicatorIndex} />
       </div>
     </div>
   );

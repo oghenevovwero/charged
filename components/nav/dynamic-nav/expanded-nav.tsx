@@ -31,7 +31,7 @@ export default function ExpandedDynamicNav() {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, []);
+  });
 
   return (
     <nav

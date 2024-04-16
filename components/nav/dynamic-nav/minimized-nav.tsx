@@ -38,7 +38,7 @@ export default function MinimizedDynamicNav() {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, [navIsOpen, openNav]);
+  });
 
   return (
     <header
