@@ -90,7 +90,7 @@ export default function Plans() {
 
         <div className="flex h-full flex-col justify-around min-[1110px]:py-20">
           <div className="flex items-end gap-1 max-[1110px]:my-10">
-            <div className="text-5xl font-bold">$20</div>
+            <div className="text-5xl font-bold">$125</div>
             <div className="align-sub font-medium">for up to 10 kWh</div>
           </div>
           <div className="text-sm font-medium max-[1110px]:mb-6">
