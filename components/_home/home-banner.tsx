@@ -16,7 +16,6 @@ export default function HomeBanner() {
           priority
           className="absolute w-[200%]"
           fill
-          // sizes="120vw"
           style={{ objectFit: "cover" }}
         />
       </div>
