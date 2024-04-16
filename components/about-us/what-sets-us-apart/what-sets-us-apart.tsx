@@ -22,7 +22,7 @@ export default function WhatSetsUsApart() {
           </div>
         </div>
         <div className="w-full flex-[3] max-lg:mt-8">
-          <ImageSwitcher
+          <ExportedImageSwitcher
             indicatorIndex={indicatorIndex}
             setIndicatorIndex={setIndicatorIndex}
           />

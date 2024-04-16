@@ -1,12 +1,12 @@
 import downloadImg from "@/public/images/asd.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function DownloadApp() {
   return (
     <div className="flex flex-col items-center justify-center text-center lg:pr-16">
-      <Image
+      <ExportedImage
         src={downloadImg}
-        quality={100}
+        
         width={75}
         height={75}
         alt={"Download our app"}

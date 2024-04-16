@@ -2,7 +2,7 @@
 
 import { EXPANDED_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
 import logoImg from "@/public/images/the-logo.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import BtnLink from "../../btn-link";
@@ -52,7 +52,7 @@ export default function MinimizedDynamicNav() {
             href={"/"}
             className="h-full w-full cursor-pointer active:opacity-50 md:hover:opacity-60"
           >
-            <Image src={logoImg} className={`h-full w-full`} alt="Our logo" />
+            <ExportedImage src={logoImg} className={`h-full w-full`} alt="Our logo" />
           </Link>
         </div>
         <button

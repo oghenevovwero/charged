@@ -1,7 +1,7 @@
 import appleImg from "@/public/images/apple.png";
 import bannerImg from "@/public/images/charger2.png";
 import playImg from "@/public/images/playstore.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import BannerContent from "../banner-content";
 import Padding from "../padding";
 
@@ -9,11 +9,10 @@ export default function HomeBanner() {
   return (
     <section className="relative h-screen w-screen overflow-x-clip bg-white">
       <div className="absolute right-0 h-full w-[100.5%]">
-        <Image
+        <ExportedImage
           src={bannerImg}
           placeholder="blur"
           alt="welcome to get charged"
-          quality={100}
           priority
           className="absolute w-[200%]"
           fill
@@ -37,12 +36,11 @@ export default function HomeBanner() {
               className={`cursor-pointer p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex items-center gap-1 rounded-lg border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
             >
               <div>
-                <Image
+                <ExportedImage
                   src={appleImg}
                   width={20}
                   height={20}
                   alt="Get on app store"
-                  quality={100}
                 />
               </div>
               <div>
@@ -54,12 +52,11 @@ export default function HomeBanner() {
               className={`rounded-lg p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex cursor-pointer items-center gap-1 border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
             >
               <div>
-                <Image
+                <ExportedImage
                   src={playImg}
                   width={20}
                   height={20}
                   alt="Get on play store"
-                  quality={100}
                 />
               </div>
               <div>

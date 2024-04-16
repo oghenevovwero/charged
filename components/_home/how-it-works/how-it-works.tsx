@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import DownloadApp from "./download-app";
 import RequestCharge from "./request-charge";
 import GetCharged from "./get-charged";

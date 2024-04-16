@@ -2,7 +2,7 @@ import Container from "@/components/container";
 import { pricingPlans } from "@/data/pricing-plans";
 import greenTickImg from "@/public/images/green-tick.png";
 import vanImg from "@/public/images/van.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Plan from "./plan";
 
@@ -34,7 +34,7 @@ export default function Plans() {
             <div className="w-full flex-1">
               <div className="mb-5 flex gap-3">
                 <div>
-                  <Image
+                  <ExportedImage
                     src={greenTickImg}
                     width={20}
                     height={20}
@@ -47,7 +47,7 @@ export default function Plans() {
               </div>
               <div className="flex gap-3">
                 <div>
-                  <Image
+                  <ExportedImage
                     src={greenTickImg}
                     width={20}
                     height={20}
@@ -85,7 +85,7 @@ export default function Plans() {
           require occasional assistance, we offer one-time service call requests
         </div>
         <div className="max-lg:my-10">
-          <Image src={vanImg} alt="van" className="min-[1110px]:float-end" />
+          <ExportedImage src={vanImg} alt="van" className="min-[1110px]:float-end" />
         </div>
 
         <div className="flex h-full flex-col justify-around min-[1110px]:py-20">

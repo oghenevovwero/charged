@@ -1,7 +1,7 @@
 "use client";
 
 import arrowImg from "@/public/images/arrow-forward.svg";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Dispatch, SetStateAction } from "react";
 
 type SwitcherProps = {
@@ -27,7 +27,7 @@ export default function SwitcherButtons({
         style={{ opacity: indicatorIndex === 0 ? "40%" : "100%" }}
         className="flex h-11 w-11 rotate-180 cursor-pointer items-center justify-center rounded-full bg-gray-100 active:bg-gray-500"
       >
-        <Image src={arrowImg} width={25} height={10} alt="next" />
+        <ExportedImage src={arrowImg} width={25} height={10} alt="next" />
       </div>
 
       <div
@@ -42,7 +42,7 @@ export default function SwitcherButtons({
         style={{ opacity: indicatorIndex === 2 ? "40%" : "100%" }}
         className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-gray-100 active:bg-gray-500"
       >
-        <Image src={arrowImg} width={25} height={10} alt="previous" />
+        <ExportedImage src={arrowImg} width={25} height={10} alt="previous" />
       </div>
     </div>
   );

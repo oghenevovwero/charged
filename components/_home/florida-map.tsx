@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import chargeImg from "@/public/images/close-up.png";
 import mapImg from "@/public/images/florida.png";
 import Padding from "../padding";
@@ -6,18 +6,18 @@ import Padding from "../padding";
 export default function LagosMap() {
   return (
     <div className="relative h-[60vh] overflow-clip">
-      <Image
+      <ExportedImage
         src={mapImg}
         placeholder="blur"
         alt="get charging"
-        quality={100}
+        
         fill
         sizes="100vw"
         style={{ objectFit: "cover" }}
       />
       <div className="absolute inset-0 h-full w-screen">
         <div className="relative flex h-full justify-end">
-          <Image
+          <ExportedImage
             fill
             src={chargeImg}
             style={{ objectFit: "cover" }}

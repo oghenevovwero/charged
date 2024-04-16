@@ -1,16 +1,16 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import chargingImg from "@/public/images/price-banner.png";
 import Container from "../container";
 
 export default function PricingBanner() {
   return (
     <div className="relative h-screen overflow-clip">
-      <Image
+      <ExportedImage
         src={chargingImg}
         placeholder="blur"
         alt="pricing page"
         priority
-        quality={100}
+        
         fill
         sizes="100vw"
         style={{ objectFit: "cover" }}

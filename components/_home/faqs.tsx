@@ -1,6 +1,6 @@
 import { homePageQuestions } from "@/data/faqs";
 import plugImg from "@/public/images/plug.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Container from "../container";
 import RenderFAQs from "../render-faqs";
@@ -35,7 +35,7 @@ export default function FAQs() {
       </div>
       <div className="flex flex-col justify-around gap-12 md:flex-row md:gap-6">
         <div className="w-full md:flex-1 md:pl-20 ">
-          <Image className="w-full" src={plugImg} alt="plug in" />
+          <ExportedImage className="w-full" src={plugImg} alt="plug in" />
         </div>
         <RenderFAQs questions={homePageQuestions} />
       </div>

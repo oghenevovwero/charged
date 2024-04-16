@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import sustainabilityImg from "@/public/images/p4.png";
 import e1Img from "@/public/images/e1.png"
 
@@ -6,14 +6,14 @@ export default function Sustainability() {
   return (
     <div className="w-full rounded-xl bg-white p-2 text-black lg:p-5">
       <div className="relative">
-        <Image
+        <ExportedImage
           src={sustainabilityImg}
           className="w-full rounded-lg"
           alt="we are environmentally conscious"
         />
         <div className="absolute animate-[bounce_1.75s_ease-in-out_infinite]  bottom-4 flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
-            <Image
+            <ExportedImage
               src={e1Img}
               width={20}
               height={20}

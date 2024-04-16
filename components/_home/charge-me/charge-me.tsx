@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Convenience from "./convenience";
 import Flexibility from "./flexibility";
 import Reliability from "./reliability";
@@ -12,7 +12,7 @@ export default function ChargeMe() {
   return (
     <Container className="flex flex-col justify-between gap-4 bg-[#F6F8F7] sm:flex-row">
       <figure className="flex w-64 max-sm:hidden xl:w-80">
-        <Image src={chargeMeImg} alt="charge me" height={1050} />
+        <ExportedImage src={chargeMeImg} alt="charge me" height={1050} />
       </figure>
       <header className="text-4xl font-bold sm:hidden">CHARGE ME</header>
       <div>

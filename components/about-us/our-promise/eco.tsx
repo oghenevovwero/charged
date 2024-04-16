@@ -1,10 +1,10 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import ecoImg from "@/public/images/eco.png";
 
 export default function Eco() {
   return (
     <div className="flex items-start gap-4 px-2">
-      <Image
+      <ExportedImage
         src={ecoImg}
         width={80}
         height={80}

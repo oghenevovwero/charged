@@ -1,5 +1,5 @@
 import arrowImg from "@/public/images/arrow-forward.svg";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Padding from "../padding";
 
 export default function SearchRoles() {
@@ -10,7 +10,7 @@ export default function SearchRoles() {
           placeholder="Enter your email"
           className="focus::border-b-gray-500 placeholder: w-full border border-b border-white border-b-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg placeholder:text-gray-500"
         />
-        <Image
+        <ExportedImage
           src={arrowImg}
           width={35}
           height={35}

@@ -1,13 +1,13 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import requestImg from "@/public/images/req.png";
 import Padding from "@/components/padding";
 
 export default function RequestCharge() {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <Image
+      <ExportedImage
         src={requestImg}
-        quality={100}
+        
         width={75}
         height={75}
         alt={"Request charge"}

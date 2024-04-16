@@ -1,6 +1,6 @@
 import greenTickImg from "@/public/images/green-tick.png";
 import { PricingPlan } from "@/types";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 
 export default function Plan({
@@ -44,7 +44,7 @@ export default function Plan({
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-[6px]">
               <div className="flex-[1]">
-                <Image
+                <ExportedImage
                   src={greenTickImg}
                   width={20}
                   height={20}

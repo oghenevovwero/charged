@@ -1,7 +1,7 @@
 "use client";
 
 import logoImg from "@/public/images/the-logo.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import BtnLink from "../../btn-link";
 import Padding from "../../padding";
@@ -26,7 +26,7 @@ export default function ExpandedStaticNav() {
             href={"/"}
             className="h-full w-full cursor-pointer hover:opacity-60 active:opacity-100"
           >
-            <Image src={logoImg} className="h-full w-full" alt="Our logo" />
+            <ExportedImage src={logoImg} className="h-full w-full" alt="Our logo" />
           </Link>
         </div>
         <div className="flex items-center justify-around gap-6 font-medium">

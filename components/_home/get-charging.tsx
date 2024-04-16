@@ -1,16 +1,16 @@
 import getChargingImg from "@/public/images/charger3.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Container from "../container";
 import BtnLink from "../btn-link";
 
 export default function GetCharging() {
   return (
     <div className="relative h-[70vh] overflow-clip text-white">
-      <Image
+      <ExportedImage
         src={getChargingImg}
         placeholder="blur"
         alt="get charging"
-        quality={100}
+        
         fill
         sizes="100vw"
         style={{ objectFit: "cover" }}

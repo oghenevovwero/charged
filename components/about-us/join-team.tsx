@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import memberImg from "@/public/images/members.png";
 import Link from "next/link";
 import Container from "../container";
@@ -18,7 +18,7 @@ export default function JoinTheTeam() {
         </div>
       </div>
       <div className="relative flex-1">
-        <Image
+        <ExportedImage
           alt="members"
           height={478}
           className="max-md:rounded-md md:rounded-r-3xl"

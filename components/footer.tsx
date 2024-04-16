@@ -2,7 +2,7 @@ import appleImg from "@/public/images/apple.png";
 import footerChargeImg from "@/public/images/footer-charge.png";
 import playImg from "@/public/images/playstore.png";
 import logoImg from "@/public/images/the-logo.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Padding from "./padding";
 import { GET_APP_CALL } from "@/constants";
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="mb-6 flex flex-col sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
-              <Image src={logoImg} height={40} width={100} alt="Our logo" />
+              <ExportedImage src={logoImg} height={40} width={100} alt="Our logo" />
             </Link>
             <div className="text-[#EDF0EF]">
               Mobile EV charge that has your back
@@ -27,12 +27,12 @@ export default function Footer() {
             <div className="flex flex-row items-center gap-2 md:flex-col">
               <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
-                  <Image
+                  <ExportedImage
                     src={appleImg}
                     width={20}
                     height={20}
                     alt="Get on app store"
-                    quality={100}
+                    
                   />
                 </div>
                 <div>
@@ -42,12 +42,12 @@ export default function Footer() {
               </div>
               <div className="flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 p-2 text-white active:opacity-50">
                 <div>
-                  <Image
+                  <ExportedImage
                     src={playImg}
                     width={20}
                     height={20}
                     alt="Get on play store"
-                    quality={100}
+                    
                   />
                 </div>
                 <div>
@@ -104,7 +104,7 @@ export default function Footer() {
         </div>
       </Padding>
       <div className="my-8 flex items-center justify-center px-2 md:my-16">
-        <Image src={footerChargeImg} alt="charge" quality={100} />
+        <ExportedImage src={footerChargeImg} alt="charge"  />
       </div>
       <Padding>
         <div className="mb-2 h-[1px] w-full bg-gray-400" />
@@ -115,10 +115,10 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="text-lg font-extrabold">X</div>
             <div>
-              <Image src={linkedInImg} width={15} height={15} alt="Linked in" />
+              <ExportedImage src={linkedInImg} width={15} height={15} alt="Linked in" />
             </div>
             <div>
-              <Image src={fbImg} width={15} height={15} alt="Facebook" />
+              <ExportedImage src={fbImg} width={15} height={15} alt="Facebook" />
             </div>
           </div>
         </div>

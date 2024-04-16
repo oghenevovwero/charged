@@ -2,7 +2,7 @@ import bootImg from "@/public/images/happy-driver.png";
 import customerImg from "@/public/images/man-in-suit.png";
 import pluggedInImg from "@/public/images/mechanic.png";
 import driverImg from "@/public/images/young-lady.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import BtnLink from "../btn-link";
 import Container from "../container";
 import StackedImages from "../stacked-images";
@@ -25,22 +25,22 @@ export default function Availability() {
           </div>
         </div>
         <StackedImages>
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={pluggedInImg}
             alt="mechanic"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={driverImg}
             alt="girl with laptop"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={bootImg}
             alt="happy driver"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={customerImg}
             alt="an accountant"

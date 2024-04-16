@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import chevronImg from "@/public/images/down-chevron.png";
 import chargeImg from "@/public/images/charge-at-station.png";
 import Container from "../container";
@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <Container className="flex flex-col justify-between gap-12 bg-white text-black sm:flex-row sm:gap-5">
       <div className="flex-1 mt-12">
-        <Image src={chargeImg} alt="charging" />
+        <ExportedImage src={chargeImg} alt="charging" />
       </div>
       <div className="flex w-full flex-1 flex-col gap-5 sm:mt-12">
         <div className="text-5xl font-bold">Get in touch</div>
@@ -48,7 +48,7 @@ export default function ContactUs() {
           <div className="absolute bottom-3 left-2 flex items-center gap-2">
             <div className="text-lg text-gray-400">US</div>
             <div>
-              <Image
+              <ExportedImage
                 src={chevronImg}
                 alt="more countries"
                 width={10}

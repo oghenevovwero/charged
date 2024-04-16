@@ -3,7 +3,7 @@
 import greenEarthImg from "@/public/images/green-earth.png";
 import plugImg from "@/public/images/refuel.jpeg";
 import trailerImg from "@/public/images/trailer.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Dispatch, SetStateAction, useState } from "react";
 import SwitcherButtons from "./switcher-btns";
 import FadeInRender from "../../fade-in-render";
@@ -32,7 +32,7 @@ export default function ImageSwitcher({
             <div className="h-[85%] max-w-[300px] xl:max-w-[320px]">
               {indicatorIndex === 0 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     style={{ transition: "all 1s linear" }}
                     className="h-full w-full rounded-lg"
                     placeholder="blur"
@@ -43,7 +43,7 @@ export default function ImageSwitcher({
               )}
               {indicatorIndex === 1 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     className="h-full w-full rounded-lg"
                     src={greenEarthImg}
                     placeholder="blur"
@@ -53,7 +53,7 @@ export default function ImageSwitcher({
               )}
               {indicatorIndex === 2 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     style={{ transition: "all 1s linear" }}
                     className="h-full w-full rounded-lg"
                     placeholder="blur"
@@ -68,7 +68,7 @@ export default function ImageSwitcher({
             <div className="absolute h-[80%] w-[200%]">
               {indicatorIndex === 0 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     className="h-full w-full rounded-lg"
                     quality={50}
                     placeholder="blur"
@@ -79,7 +79,7 @@ export default function ImageSwitcher({
               )}
               {indicatorIndex === 1 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     className="h-full w-full rounded-lg"
                     quality={50}
                     src={plugImg}
@@ -90,7 +90,7 @@ export default function ImageSwitcher({
               )}
               {indicatorIndex === 2 && (
                 <FadeInRender>
-                  <Image
+                  <ExportedImage
                     className="h-full w-full rounded-lg"
                     src={trailerImg}
                     placeholder="blur"
@@ -110,7 +110,7 @@ export default function ImageSwitcher({
             indicatorIndex={indicatorIndex}
           />
         </div>
-        <ImageIndicator indicatorIndex={indicatorIndex} />
+        <ExportedImageIndicator indicatorIndex={indicatorIndex} />
       </div>
     </div>
   );

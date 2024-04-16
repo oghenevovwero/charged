@@ -1,5 +1,5 @@
 import welcomeImg from "@/public/images/work-setup.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Container from "../container";
 
 export default function BuildWithUs() {
@@ -15,7 +15,7 @@ export default function BuildWithUs() {
         </div>
       </div>
       <div className="flex flex-1 justify-end">
-        <Image
+        <ExportedImage
           className="rounded-md"
           src={welcomeImg}
           alt="take the journey with us"

@@ -2,7 +2,7 @@ import clockImg from "@/public/images/clock-icon.png";
 import locationImg from "@/public/images/location-icon.png";
 import jobImg from "@/public/images/view-job.png";
 import { Role } from "@/types";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Position({ name, role }: Role) {
   return (
@@ -16,7 +16,7 @@ export default function Position({ name, role }: Role) {
             View job
           </div>
           <div>
-            <Image src={jobImg} alt="jobs" />
+            <ExportedImage src={jobImg} alt="jobs" />
           </div>
         </div>
       </div>
@@ -24,13 +24,13 @@ export default function Position({ name, role }: Role) {
       <div className="flex items-center gap-6 text-sm">
         <div className="flex items-center gap-1">
           <div>
-            <Image src={locationImg} alt="location" />
+            <ExportedImage src={locationImg} alt="location" />
           </div>
           <div className="font-medium">Remote</div>
         </div>
         <div className="flex items-center gap-1">
           <div>
-            <Image src={clockImg} alt="clock" />
+            <ExportedImage src={clockImg} alt="clock" />
           </div>
           <div className="font-medium">Fulltime</div>
         </div>

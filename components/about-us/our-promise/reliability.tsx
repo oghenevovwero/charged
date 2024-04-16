@@ -1,10 +1,10 @@
 import reliabilityImg from "@/public/images/okay.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Reliability() {
   return (
     <div className="flex items-start gap-4 px-2">
-      <Image src={reliabilityImg} width={80} height={80} alt={"reliability"} />
+      <ExportedImage src={reliabilityImg} width={80} height={80} alt={"reliability"} />
 
       <div>
         <div className="mb-4 text-2xl font-semibold">Reliability</div>

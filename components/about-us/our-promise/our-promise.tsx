@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Reliability from "./reliability";
 import Flexibility from "./flexibility";
 import Eco from "./eco";

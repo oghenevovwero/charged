@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import plugImg from "@/public/images/unrounded-plug.png";
 import Container from "../container";
 import { PRIMARY_GREEN } from "@/constants";
@@ -38,7 +38,7 @@ export default function WaitList() {
           </div>
         </div>
         <div className="h-96 w-full flex-1 max-md:hidden">
-          <Image
+          <ExportedImage
             className="h-full w-full rounded-r-3xl"
             src={plugImg}
             alt="plug in"

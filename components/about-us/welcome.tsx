@@ -1,5 +1,5 @@
 import welcomeImg from "@/public/images/road.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Padding from "../padding";
 import Container from "../container";
 
@@ -19,7 +19,7 @@ export default function Welcome() {
         </div>
       </div>
       <div className="flex flex-1 justify-end">
-        <Image
+        <ExportedImage
           className="rounded-md"
           src={welcomeImg}
           alt="take the journey with us"

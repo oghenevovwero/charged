@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import teamImg from "@/public/images/team.png";
 import Container from "../container";
 
@@ -18,7 +18,7 @@ export default function WhoWeAre() {
         </div>
       </div>
       <div className="flex flex-1 justify-end">
-        <Image
+        <ExportedImage
           className="rounded-md"
           src={teamImg}
           alt="collaborative workers"

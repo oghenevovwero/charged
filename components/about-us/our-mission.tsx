@@ -3,7 +3,7 @@ import bootImg from "@/public/images/boot.png";
 import customerImg from "@/public/images/customer.png";
 import driverImg from "@/public/images/driver.png";
 import pluggedInImg from "@/public/images/plugged-in.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Container from "../container";
 import StackedImages from "../stacked-images";
 
@@ -11,7 +11,7 @@ export default function OurMission() {
   return (
     <Container className="bg-white text-black ">
       <div className="mb-16 flex items-center justify-center">
-        <Image src={chargeImg} alt="charge with us" />
+        <ExportedImage src={chargeImg} alt="charge with us" />
       </div>
       <div>
         <div className="flex justify-center">
@@ -33,22 +33,22 @@ export default function OurMission() {
           </div>
         </div>
         <StackedImages>
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={pluggedInImg}
             alt="charger"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={driverImg}
             alt="a happy man"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={bootImg}
             alt="a car trunk"
           />
-          <Image
+          <ExportedImage
             className="h-full rounded-md md:rounded-xl"
             src={customerImg}
             alt="a man with his phone"

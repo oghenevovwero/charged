@@ -1,11 +1,11 @@
 import flexibilityImg from "@/public/images/p3.png";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Flexibility() {
   return (
     <div className="w-full rounded-xl bg-white p-2 text-black lg:p-5">
       <div className="relative">
-        <Image
+        <ExportedImage
           src={flexibilityImg}
           className="w-full rounded-lg"
           alt="we give you flexibility"

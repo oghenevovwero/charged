@@ -1,10 +1,10 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import flexibilityImg from "@/public/images/flexibility.png";
 
 export default function Flexibility() {
   return (
     <div className="flex items-start gap-4 px-2">
-      <Image src={flexibilityImg} width={80} height={80} alt={"flexibility"} />
+      <ExportedImage src={flexibilityImg} width={80} height={80} alt={"flexibility"} />
 
       <div>
         <div className="mb-4 text-2xl font-semibold">Flexibility</div>
