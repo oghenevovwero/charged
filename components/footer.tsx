@@ -1,11 +1,13 @@
-import appleImg from "@/public/apple.png";
-import footerChargeImg from "@/public/footer-charge.png";
-import playImg from "@/public/playstore.png";
-import logoImg from "@/public/the-logo.png";
+import appleImg from "@/public/images/apple.png";
+import footerChargeImg from "@/public/images/footer-charge.png";
+import playImg from "@/public/images/playstore.png";
+import logoImg from "@/public/images/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import Padding from "./padding";
 import { GET_APP_CALL } from "@/constants";
+import linkedInImg from "@/public/images/li.png"
+import fbImg from "@/public/images/fb.png"
 
 export default function Footer() {
   return (
@@ -113,10 +115,10 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="text-lg font-extrabold">X</div>
             <div>
-              <Image src={"/li.png"} width={15} height={15} alt="Linked in" />
+              <Image src={linkedInImg} width={15} height={15} alt="Linked in" />
             </div>
             <div>
-              <Image src={"/fb.png"} width={15} height={15} alt="Facebook" />
+              <Image src={fbImg} width={15} height={15} alt="Facebook" />
             </div>
           </div>
         </div>

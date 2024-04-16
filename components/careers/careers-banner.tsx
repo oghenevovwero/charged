@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chargingImg from "@/public/executive-team.png";
+import chargingImg from "@/public/images/executive-team.png";
 import Container from "../container";
 
 export default function CareersBanner() {

@@ -1,4 +1,4 @@
-import downloadImg from "@/public/asd.png";
+import downloadImg from "@/public/images/asd.png";
 import Image from "next/image";
 
 export default function DownloadApp() {

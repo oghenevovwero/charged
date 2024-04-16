@@ -1,8 +1,8 @@
 "use client";
 
-import greenEarthImg from "@/public/green-earth.png";
-import plugImg from "@/public/refuel.jpeg";
-import trailerImg from "@/public/trailer.png";
+import greenEarthImg from "@/public/images/green-earth.png";
+import plugImg from "@/public/images/refuel.jpeg";
+import trailerImg from "@/public/images/trailer.png";
 import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
 import SwitcherButtons from "./switcher-btns";

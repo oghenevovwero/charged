@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import { pricingPlans } from "@/data/pricing-plans";
-import greenTickImg from "@/public/green-tick.png";
-import vanImg from "@/public/van.png";
+import greenTickImg from "@/public/images/green-tick.png";
+import vanImg from "@/public/images/van.png";
 import Image from "next/image";
 import Link from "next/link";
 import Plan from "./plan";

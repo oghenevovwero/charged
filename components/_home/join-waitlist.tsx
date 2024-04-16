@@ -1,5 +1,5 @@
 import Image from "next/image";
-import plugImg from "@/public/unrounded-plug.png";
+import plugImg from "@/public/images/unrounded-plug.png";
 import Container from "../container";
 import { PRIMARY_GREEN } from "@/constants";
 

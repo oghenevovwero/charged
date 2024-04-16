@@ -1,5 +1,6 @@
 import Image from "next/image";
-import reliabilityImg from "@/public/p2.png";
+import reliabilityImg from "@/public/images/p2.png";
+import drivingImg from "@/public/images/driving.png"
 
 export default function Reliability() {
   return (
@@ -13,7 +14,7 @@ export default function Reliability() {
         <div className="absolute animate-[bounce_1.5s_ease-in-out_infinite]  bottom-4 flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
-              src={"/driving.png"}
+              src={drivingImg}
               width={20}
               height={20}
               className="rounded-lg object-cover"

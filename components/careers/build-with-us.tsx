@@ -1,4 +1,4 @@
-import welcomeImg from "@/public/work-setup.png";
+import welcomeImg from "@/public/images/work-setup.png";
 import Image from "next/image";
 import Container from "../container";
 

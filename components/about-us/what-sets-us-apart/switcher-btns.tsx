@@ -1,6 +1,6 @@
 "use client";
 
-import arrowImg from "@/public/arrow-forward.svg";
+import arrowImg from "@/public/images/arrow-forward.svg";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 

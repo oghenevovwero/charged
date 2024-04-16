@@ -1,6 +1,6 @@
-import clockImg from "@/public/clock-icon.png";
-import locationImg from "@/public/location-icon.png";
-import jobImg from "@/public/view-job.png";
+import clockImg from "@/public/images/clock-icon.png";
+import locationImg from "@/public/images/location-icon.png";
+import jobImg from "@/public/images/view-job.png";
 import { Role } from "@/types";
 import Image from "next/image";
 

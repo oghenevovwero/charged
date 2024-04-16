@@ -1,5 +1,6 @@
 import Image from "next/image";
-import convenienceImg from "@/public/p1.png";
+import convenienceImg from "@/public/images/p1.png";
+import e1Img from "@/public/images/e1.png"
 
 export default function Convenience() {
   return (
@@ -13,7 +14,7 @@ export default function Convenience() {
         <div className="absolute animate-[bounce_2.5s_ease-in-out_infinite] bottom-4  flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
-              src={"/e1.png"}
+              src={e1Img}
               width={20}
               height={20}
               className="rounded-lg object-cover"

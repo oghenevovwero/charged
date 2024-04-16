@@ -1,4 +1,4 @@
-import welcomeImg from "@/public/road.png";
+import welcomeImg from "@/public/images/road.png";
 import Image from "next/image";
 import Padding from "../padding";
 import Container from "../container";

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import chargeImg from "@/public/close-up.png";
-import mapImg from "@/public/florida.png";
+import chargeImg from "@/public/images/close-up.png";
+import mapImg from "@/public/images/florida.png";
 import Padding from "../padding";
 
 export default function LagosMap() {

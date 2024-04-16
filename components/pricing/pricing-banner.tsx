@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chargingImg from "@/public/price-banner.png";
+import chargingImg from "@/public/images/price-banner.png";
 import Container from "../container";
 
 export default function PricingBanner() {

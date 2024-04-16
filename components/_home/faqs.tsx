@@ -1,5 +1,5 @@
 import { homePageQuestions } from "@/data/faqs";
-import plugImg from "@/public/plug.png";
+import plugImg from "@/public/images/plug.png";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../container";

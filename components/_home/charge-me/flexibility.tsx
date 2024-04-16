@@ -1,4 +1,4 @@
-import flexibilityImg from "@/public/p3.png";
+import flexibilityImg from "@/public/images/p3.png";
 import Image from "next/image";
 
 export default function Flexibility() {

@@ -1,7 +1,7 @@
 "use client";
 
 import { PRIMARY_BLUE } from "@/constants";
-import logoImg from "@/public/the-logo.png";
+import logoImg from "@/public/images/the-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

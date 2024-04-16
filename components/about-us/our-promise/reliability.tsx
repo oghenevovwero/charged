@@ -1,4 +1,4 @@
-import reliabilityImg from "@/public/okay.png";
+import reliabilityImg from "@/public/images/okay.png";
 import Image from "next/image";
 
 export default function Reliability() {

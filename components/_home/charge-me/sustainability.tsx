@@ -1,5 +1,6 @@
 import Image from "next/image";
-import sustainabilityImg from "@/public/p4.png";
+import sustainabilityImg from "@/public/images/p4.png";
+import e1Img from "@/public/images/e1.png"
 
 export default function Sustainability() {
   return (
@@ -13,7 +14,7 @@ export default function Sustainability() {
         <div className="absolute animate-[bounce_1.75s_ease-in-out_infinite]  bottom-4 flex w-full items-center justify-center">
           <div className="flex items-center justify-start gap-2 rounded-lg bg-white p-2 text-black">
             <Image
-              src={"/e1.png"}
+              src={e1Img}
               width={20}
               height={20}
               className="rounded-lg object-cover"

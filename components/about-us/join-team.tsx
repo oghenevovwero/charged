@@ -1,5 +1,5 @@
 import Image from "next/image";
-import memberImg from "@/public/members.png";
+import memberImg from "@/public/images/members.png";
 import Link from "next/link";
 import Container from "../container";
 import BtnLink from "../btn-link";

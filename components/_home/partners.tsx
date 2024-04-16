@@ -1,10 +1,10 @@
 import Image from "next/image";
-import nissanImg from "@/public/nissan.png";
-import teslaImg from "@/public/tesla.png";
-import bmwImg from "@/public/bmw.png";
-import fordImg from "@/public/ford.png";
-import bydImg from "@/public/byd.png";
-import hyundaiImg from "@/public/hyundai.png";
+import nissanImg from "@/public/images/nissan.png";
+import teslaImg from "@/public/images/tesla.png";
+import bmwImg from "@/public/images/bmw.png";
+import fordImg from "@/public/images/ford.png";
+import bydImg from "@/public/images/byd.png";
+import hyundaiImg from "@/public/images/hyundai.png";
 import Padding from "../padding";
 
 export default function Partners() {

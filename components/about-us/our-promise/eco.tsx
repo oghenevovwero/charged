@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ecoImg from "@/public/eco.png";
+import ecoImg from "@/public/images/eco.png";
 
 export default function Eco() {
   return (

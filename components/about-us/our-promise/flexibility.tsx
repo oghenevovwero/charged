@@ -1,5 +1,5 @@
 import Image from "next/image";
-import flexibilityImg from "@/public/flexibility.png";
+import flexibilityImg from "@/public/images/flexibility.png";
 
 export default function Flexibility() {
   return (

@@ -1,4 +1,4 @@
-import getChargingImg from "@/public/charger3.png";
+import getChargingImg from "@/public/images/charger3.png";
 import Image from "next/image";
 import Container from "../container";
 import BtnLink from "../btn-link";

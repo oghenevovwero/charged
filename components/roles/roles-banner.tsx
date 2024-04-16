@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chargingImg from "@/public/roles-desk.png";
+import chargingImg from "@/public/images/roles-desk.png";
 
 export default function RolesBanner() {
   return (
