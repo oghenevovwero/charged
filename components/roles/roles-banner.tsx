@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import chargingImg from "@/public/images/roles-desk.png";
+import chargingImg from "@/public/images/roles-desk-c.png";
 
 export default function RolesBanner() {
   return (

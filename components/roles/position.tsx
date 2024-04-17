@@ -1,6 +1,6 @@
-import clockImg from "@/public/images/clock-icon.png";
-import locationImg from "@/public/images/location-icon.png";
-import jobImg from "@/public/images/view-job.png";
+import clockImg from "@/public/images/clock-icon-c.png";
+import locationImg from "@/public/images/location-icon-c.png";
+import jobImg from "@/public/images/view-job-c.png";
 import { Role } from "@/types";
 import ExportedImage from "next-image-export-optimizer";
 

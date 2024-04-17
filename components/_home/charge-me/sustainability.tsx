@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
-import sustainabilityImg from "@/public/images/p4.png";
-import e1Img from "@/public/images/e1.png"
+import sustainabilityImg from "@/public/images/p4-c.png";
+import e1Img from "@/public/images/e1-c.png"
 
 export default function Sustainability() {
   return (

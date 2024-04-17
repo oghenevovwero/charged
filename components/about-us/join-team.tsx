@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import memberImg from "@/public/images/members.png";
+import memberImg from "@/public/images/members-c.png";
 import Link from "next/link";
 import Container from "../container";
 import BtnLink from "../btn-link";

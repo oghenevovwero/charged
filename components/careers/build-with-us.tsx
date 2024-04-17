@@ -1,4 +1,4 @@
-import welcomeImg from "@/public/images/work-setup.png";
+import welcomeImg from "@/public/images/work-setup-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Container from "../container";
 

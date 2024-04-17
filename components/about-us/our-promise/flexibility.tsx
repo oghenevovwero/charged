@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import flexibilityImg from "@/public/images/flexibility.png";
+import flexibilityImg from "@/public/images/flexibility-c.png";
 
 export default function Flexibility() {
   return (

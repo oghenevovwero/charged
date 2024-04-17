@@ -1,6 +1,6 @@
-import appleImg from "@/public/images/apple.png";
-import bannerImg from "@/public/images/charger2.png";
-import playImg from "@/public/images/playstore.png";
+import appleImg from "@/public/images/apple-c.png";
+import bannerImg from "@/public/images/charger2-c.png";
+import playImg from "@/public/images/playstore-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import BannerContent from "../banner-content";
 import Padding from "../padding";
@@ -32,32 +32,28 @@ export default function HomeBanner() {
           </div>
           <div className="flex items-center gap-3">
             <div
-              className={`cursor-pointer p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex items-center gap-1 rounded-lg border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
+              className={`flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 bg-[#1A202B] p-2 text-white hover:opacity-75 active:opacity-50`}
             >
-              <div>
-                <ExportedImage
-                  src={appleImg}
-                  width={20}
-                  height={20}
-                  alt="Get on app store"
-                />
-              </div>
+              <ExportedImage
+                src={appleImg}
+                width={20}
+                height={20}
+                alt="Get on app store"
+              />
               <div>
                 <div className="text-[8px]">COMING SOON ON</div>
                 <div className="text-[12px] font-semibold">App Store</div>
               </div>
             </div>
             <div
-              className={`rounded-lg p-2 bg-[${process.env.NEXT_PUBLIC_PB}] flex cursor-pointer items-center gap-1 border border-gray-500 text-white hover:opacity-75 active:opacity-50`}
+              className={`flex cursor-pointer items-center gap-1 rounded-lg border border-gray-500 bg-[#1A202B] p-2 text-white hover:opacity-75 active:opacity-50`}
             >
-              <div>
-                <ExportedImage
-                  src={playImg}
-                  width={20}
-                  height={20}
-                  alt="Get on play store"
-                />
-              </div>
+              <ExportedImage
+                src={playImg}
+                width={20}
+                height={20}
+                alt="Get on play store"
+              />
               <div>
                 <div className="text-[8px]">COMING SOON ON</div>
                 <div className="text-[12px] font-semibold">Google play</div>

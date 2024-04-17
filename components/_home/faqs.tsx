@@ -1,5 +1,5 @@
 import { homePageQuestions } from "@/data/faqs";
-import plugImg from "@/public/images/plug.png";
+import plugImg from "@/public/images/plug-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Container from "../container";

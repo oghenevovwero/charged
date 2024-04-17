@@ -33,17 +33,5 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
-  height: 8px;
-}
-
-
-::-webkit-scrollbar-thumb {
-  width: 1px;
-  height: 96px;
-  border-radius: 1ex;
-  background-color: #1A202B;
-}
-::-webkit-scrollbar-corner{
-  background: #000;
+  display: none;
 }

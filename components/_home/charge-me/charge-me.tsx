@@ -3,7 +3,7 @@ import Convenience from "./convenience";
 import Flexibility from "./flexibility";
 import Reliability from "./reliability";
 import Sustainability from "./sustainability";
-import chargeMeImg from "@/public/images/charge-me.png";
+import chargeMeImg from "@/public/images/charge-me-c.png";
 import Container from "@/components/container";
 import Link from "next/link";
 import BtnLink from "@/components/btn-link";

@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import { pricingPlans } from "@/data/pricing-plans";
-import greenTickImg from "@/public/images/green-tick.png";
-import vanImg from "@/public/images/van.png";
+import greenTickImg from "@/public/images/green-tick-c.png";
+import vanImg from "@/public/images/van-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Plan from "./plan";
@@ -65,7 +65,7 @@ export default function Plans() {
         <div className="max-sm:w-full">
           <Link href="/pricing#footer" className="scroll">
             <div
-              className={`w-full cursor-pointer rounded-lg border border-[#00A63D]
+              className={`w-full cursor-pointer rounded-lg border border-[#00A54D]
               bg-white 
               px-[33px] 
               py-[14px] text-sm font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}

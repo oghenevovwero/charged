@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import chargingImg from "@/public/images/price-banner.png";
+import chargingImg from "@/public/images/price-banner-c.png";
 import Container from "../container";
 
 export default function PricingBanner() {

@@ -10,7 +10,7 @@ export default function OurPromise() {
       <div className="text-center">
         <div className="mb-14 text-4xl font-bold">Our promise to you</div>
       </div>
-      <div className="flex flex-col items-center justify-around max-sm:gap-8 sm:flex-row sm:items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-2 md:gap-6 lg:gap-8 sm:flex-row">
         <Reliability />
         <Flexibility />
         <Eco />

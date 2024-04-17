@@ -1,8 +1,8 @@
-import chargeImg from "@/public/images/about-charge.png";
-import bootImg from "@/public/images/boot.png";
-import customerImg from "@/public/images/customer.png";
-import driverImg from "@/public/images/driver.png";
-import pluggedInImg from "@/public/images/plugged-in.png";
+import chargeImg from "@/public/images/about-charge-c.png";
+import bootImg from "@/public/images/boot-c.png";
+import customerImg from "@/public/images/customer-c.png";
+import driverImg from "@/public/images/driver-c.png";
+import pluggedInImg from "@/public/images/plugged-in-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Container from "../container";
 import StackedImages from "../stacked-images";
@@ -17,7 +17,7 @@ export default function OurMission() {
         <div className="flex justify-center">
           <div className="md:w-2/3 lg:w-1/2">
             <div
-              className={`text-[#00A63D] mb-8 text-center text-lg font-bold`}
+              className={`text-[#00A54D] mb-8 text-center text-lg font-bold`}
             >
               Our Mission
             </div>

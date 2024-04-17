@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import plugImg from "@/public/images/unrounded-plug.png";
+import plugImg from "@/public/images/unrounded-plug-c.png";
 import Container from "../container";
 import { PRIMARY_GREEN } from "@/constants";
 

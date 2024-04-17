@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
-import reliabilityImg from "@/public/images/p2.png";
-import drivingImg from "@/public/images/driving.png"
+import reliabilityImg from "@/public/images/p2-c.png";
+import drivingImg from "@/public/images/driving-c.png"
 
 export default function Reliability() {
   return (

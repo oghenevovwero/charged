@@ -11,11 +11,12 @@
 
 # next.js
 /.next/
-/out/
+/out
 
 # production
 /build
 *.zip
+public/nextImageExportOptimizer/
 
 # misc
 .DS_Store

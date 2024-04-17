@@ -1,7 +1,7 @@
 "use client";
 
 import { EXPANDED_NAV_HEIGHT, PRIMARY_BLUE } from "@/constants";
-import logoImg from "@/public/images/the-logo.png";
+import logoImg from "@/public/images/the-logo-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -20,7 +20,7 @@ export default function MinimizedDynamicNav() {
   const [dynamicStyles, setDynamicStyles] = useState("");
 
   const scrollHandler = () => {
-    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT) {
+    if (window.scrollY >= window.screen.height - EXPANDED_NAV_HEIGHT * 2) {
       setDynamicStyles(nonTransparentStyle);
     } else {
       if (navIsOpen.current) {

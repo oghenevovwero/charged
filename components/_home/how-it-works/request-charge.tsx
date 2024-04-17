@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import requestImg from "@/public/images/req.png";
+import requestImg from "@/public/images/req-c.png";
 import Padding from "@/components/padding";
 
 export default function RequestCharge() {

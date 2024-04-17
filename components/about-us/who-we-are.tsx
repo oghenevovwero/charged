@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import teamImg from "@/public/images/team.png";
+import teamImg from "@/public/images/team-c.png";
 import Container from "../container";
 
 export default function WhoWeAre() {

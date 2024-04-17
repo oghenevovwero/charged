@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import chargedImg from "@/public/images/bat.png";
+import chargedImg from "@/public/images/bat-c.png";
 import Padding from "@/components/padding";
 
 export default function GetCharged() {

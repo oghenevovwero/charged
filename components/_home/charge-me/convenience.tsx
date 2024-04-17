@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
-import convenienceImg from "@/public/images/p1.png";
-import e1Img from "@/public/images/e1.png"
+import convenienceImg from "@/public/images/p1-c.png";
+import e1Img from "@/public/images/e1-c.png"
 
 export default function Convenience() {
   return (

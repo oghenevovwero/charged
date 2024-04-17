@@ -1,4 +1,4 @@
-import reliabilityImg from "@/public/images/okay.png";
+import reliabilityImg from "@/public/images/okay-c.png";
 import ExportedImage from "next-image-export-optimizer";
 
 export default function Reliability() {

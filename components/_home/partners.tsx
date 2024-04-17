@@ -1,10 +1,10 @@
 import ExportedImage from "next-image-export-optimizer";
-import nissanImg from "@/public/images/nissan.png";
-import teslaImg from "@/public/images/tesla.png";
-import bmwImg from "@/public/images/bmw.png";
-import fordImg from "@/public/images/ford.png";
-import bydImg from "@/public/images/byd.png";
-import hyundaiImg from "@/public/images/hyundai.png";
+import nissanImg from "@/public/images/nissan-c.png";
+import teslaImg from "@/public/images/tesla-c.png";
+import bmwImg from "@/public/images/bmw-c.png";
+import fordImg from "@/public/images/ford-c.png";
+import bydImg from "@/public/images/byd-c.png";
+import hyundaiImg from "@/public/images/hyundai-c.png";
 import Padding from "../padding";
 
 export default function Partners() {

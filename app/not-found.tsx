@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import logoImg from "@/public/images/the-logo.png";
+import logoImg from "@/public/images/the-logo-c.png";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 

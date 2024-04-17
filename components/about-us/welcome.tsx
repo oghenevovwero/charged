@@ -1,4 +1,4 @@
-import welcomeImg from "@/public/images/road.png";
+import welcomeImg from "@/public/images/road-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Padding from "../padding";
 import Container from "../container";

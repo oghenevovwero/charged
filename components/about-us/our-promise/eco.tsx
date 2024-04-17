@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import ecoImg from "@/public/images/eco.png";
+import ecoImg from "@/public/images/eco-c.png";
 
 export default function Eco() {
   return (

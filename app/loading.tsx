@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import logoImg from "@/public/images/the-logo.png";
+import logoImg from "@/public/images/the-logo-c.png";
 
 export default function Loading() {
   return (

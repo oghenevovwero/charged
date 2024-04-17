@@ -1,13 +1,13 @@
-import appleImg from "@/public/images/apple.png";
-import footerChargeImg from "@/public/images/footer-charge.png";
-import playImg from "@/public/images/playstore.png";
-import logoImg from "@/public/images/the-logo.png";
+import appleImg from "@/public/images/apple-c.png";
+import footerChargeImg from "@/public/images/footer-charge-c.png";
+import playImg from "@/public/images/playstore-c.png";
+import logoImg from "@/public/images/the-logo-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Padding from "./padding";
 import { GET_APP_CALL } from "@/constants";
-import linkedInImg from "@/public/images/li.png"
-import fbImg from "@/public/images/fb.png"
+import linkedInImg from "@/public/images/li-c.png"
+import fbImg from "@/public/images/fb-c.png"
 
 export default function Footer() {
   return (

@@ -1,4 +1,4 @@
-import flexibilityImg from "@/public/images/p3.png";
+import flexibilityImg from "@/public/images/p3-c.png";
 import ExportedImage from "next-image-export-optimizer";
 
 export default function Flexibility() {
@@ -10,7 +10,7 @@ export default function Flexibility() {
           className="w-full rounded-lg"
           alt="we give you flexibility"
         />
-        <div className="absolute animate-[bounce_3s_ease-in-out_infinite]  bottom-4 flex w-full items-center justify-center">
+        <div className="absolute bottom-4  flex w-full animate-[bounce_3s_ease-in-out_infinite] items-center justify-center">
           <div className="rounded-lg bg-white p-2 text-black">
             <div>
               <div className="mb-1 text-sm font-semibold">
@@ -18,11 +18,13 @@ export default function Flexibility() {
               </div>
               <div className="text-[12px] sm:text-sm">
                 <div className="mb-1 flex items-start gap-2">
-                  <input
-                    type="radio"
-                    defaultChecked
-                    className="mt-[2.5px] accent-green-600"
-                  />
+                  <label>
+                    <input
+                      type="radio"
+                      defaultChecked
+                      className="mt-[2.5px] accent-green-600"
+                    />
+                  </label>
                   <div>
                     <div>Battery top up</div>
                     <div className="my-1 h-1 w-full rounded-full bg-gray-300" />
@@ -30,11 +32,13 @@ export default function Flexibility() {
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <input
-                    type="radio"
-                    defaultChecked={false}
-                    className="mt-[2.5px] accent-green-600"
-                  />
+                  <label>
+                    <input
+                      type="radio"
+                      defaultChecked={false}
+                      className="mt-[2.5px] accent-green-600"
+                    />
+                  </label>
                   <div>
                     <div>Battery 100% charge</div>
                     <div className="my-1 h-1 w-full rounded-full bg-gray-300" />

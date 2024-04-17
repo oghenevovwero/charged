@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
-import chevronImg from "@/public/images/down-chevron.png";
-import chargeImg from "@/public/images/charge-at-station.png";
+import chevronImg from "@/public/images/down-chevron-c.png";
+import chargeImg from "@/public/images/charge-at-station-c.png";
 import Container from "../container";
 import { PRIMARY_GREEN } from "@/constants";
 
