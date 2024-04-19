@@ -135,7 +135,7 @@ export default function Policy() {
             instructions provided in such communications.
           </div>
 
-          <div className="mb-6 mt-8 text-xl font-semibold">
+          <div className="mt-8 text-xl font-semibold">
             5. Your Privacy Rights
           </div>
           <div className="mb-6">
