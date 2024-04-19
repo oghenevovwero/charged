@@ -1,14 +1,13 @@
+import { GET_APP_CALL } from "@/constants";
 import appleImg from "@/public/images/apple-c.png";
+import fbImg from "@/public/images/fb-c.png";
 import footerChargeImg from "@/public/images/footer-charge-c.png";
+import linkedInImg from "@/public/images/li-c.png";
 import playImg from "@/public/images/playstore-c.png";
 import logoImg from "@/public/images/the-logo-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import Padding from "./padding";
-import { GET_APP_CALL } from "@/constants";
-import linkedInImg from "@/public/images/li-c.png"
-import fbImg from "@/public/images/fb-c.png"
-import dynamic from "next/dynamic";
 
 export default function Footer() {
   return (
@@ -17,7 +16,12 @@ export default function Footer() {
         <div className="mb-6 flex flex-col sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
-              <ExportedImage src={logoImg} height={40} width={80} alt="Our logo" />
+              <ExportedImage
+                src={logoImg}
+                height={40}
+                width={80}
+                alt="Our logo"
+              />
             </Link>
             <div className="text-[#EDF0EF]">
               Mobile EV charge that has your back
@@ -33,7 +37,6 @@ export default function Footer() {
                     width={20}
                     height={20}
                     alt="Get on app store"
-                    
                   />
                 </div>
                 <div>
@@ -48,7 +51,6 @@ export default function Footer() {
                     width={20}
                     height={20}
                     alt="Get on play store"
-                    
                   />
                 </div>
                 <div>
@@ -59,7 +61,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-7 md:text-sm md:flex-row md:gap-10">
+        <div className="flex flex-col justify-start gap-7 md:flex-row md:gap-10 md:text-sm">
           <Link
             href={"/about"}
             className={`cursor-pointer md:hover:text-[${process.env.NEXT_PUBLIC_PG}] active:opacity-60`}
@@ -105,7 +107,7 @@ export default function Footer() {
         </div>
       </Padding>
       <div className="my-8 flex items-center justify-center px-2 md:my-16">
-        <ExportedImage src={footerChargeImg} alt="charge"  />
+        <ExportedImage src={footerChargeImg} alt="charge" />
       </div>
       <Padding>
         <div className="mb-2 h-[1px] w-full bg-gray-400" />
@@ -116,10 +118,20 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="text-lg font-extrabold">X</div>
             <div>
-              <ExportedImage src={linkedInImg} width={15} height={15} alt="Linked in" />
+              <ExportedImage
+                src={linkedInImg}
+                width={15}
+                height={15}
+                alt="Linked in"
+              />
             </div>
             <div>
-              <ExportedImage src={fbImg} width={15} height={15} alt="Facebook" />
+              <ExportedImage
+                src={fbImg}
+                width={15}
+                height={15}
+                alt="Facebook"
+              />
             </div>
           </div>
         </div>
