@@ -1,5 +1,5 @@
 import appleImg from "@/public/images/apple-c.png";
-import bannerImg from "@/public/images/charger2-c.png";
+import bannerImg from "@/public/images/charger2.png";
 import playImg from "@/public/images/playstore-c.png";
 import ExportedImage from "next-image-export-optimizer";
 import BannerContent from "../banner-content";

@@ -20,9 +20,9 @@ export default function Plan({
     shadow-md 
     transition-transform 
     duration-300
-    hover:scale-[97.5%] 
+    md:hover:scale-[98%] 
     hover:opacity-90
-    hover:shadow-xl
+    hover:shadow-lg
     md:p-3
     lg:p-5
     "

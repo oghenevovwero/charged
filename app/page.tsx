@@ -6,13 +6,12 @@ import HomeBanner from "@/components/_home/home-banner";
 import HowItWorks from "@/components/_home/how-it-works/how-it-works";
 import WaitList from "@/components/_home/join-waitlist";
 import Partners from "@/components/_home/partners";
-import Footer from "@/components/footer";
-import Nav from "@/components/nav/dynamic-nav/nav";
+import ResponsiveNavigation from "@/components/nav/responsive-nav";
 
 export default function Home() {
   return (
     <div>
-      <Nav />
+      <ResponsiveNavigation />
       <HomeBanner />
       <Partners />
       <LagosMap />
@@ -21,7 +20,7 @@ export default function Home() {
       <GetCharging />
       <FAQs />
       <WaitList />
-      <Footer />
+      
     </div>
   );
 }

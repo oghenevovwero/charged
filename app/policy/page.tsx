@@ -1,11 +1,10 @@
 import Container from "@/components/container";
-import Footer from "@/components/footer";
-import ContactNav from "@/components/nav/static-nav/nav";
+import StaticNavigation from "@/components/nav/static-nav";
 
 export default function Policy() {
   return (
     <div>
-      <ContactNav />
+      <StaticNavigation />
       <Container className="flex flex-col items-center bg-white text-black">
         <div className="mt-12 sm:mt-10 bg-white text-black">
           <div className="mb-10 text-4xl font-bold">Privacy Policy</div>
@@ -204,7 +203,7 @@ export default function Policy() {
           </div>
         </div>
       </Container>
-      <Footer />
+      
     </div>
   );
 }

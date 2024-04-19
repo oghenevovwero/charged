@@ -2,6 +2,7 @@ import local from "next/font/local";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -79,11 +80,11 @@ export const metadata: Metadata = {
   description: "Mobile EV charge that has your back",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type LayoutProps = Readonly<{
   children: React.ReactNode;
-}>) {
+}>;
+
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <head>
@@ -91,6 +92,7 @@ export default function RootLayout({
       </head>
       <body className={`${openSauceSans.variable} ${inter.className}`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

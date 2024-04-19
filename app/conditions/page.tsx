@@ -1,11 +1,11 @@
-import ContactNav from "@/components/nav/static-nav/nav";
 import Container from "@/components/container";
-import Footer from "@/components/footer";
+import StaticNavigation from "@/components/nav/static-nav";
+
 
 export default function TermsAndConditions() {
   return (
     <div>
-      <ContactNav />
+      <StaticNavigation />
       <Container className="flex flex-col items-center bg-white text-black">
         <article className="mt-12 bg-white text-black sm:mt-10">
           <header className="mb-10 text-4xl font-bold">
@@ -608,7 +608,7 @@ export default function TermsAndConditions() {
           </p>
         </article>
       </Container>
-      <Footer />
+      
     </div>
   );
 }

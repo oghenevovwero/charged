@@ -1,13 +1,12 @@
 import ContactUs from "@/components/contact/contact";
-import ContactNav from "@/components/nav/static-nav/nav";
-import Footer from "@/components/footer";
+import StaticNavigation from "@/components/nav/static-nav";
+
 
 export default function Contact() {
   return (
     <div>
-      <ContactNav />
+      <StaticNavigation />
       <ContactUs />
-      <Footer />
     </div>
   );
 }

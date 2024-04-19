@@ -8,6 +8,7 @@ import Padding from "./padding";
 import { GET_APP_CALL } from "@/constants";
 import linkedInImg from "@/public/images/li-c.png"
 import fbImg from "@/public/images/fb-c.png"
+import dynamic from "next/dynamic";
 
 export default function Footer() {
   return (

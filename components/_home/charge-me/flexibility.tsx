@@ -18,13 +18,12 @@ export default function Flexibility() {
               </div>
               <div className="text-[12px] sm:text-sm">
                 <div className="mb-1 flex items-start gap-2">
-                  <label>
-                    <input
-                      type="radio"
-                      defaultChecked
-                      className="mt-[2.5px] accent-green-600"
-                    />
-                  </label>
+                  <input
+                    type="radio"
+                    aria-label="first charge"
+                    defaultChecked
+                    className="mt-[2.5px] accent-green-600"
+                  />
                   <div>
                     <div>Battery top up</div>
                     <div className="my-1 h-1 w-full rounded-full bg-gray-300" />
@@ -32,13 +31,12 @@ export default function Flexibility() {
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <label>
-                    <input
-                      type="radio"
-                      defaultChecked={false}
-                      className="mt-[2.5px] accent-green-600"
-                    />
-                  </label>
+                  <input
+                    type="radio"
+                    aria-label="other charge"
+                    defaultChecked={false}
+                    className="mt-[2.5px] accent-green-600"
+                  />
                   <div>
                     <div>Battery 100% charge</div>
                     <div className="my-1 h-1 w-full rounded-full bg-gray-300" />

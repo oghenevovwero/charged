@@ -1,17 +1,15 @@
 import FaqsBanner from "@/components/faqs/faqs-banner";
 import OtherQuestions from "@/components/faqs/other-questions";
 import Support from "@/components/faqs/support";
-import Footer from "@/components/footer";
-import Nav from "@/components/nav/dynamic-nav/nav";
+import ResponsiveNavigation from "@/components/nav/responsive-nav";
 
 export default function Faqs() {
   return (
     <div>
-      <Nav />
+      <ResponsiveNavigation />
       <FaqsBanner />
       <Support />
       <OtherQuestions />
-      <Footer />
     </div>
   );
 }

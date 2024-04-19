@@ -1,17 +1,15 @@
 import WaitList from "@/components/_home/join-waitlist";
-import Footer from "@/components/footer";
-import Nav from "@/components/nav/dynamic-nav/nav";
+import ResponsiveNavigation from "@/components/nav/responsive-nav";
 import Plans from "@/components/pricing/plans.tsx/plans";
 import PricingBanner from "@/components/pricing/pricing-banner";
 
 export default function Pricing() {
   return (
     <div>
-      <Nav />
+      <ResponsiveNavigation />
       <PricingBanner />
       <Plans />
       <WaitList />
-      <Footer />
     </div>
   );
 }

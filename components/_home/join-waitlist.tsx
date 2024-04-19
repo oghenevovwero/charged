@@ -23,7 +23,7 @@ export default function WaitList() {
               className={`
               absolute right-[6px] 
               top-[6px] cursor-pointer 
-              rounded-md 
+              rounded-md
               px-3 
               py-3 
               text-lg
