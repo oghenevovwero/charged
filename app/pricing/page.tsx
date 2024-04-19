@@ -1,5 +1,5 @@
-import WaitList from "@/components/_home/join-waitlist";
-import ResponsiveNavigation from "@/components/nav/responsive-nav";
+import WaitList from "@/components/home/join-waitlist";
+import ResponsiveNavigation from "@/components/nav";
 import Plans from "@/components/pricing/plans.tsx/plans";
 import PricingBanner from "@/components/pricing/pricing-banner";
 

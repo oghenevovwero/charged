@@ -5,7 +5,7 @@ import OurPromise from "@/components/about-us/our-promise/our-promise";
 import Welcome from "@/components/about-us/welcome";
 import WhatSetsUsApart from "@/components/about-us/what-sets-us-apart/what-sets-us-apart";
 import WhoWeAre from "@/components/about-us/who-we-are";
-import ResponsiveNavigation from "@/components/nav/responsive-nav";
+import ResponsiveNavigation from "@/components/nav";
 
 export default function AboutUs() {
   return (

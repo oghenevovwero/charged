@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="mb-6 flex flex-col sm:flex-row sm:justify-between">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="cursor-pointer">
-              <ExportedImage src={logoImg} height={40} width={100} alt="Our logo" />
+              <ExportedImage src={logoImg} height={40} width={80} alt="Our logo" />
             </Link>
             <div className="text-[#EDF0EF]">
               Mobile EV charge that has your back

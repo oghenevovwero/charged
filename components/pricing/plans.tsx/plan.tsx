@@ -63,7 +63,7 @@ export default function Plan({
           py-[14px]
           text-center 
           text-sm           
-          font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}
+          font-medium transition-transform duration-300 hover:scale-[97.5%] active:opacity-50`}
           >
             Get started now
           </div>

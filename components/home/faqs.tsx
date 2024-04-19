@@ -25,7 +25,7 @@ export default function FAQs() {
             font-medium text-black
             transition-transform 
             duration-300 
-            hover:scale-95 
+            hover:scale-[97.5%] 
             active:opacity-50 
             md:text-lg"
           >

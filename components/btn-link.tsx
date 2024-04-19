@@ -19,7 +19,7 @@ export default function BtnLink({ title, to = "#" }: Props) {
           text-white 
           transition-transform 
           duration-300 
-          md:hover:scale-95
+          md:hover:scale-[97.5%]
           active:opacity-50`}
         >
           {title}

@@ -20,7 +20,7 @@ export default function ContactUs() {
             <div className="mb-1 text-sm font-semibold">First name</div>
             <input
               placeholder="First name"
-              className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
+              className="w-full rounded-lg  border border-gray-300 bg-white px-2 py-2 text-black outline-none"
             />
           </div>
 
@@ -28,7 +28,7 @@ export default function ContactUs() {
             <div className="mb-1 text-sm font-semibold">Last name</div>
             <input
               placeholder="Last name"
-              className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
+              className="w-full rounded-lg  border border-gray-300 bg-white px-2 py-2 text-black outline-none"
             />
           </div>
         </div>
@@ -36,17 +36,17 @@ export default function ContactUs() {
           <div className="mb-1 text-sm font-semibold">Email</div>
           <input
             placeholder="You@company.com"
-            className="placeholder: w-full rounded-lg  border border-gray-300 bg-white px-2 py-3 text-lg text-black outline-none placeholder:text-lg"
+            className="w-full rounded-lg  border border-gray-300 bg-white px-2 py-2 text-black outline-none"
           />
         </div>
-        <div className="relative w-full text-sm">
+        <div className="relative w-full">
           <div className="mb-1 text-sm font-semibold">Phone number</div>
           <input
             placeholder="+1 (555) 000-0000"
-            className="placeholder: w-full rounded-lg  border border-gray-300 bg-white py-3 pl-[60px] pr-2 text-lg text-black outline-none placeholder:text-lg"
+            className="w-full rounded-lg  border border-gray-300 bg-white py-2 pl-[60px] pr-2 text-black outline-none"
           />
-          <div className="absolute bottom-3 left-2 flex items-center gap-2">
-            <div className="text-lg text-gray-400">US</div>
+          <div className="absolute bottom-2 left-2 flex items-center gap-2">
+            <div className="text-gray-400">US</div>
             <div>
               <ExportedImage
                 src={chevronImg}

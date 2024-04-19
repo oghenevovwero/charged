@@ -1,11 +1,11 @@
 import Container from "@/components/container";
-import StaticNavigation from "@/components/nav/static-nav";
+import ResponsiveNavigation from "@/components/nav";
 
 
 export default function TermsAndConditions() {
   return (
     <div>
-      <StaticNavigation />
+      <ResponsiveNavigation alwaysOpaque />
       <Container className="flex flex-col items-center bg-white text-black">
         <article className="mt-12 bg-white text-black sm:mt-10">
           <header className="mb-10 text-4xl font-bold">

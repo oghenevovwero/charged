@@ -16,7 +16,7 @@ export default function GetCharging() {
       />
       <div className="absolute inset-0 flex h-full w-screen items-center justify-start">
         <Container>
-          <div className="text-6xl font-bold md:w-[70%] lg:w-[60%] xl:w-[50%]">
+          <div className="text-6xl font-bold md:w-[70%] lg:w-[60%] xl:w-[50%] leading-[65px]">
             Get 24/7 charging delivery service for up to $0.58/KWh
           </div>
           <div className="mt-6 sm:mt-8">

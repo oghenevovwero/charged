@@ -12,7 +12,7 @@ export default function Charged404() {
 
       <Link
         href={"/"}
-        className="rounded-lg border px-2 py-1 md:hover:scale-95 mt-6"
+        className="rounded-lg border px-2 py-1 md:hover:scale-[97.5%] mt-6"
       >
         Go back home
       </Link>

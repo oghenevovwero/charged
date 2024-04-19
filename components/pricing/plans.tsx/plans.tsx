@@ -68,7 +68,7 @@ export default function Plans() {
               className={`w-full cursor-pointer rounded-lg border border-[#00A54D]
               bg-white 
               px-[33px] 
-              py-[14px] text-sm font-medium transition-transform duration-300 hover:scale-95 active:opacity-50`}
+              py-[14px] text-sm font-medium transition-transform duration-300 hover:scale-[97.5%] active:opacity-50`}
             >
               <div className="flex items-center justify-center gap-1">
                 <div>Get</div>

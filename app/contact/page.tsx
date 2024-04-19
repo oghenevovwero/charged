@@ -1,11 +1,11 @@
 import ContactUs from "@/components/contact/contact";
-import StaticNavigation from "@/components/nav/static-nav";
+import ResponsiveNavigation from "@/components/nav";
 
 
 export default function Contact() {
   return (
     <div>
-      <StaticNavigation />
+      <ResponsiveNavigation alwaysOpaque />
       <ContactUs />
     </div>
   );
