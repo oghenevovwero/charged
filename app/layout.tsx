@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
+import {GoogleTagManager} from '@next/third-parties/google'
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -93,6 +94,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={`${openSauceSans.variable} ${inter.className}`}>
         {children}
         <Footer />
+        <GoogleTagManager gtmId="AW-16541443584" />
       </body>
     </html>
   );
