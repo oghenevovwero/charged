@@ -20,7 +20,6 @@ export default function Home() {
       <GetCharging />
       <FAQs />
       <WaitList />
-      
     </div>
   );
 }

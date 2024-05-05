@@ -22,7 +22,7 @@ export default function HomeBanner() {
       <BannerContent className="flex items-center text-white">
         <Padding>
           <div className="sm:w-[60%]">
-            <header className="text-6xl font-semibold">
+            <header className="text-6xl xl:text-7xl font-semibold">
               Get charged, anytime, anywhere
             </header>
             <header className="mb-6 mt-8 text-xl font-light">
