@@ -17,17 +17,8 @@ export default function WaitlistForm() {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
   );
 
-  const [good, setGood] = useState(false);
-
   const email = useRef("");
   const name = useRef("");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setGood(!good);
-    }, 3000);
-    return () => clearInterval(interval);
-  });
 
   return (
     <form
@@ -78,9 +69,9 @@ export default function WaitlistForm() {
               }
             }}
             placeholder="Your name"
-            className="w-full rounded-lg border border-gray-300 bg-[#54645D] px-3 py-[14px] text-lg outline-none placeholder:text-white"
+            className="w-full rounded-lg border border-gray-400 bg-[#54645D] px-3 py-[14px] text-lg outline-none placeholder:text-white"
           />
-          <div className="flex w-full justify-center text-lg text-red-400">
+          <div className="flex w-full sm:justify-center text-lg text-red-400">
             {showNameError}
           </div>
         </div>
@@ -98,9 +89,9 @@ export default function WaitlistForm() {
               }
             }}
             placeholder="Email address"
-            className="w-full rounded-lg border border-gray-300 bg-[#54645D] px-3 py-[14px] text-lg outline-none placeholder:text-white"
+            className="w-full rounded-lg border border-gray-400 bg-[#54645D] px-3 py-[14px] text-lg outline-none placeholder:text-white"
           />
-          <div className="flex w-full justify-center text-lg text-red-400">
+          <div className="flex w-full sm:justify-center text-lg text-red-400">
             {showEmailError}
           </div>
         </div>
@@ -134,12 +125,12 @@ export default function WaitlistForm() {
       </button>
       <div
         style={{
-          visibility: good ? "visible" : "hidden",
+          visibility: success ? "visible" : "hidden",
           transition: "all 1s linear",
         }}
-        className="text-white text-lg sm:text-center mt-2"
+        className="text-white text-lg text-center mt-2"
       >
-        Hooray! You're in line for something amazing
+        Hooray! You&apos;re in line for something amazing
       </div>
     </form>
   );
